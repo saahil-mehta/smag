@@ -9,6 +9,110 @@
 
 .motion-ready [data-reveal] { opacity: 0; }
 
+/* Hero depth treatment.
+   The hero image is a flattened render, so the foreground layer repeats
+   the same image and clips it around the machinery. This lets the large
+   manufacturer name sit visually behind the magnetic equipment. */
+.framer-VLcRh .framer-wx6ri9 {
+  isolation: isolate;
+}
+
+.framer-VLcRh .framer-1tels6l {
+  z-index: 3 !important;
+  top: 26% !important;
+  left: 50% !important;
+  max-width: min(1280px, 92vw) !important;
+  place-content: center !important;
+  pointer-events: none;
+  transform: translate(-50%, -50%) !important;
+  overflow: visible !important;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0, 0, 0, .72) 72%, rgba(0, 0, 0, .38) 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 50%, rgba(0, 0, 0, .72) 72%, rgba(0, 0, 0, .38) 100%);
+}
+
+.framer-VLcRh .framer-1tels6l .framer-text {
+  text-align: center;
+}
+
+/* Watermark font-size: Framer ships fixed 100 / 180 / 284 px, which
+   overflow above 100% browser zoom. Override with a clamp() that
+   scales fluidly with viewport so it survives zoom and small
+   screens. white-space: nowrap belt-and-braces against the
+   "Since 1978" token splitting if the &nbsp; ever gets stripped. */
+.framer-VLcRh .framer-1tels6l .framer-uffr94 p {
+  font-size: clamp(2rem, 9vw, 14rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.03em !important;
+  white-space: nowrap;
+}
+
+.framer-VLcRh .framer-1nzah82 {
+  z-index: 3;
+}
+
+.smag-hero-depth-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.smag-hero-depth-piece {
+  position: absolute;
+  inset: 0;
+  background-image: url("hero.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smag-depth-left {
+  display: none;
+}
+
+.smag-depth-centre {
+  display: none;
+}
+
+.smag-depth-base {
+  display: none;
+}
+
+.smag-depth-right {
+  display: none;
+}
+
+@media (min-width: 810px) and (max-width: 1439.98px) {
+  .framer-VLcRh .framer-1tels6l {
+    top: 24% !important;
+    max-width: min(1040px, 94vw) !important;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .framer-VLcRh .framer-1tels6l {
+    top: 24% !important;
+    max-width: 92vw !important;
+  }
+
+  .framer-VLcRh .framer-1tels6l .framer-uffr94 p {
+    font-size: clamp(2.35rem, 11vw, 3.1rem) !important;
+  }
+
+  .framer-VLcRh .framer-1nzah82 h1.framer-text {
+    font-size: clamp(1.75rem, 8.2vw, 2.125rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .smag-hero-depth-piece {
+    background-image: url("hero-mobile.jpg");
+    background-position: center;
+  }
+
+}
+
 /* Reskin token collision: Framer's send-icon inherits the Primary
    token for both fill and color, which is the same red as the Arrow
    circle background. Force a white-on-primary glyph. */
