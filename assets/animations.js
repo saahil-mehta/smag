@@ -18,6 +18,54 @@
     for (var i = 0; i < spans.length; i++) spans[i].style.setProperty('--smag-i', i);
   });
 
+  // Mobile drawer menu. Replaces Framer's runtime-driven mobile menu.
+  // Hrefs use the same relative prefix as the existing navbar links on this
+  // page (pages under blogs/, projects/, package/ need a "../" prefix), so
+  // we probe an existing internal link instead of hard-coding paths.
+  (function injectDrawer() {
+    if (document.getElementById('smag-mm')) return;
+    var probe = document.querySelector('a[href$="about-us.html"]');
+    var prefix = probe ? (probe.getAttribute('href').match(/^((?:\.\.\/)*)/) || [''])[0] : '';
+    var links = [
+      ['index.html', 'Home'],
+      ['about-us.html', 'About'],
+      ['services.html', 'Services'],
+      ['package.html', 'Packages'],
+      ['blogs.html', 'Blogs'],
+      ['contact.html', 'Contact'],
+    ];
+    var mm = document.createElement('div');
+    mm.id = 'smag-mm';
+    mm.setAttribute('role', 'dialog');
+    mm.setAttribute('aria-modal', 'true');
+    mm.setAttribute('aria-label', 'Menu');
+    var close = document.createElement('button');
+    close.id = 'smag-mm-close';
+    close.setAttribute('aria-label', 'Close menu');
+    close.innerHTML = '&times;';
+    close.addEventListener('click', function () { mm.classList.remove('open'); });
+    mm.appendChild(close);
+    links.forEach(function (l) {
+      var a = document.createElement('a');
+      a.href = prefix + l[0];
+      a.textContent = l[1];
+      mm.appendChild(a);
+    });
+    document.body.appendChild(mm);
+
+    document.querySelectorAll('[data-framer-name="Menu Button"]').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        mm.classList.add('open');
+      }, true);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mm.classList.contains('open')) mm.classList.remove('open');
+    });
+  })();
+
   // Marquee: always make the track visible; animate only when motion is allowed.
   document.querySelectorAll('[data-marquee]').forEach(function (track) {
     track.style.opacity = '1';

@@ -1,9 +1,21 @@
-/* S-MAG animations: layered atop Framer's static structure.
+/* S-MAG styles: layered atop Framer's static structure.
+   - Hide Framer's "Made in Framer" badge.
    - Reveal: hide [data-reveal] until animations.js mounts them.
-   - Pill+arrow CTA hover: per-letter roll + diagonal arrow swap.
-   - Pill+arrow CTA click: gentle press scale. */
+   - Pill+arrow CTA hover/click.
+   - Arrow icon contrast fix (Primary/Primary collision in reskin).
+   - Mobile drawer menu (drawer DOM is injected by animations.js). */
+
+#__framer-badge-container { display: none !important; }
 
 .motion-ready [data-reveal] { opacity: 0; }
+
+/* Reskin token collision: Framer's send-icon inherits the Primary
+   token for both fill and color, which is the same red as the Arrow
+   circle background. Force a white-on-primary glyph. */
+.framer-m76ur6 [data-framer-name="Arrow"] [data-framer-component-type="SVG"] {
+  color: #fff !important;
+  fill: #fff !important;
+}
 
 /* ------------------------------------------------------------------ *
  * Pill + arrow CTA
@@ -68,4 +80,63 @@
   .framer-m76ur6:active {
     transform: none;
   }
+}
+
+/* ------------------------------------------------------------------ *
+ * Mobile drawer menu
+ *
+ * Replaces Framer's mobile menu which depended on the React runtime.
+ * The drawer DOM is injected by animations.js and the menu button
+ * is bound there too; this is purely presentation.
+ * ------------------------------------------------------------------ */
+
+#smag-mm {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 88px 28px 28px;
+  gap: 2px;
+}
+
+#smag-mm.open { display: flex; }
+
+#smag-mm a {
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -.03em;
+  color: #0a0a0a;
+  text-decoration: none;
+  padding: 16px 2px;
+  border-bottom: 1px solid #ededed;
+}
+
+#smag-mm a:active { color: #e8231a; }
+
+#smag-mm-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+  color: #0a0a0a;
+  cursor: pointer;
+}
+
+@media (min-width: 810px) {
+  #smag-mm { display: none !important; }
+}
+
+/* Framer's mobile-layout Overlay sits above the navbar and intercepts
+   clicks on the Menu Button. Disable pointer events on the overlay so
+   the button receives them. */
+@media (max-width: 809.98px) {
+  [data-framer-name="Overlay"] { pointer-events: none !important; }
 }
