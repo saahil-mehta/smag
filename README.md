@@ -21,22 +21,28 @@ the layout. Some sections still carry placeholder content.
 ## Local preview
 
 ```sh
-make web          # serves on http://localhost:8000
+make web          # builds, then serves on http://localhost:8000
 ```
 
-Override the port with `make web PORT=9000`.
+`make web` runs `make build` first, so the served pages always reflect
+the latest partials. Override the port with `make web PORT=9000`.
+
+If you edit a partial while the server is already running, rerun
+`make build` in another terminal; the server picks up the regenerated
+files on the next request.
 
 ## Build
 
-Shared chrome (currently the navbar) lives in `_partials/` and is
+Shared chrome (navbar and footer) lives in `_partials/` and is
 assembled into each page by `tools/build.py`:
 
 ```sh
 make build        # regenerate marker-bounded sections in every page
 ```
 
-Edit a partial, run `make build`, commit both the partial and the
-regenerated pages. See `_partials/README.md` for the marker format.
+Edit a partial, run `make build` (or just `make web`), commit both
+the partial and the regenerated pages. See `_partials/README.md` for
+the marker format.
 
 ## Hosting
 
