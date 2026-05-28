@@ -1,0 +1,71 @@
+/* S-MAG animations: layered atop Framer's static structure.
+   - Reveal: hide [data-reveal] until animations.js mounts them.
+   - Pill+arrow CTA hover: per-letter roll + diagonal arrow swap.
+   - Pill+arrow CTA click: gentle press scale. */
+
+.motion-ready [data-reveal] { opacity: 0; }
+
+/* ------------------------------------------------------------------ *
+ * Pill + arrow CTA
+ *
+ * Framer ships these as <a class="framer-m76ur6 ..."> with two children:
+ *   1. .rolling-text-inner-XXX containing one <span> per letter.
+ *      The wrapper has overflow:hidden, display:flex, and
+ *      text-shadow: 0 var(--line-height-abs) 0 var(--text) which paints
+ *      a clone of each glyph one line below. Hover slides each span up
+ *      by one line-height: original exits, shadow-clone arrives in place.
+ *   2. [data-framer-name="Arrow"], a 46x46 overflow:hidden circle with
+ *      two stacked send-icon SVGs. SVG A is centred; SVG B is offset by
+ *      (-24, +25). Translating the shared wrapper by (+24, -25) on hover
+ *      sends A out the top-right and B into centre.
+ * ------------------------------------------------------------------ */
+
+.framer-m76ur6 {
+  cursor: pointer;
+  transition: transform 200ms cubic-bezier(.25, 1, .5, 1);
+}
+
+.framer-m76ur6 [class*="rolling-text-inner-"] > span {
+  transition: transform 430ms cubic-bezier(.25, 1, .5, 1);
+  transition-delay: calc(var(--smag-i, 0) * 32ms);
+  will-change: transform;
+}
+
+/* !important is required: Framer sets `transform:none` inline on every
+   letter span, which has higher specificity than any CSS selector. */
+.framer-m76ur6:hover [class*="rolling-text-inner-"] > span,
+.framer-m76ur6:focus-visible [class*="rolling-text-inner-"] > span {
+  transform: translateY(-1.2em) !important;
+}
+
+.framer-m76ur6 [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"] {
+  transition: transform 430ms cubic-bezier(.25, 1, .5, 1);
+  will-change: transform;
+}
+
+.framer-m76ur6:hover [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"],
+.framer-m76ur6:focus-visible [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"] {
+  transform: translate(24px, -25px);
+}
+
+.framer-m76ur6:active {
+  transform: scale(0.97);
+  transition-duration: 120ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .framer-m76ur6,
+  .framer-m76ur6 [class*="rolling-text-inner-"] > span,
+  .framer-m76ur6 [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"] {
+    transition: none;
+  }
+  .framer-m76ur6:hover [class*="rolling-text-inner-"] > span,
+  .framer-m76ur6:focus-visible [class*="rolling-text-inner-"] > span {
+    transform: none !important;
+  }
+  .framer-m76ur6:hover [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"],
+  .framer-m76ur6:focus-visible [data-framer-name="Arrow"] > [data-framer-name="vuesax/linear/send"],
+  .framer-m76ur6:active {
+    transform: none;
+  }
+}

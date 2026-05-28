@@ -10,6 +10,14 @@
   var html = document.documentElement;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Pill+arrow CTA hover/click is CSS-driven (see animations.css). We only
+  // need to index each letter span so the per-letter stagger works. The
+  // class .framer-m76ur6 marks every pill+arrow anchor across the site.
+  document.querySelectorAll('a.framer-m76ur6 [class*="rolling-text-inner-"]').forEach(function (inner) {
+    var spans = inner.children;
+    for (var i = 0; i < spans.length; i++) spans[i].style.setProperty('--smag-i', i);
+  });
+
   // Marquee: always make the track visible; animate only when motion is allowed.
   document.querySelectorAll('[data-marquee]').forEach(function (track) {
     track.style.opacity = '1';
