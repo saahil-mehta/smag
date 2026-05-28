@@ -2,7 +2,7 @@
 
 PORT ?= 8000
 
-.PHONY: help web
+.PHONY: help web build
 
 help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
@@ -11,3 +11,6 @@ help: ## Show available targets
 web: ## Serve the site locally (override port with PORT=9000)
 	@echo "Serving on http://localhost:$(PORT)  (Ctrl-C to stop)"
 	@python3 -m http.server $(PORT)
+
+build: ## Assemble HTML pages from _partials/ (run after editing a partial)
+	@python3 tools/build.py

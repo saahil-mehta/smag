@@ -26,6 +26,18 @@ make web          # serves on http://localhost:8000
 
 Override the port with `make web PORT=9000`.
 
+## Build
+
+Shared chrome (currently the navbar) lives in `_partials/` and is
+assembled into each page by `tools/build.py`:
+
+```sh
+make build        # regenerate marker-bounded sections in every page
+```
+
+Edit a partial, run `make build`, commit both the partial and the
+regenerated pages. See `_partials/README.md` for the marker format.
+
 ## Hosting
 
 GitHub Pages, served from the repository root on the default branch.

@@ -18,6 +18,16 @@
     for (var i = 0; i < spans.length; i++) spans[i].style.setProperty('--smag-i', i);
   });
 
+  // Mark the navbar link matching the current page so Framer's
+  // [data-framer-page-link-current] CSS rules apply. The partial strips
+  // this attribute (it would otherwise be frozen to the page the partial
+  // was extracted from), so we re-set it here per page.
+  var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  document.querySelectorAll('nav[name="Navbar"] a[href]').forEach(function (a) {
+    var basename = (a.getAttribute('href').split('/').pop() || '').toLowerCase();
+    if (basename === here) a.setAttribute('data-framer-page-link-current', 'true');
+  });
+
   // Mobile drawer menu. Replaces Framer's runtime-driven mobile menu.
   // Hrefs use the same relative prefix as the existing navbar links on this
   // page (pages under blogs/, projects/, package/ need a "../" prefix), so
