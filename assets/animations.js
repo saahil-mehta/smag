@@ -18,12 +18,12 @@
     for (var i = 0; i < spans.length; i++) spans[i].style.setProperty('--smag-i', i);
   });
 
-  // Mark the navbar link matching the current page so Framer's
-  // [data-framer-page-link-current] CSS rules apply. The partial strips
-  // this attribute (it would otherwise be frozen to the page the partial
+  // Mark the navbar / footer link matching the current page so Framer's
+  // [data-framer-page-link-current] CSS rules apply. The partials strip
+  // this attribute (it would otherwise be frozen to the page each partial
   // was extracted from), so we re-set it here per page.
   var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  document.querySelectorAll('nav[name="Navbar"] a[href]').forEach(function (a) {
+  document.querySelectorAll('nav[name="Navbar"] a[href], .framer-plv1rs-container a[href]').forEach(function (a) {
     var basename = (a.getAttribute('href').split('/').pop() || '').toLowerCase();
     if (basename === here) a.setAttribute('data-framer-page-link-current', 'true');
   });
