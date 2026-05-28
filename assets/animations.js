@@ -92,15 +92,58 @@
   if (!M || reduce) { html.classList.remove('motion-ready'); return; }
 
   var spring = { type: 'spring', stiffness: 400, damping: 58, mass: 1 };
+  // Premium section reveal: slow ease-out-expo, larger offset. Used for
+  // content blocks tagged by the section scanner below.
+  var sectionEase = { duration: 0.9, ease: [0.16, 1, 0.3, 1] };
 
   function reveal(el) {
     if (el.__revealed) return;
     el.__revealed = true;
     var mode = el.getAttribute('data-reveal');
+    if (mode === 'section') {
+      M.animate(el, { opacity: [0, 1], y: [32, 0] }, sectionEase);
+      return;
+    }
     var to = { opacity: [0, 1], y: [mode === 'nav' ? -20 : 10, 0] };
     if (mode === 'blur') to.filter = ['blur(10px)', 'blur(0px)'];
     M.animate(el, to, spring);
   }
+
+  // Tag Framer content containers for premium scroll-in. Skip anything
+  // already revealed (per-letter blur, navbars), the navbar itself, the
+  // footer, and the marquee track. The hero stays at rest (already on
+  // screen at load); below-the-fold blocks animate as the user scrolls.
+  var sectionSelectors = [
+    '[data-framer-name="Heading+subtitle+button"]',
+    '[data-framer-name="Heading+subtitle+Button"]',
+    '[data-framer-name="Heading+button"]',
+    '[data-framer-name="Heading+Button"]',
+    '[data-framer-name="Heading+subtitle"]',
+    '[data-framer-name="Subtitle+button"]',
+    '[data-framer-name="Tag+heading+Button"]',
+    '[data-framer-name="Tag+heading+button"]',
+    '[data-framer-name="Tag+heading"]',
+    '[data-framer-name="Heading + Text"]',
+    '[data-framer-name="Variant 1"]',
+  ];
+  var sectionSelectorList = sectionSelectors.join(',');
+  document.querySelectorAll(sectionSelectorList).forEach(function (el) {
+    if (el.hasAttribute('data-reveal')) return;
+    if (el.closest('nav[name="Navbar"], .framer-plv1rs-container, [data-marquee]')) return;
+    // Skip the hero: it already animates its subtitle letter-by-letter
+    // via the existing "blur" reveal, and a section-level slide on top
+    // would fight that. Detect by descendant data-reveal.
+    if (el.querySelector('[data-reveal]')) return;
+    // Don't double-animate nested content blocks (e.g. a Heading+Text
+    // inside a card that's already a Variant 1).
+    if (el.parentElement && el.parentElement.closest(sectionSelectorList)) return;
+    el.setAttribute('data-reveal', 'section');
+    // Framer sets inline opacity:1 on these blocks which beats the
+    // .motion-ready [data-reveal] CSS rule. Force the rest state inline
+    // so Motion has a clean starting point.
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(32px)';
+  });
 
   // Navbar reveals on load; the rest on scroll into view (one shared observer).
   var deferred = [];
