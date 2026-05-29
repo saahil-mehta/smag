@@ -97,13 +97,18 @@
     max-width: 92vw !important;
   }
 
+  .framer-VLcRh .framer-1nzah82 {
+    transform: translateY(24px) !important;
+  }
+
   .framer-VLcRh .framer-1tels6l .framer-uffr94 p {
     font-size: clamp(2.35rem, 11vw, 3.1rem) !important;
   }
 
   .framer-VLcRh .framer-1nzah82 h1.framer-text {
-    font-size: clamp(1.75rem, 8.2vw, 2.125rem) !important;
-    line-height: 1.12 !important;
+    font-size: clamp(1.2rem, 5.8vw, 1.45rem) !important;
+    line-height: 1.08 !important;
+    white-space: nowrap !important;
   }
 
   .smag-hero-depth-piece {
