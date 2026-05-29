@@ -61,6 +61,41 @@
   white-space: nowrap !important;
 }
 
+/* Right-align the hero description and CTA so they read as one block
+   flush to the right edge, mirroring the left-aligned headline on the
+   opposite side. The subtitle wrapper is a flex column, so align-self
+   moves the button on the cross axis. */
+.framer-VLcRh .framer-n6r3t5 .framer-text {
+  text-align: right !important;
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
+}
+
+.framer-VLcRh .framer-12842m5 .framer-wv1qq7-container {
+  align-self: flex-end;
+}
+
+/* The headline and the description/CTA share a centre-aligned row, so they
+   sit at the same height. The hero is full-height with the cluster already
+   near the bottom edge, so pushing the cluster down clips the CTA. The
+   headline has empty space above it, so lift the headline instead: the
+   right cluster then reads as sitting a little lower, with no clipping.
+   Desktop and tablet only; phone stacks the cluster. */
+@media (min-width: 810px) {
+  /* The row and Main Contain default to overflow:clip at content height,
+     so a lifted headline would be cut off at the top. Release the clip on
+     just these two (not the subtitle box, which should keep clipping) so
+     the headline can sit higher. */
+  .framer-VLcRh .framer-1y3l9iz,
+  .framer-VLcRh .framer-1nzah82 {
+    overflow: visible !important;
+  }
+
+  .framer-VLcRh .framer-1i43vi {
+    transform: translateY(-32px) !important;
+  }
+}
+
 .smag-hero-depth-layer {
   position: absolute;
   inset: 0;
