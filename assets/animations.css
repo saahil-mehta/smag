@@ -50,6 +50,17 @@
   z-index: 3;
 }
 
+/* Hero headline sizing. Framer ships 72 / 50 / 44px, which forces the
+   two-sentence H1 (split by <br>) to wrap a second time into four lines.
+   Scale the type down so each sentence holds a single line, giving two
+   lines total, across all breakpoints. This is the desktop/base rule;
+   tablet and phone are handled in their own media blocks below. */
+.framer-VLcRh .framer-1nzah82 h1.framer-text {
+  font-size: clamp(2.4rem, 3.2vw, 3rem) !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+}
+
 .smag-hero-depth-layer {
   position: absolute;
   inset: 0;
@@ -88,6 +99,15 @@
   .framer-VLcRh .framer-1tels6l {
     top: 24% !important;
     max-width: min(1040px, 94vw) !important;
+  }
+
+  /* On tablet the heading shares a row with the subtitle and only gets a
+     ~400px column, so the type has to come down further to keep both
+     sentences on a single line each without overrunning the subtitle. */
+  .framer-VLcRh .framer-1nzah82 h1.framer-text {
+    font-size: clamp(1.45rem, 3vw, 1.6rem) !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
   }
 }
 
