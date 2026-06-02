@@ -96,6 +96,71 @@
   }
 }
 
+/* Stats band (the "Counter" row under the hero). The template shipped three
+   invented stats (8000W+ / 25k+ / 99%); these are replaced in the markup with
+   four document-backed ones (Since 1978, ISO 9001:2015, product range, the
+   IndiaMART rating). Widen the grid from three to four columns on desktop and
+   tablet, and stack two-by-two on phone so the columns never crush. */
+.framer-VLcRh .framer-1gs2oua {
+  grid-template-columns: repeat(4, minmax(50px, 1fr)) !important;
+}
+
+/* Framer shipped each counter div an inline transform:translateY(30px) as a
+   pre-reveal rest-state, expecting its React runtime to animate it to zero. In
+   this static export nothing clears it, and one label was left at
+   transform:none, so it sat 30px higher than the rest and overlapped its
+   number. Zero them all: the band's section-level reveal already animates the
+   entrance, so these per-counter offsets are vestigial. */
+.framer-VLcRh .framer-1gs2oua [data-framer-component-type="RichTextContainer"] {
+  transform: none !important;
+}
+
+/* Each stat wrapper otherwise shrinks to the width of its number, so a narrow
+   number ("40+") would crush its label onto two lines while a wide one stays
+   single-line, reading ragged. Stretch every wrapper to fill its grid track so
+   all four labels get the same room. */
+.framer-VLcRh .framer-1gs2oua > div {
+  justify-self: stretch !important;
+  width: auto !important;
+}
+
+/* Framer pins the counter text to white-space:pre at content width, which
+   would overflow the narrower four-up columns. Let only the labels wrap; the
+   numbers stay on one line (kept short for exactly this reason). */
+.framer-VLcRh .framer-1gs2oua .framer-1igl99h,
+.framer-VLcRh .framer-1gs2oua .framer-1sej12b,
+.framer-VLcRh .framer-1gs2oua .framer-16iflr8,
+.framer-VLcRh .framer-1gs2oua h6.framer-text {
+  width: 100% !important;
+  white-space: normal !important;
+}
+
+@media (max-width: 809.98px) {
+  .framer-VLcRh .framer-1gs2oua {
+    grid-template-columns: repeat(2, minmax(50px, 1fr)) !important;
+  }
+}
+
+/* About Us team grid: the template shipped six stock "experts"; Santosh
+   Magnetic Works has two partners. Hide the four surplus card instances
+   (Yeasmin, Yeaseen, Jesica, Ayash) by their Framer container classes, leaving
+   Rahul and Sushil. Container classes are unique to about-us.html, so hiding
+   them globally from the shared stylesheet is safe. */
+.framer-mw20qg-container,
+.framer-k9bii3-container,
+.framer-1udlsfc-container,
+.framer-1eedhwv-container {
+  display: none !important;
+}
+
+/* About Us hero banner uses the real team-under-signboard photo. The wide
+   banner slot would centre-crop through the team's midriffs, so bias the cover
+   crop upward to keep faces in frame. Scoped by src; this image is only used
+   here. */
+img[src="assets/factory-team.jpg"] {
+  object-position: 50% 30% !important;
+}
+
 .smag-hero-depth-layer {
   position: absolute;
   inset: 0;
