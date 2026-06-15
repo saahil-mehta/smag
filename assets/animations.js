@@ -18,6 +18,21 @@
     for (var i = 0; i < spans.length; i++) spans[i].style.setProperty('--smag-i', i);
   });
 
+  function alignProductFamilyCards() {
+    var section = document.getElementById('benifit-1');
+    if (!section) return;
+    ['framer-1faa9ry', 'framer-19cvw77', 'framer-3h7pth', 'framer-ib9i7h'].forEach(function (className) {
+      section.querySelectorAll('.' + className).forEach(function (card) {
+        card.style.setProperty('transform', 'none', 'important');
+      });
+    });
+  }
+
+  alignProductFamilyCards();
+  requestAnimationFrame(alignProductFamilyCards);
+  window.addEventListener('load', alignProductFamilyCards);
+  setTimeout(alignProductFamilyCards, 500);
+
   // Mark the navbar / footer link matching the current page so Framer's
   // [data-framer-page-link-current] CSS rules apply. The partials strip
   // this attribute (it would otherwise be frozen to the page each partial

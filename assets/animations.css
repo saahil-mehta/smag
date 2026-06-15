@@ -153,6 +153,46 @@
   display: none !important;
 }
 
+/* ------------------------------------------------------------------ *
+ * Static-export remediation
+ *
+ * This is a Framer export whose scroll-reveal and entrance animations
+ * assume Framer's React runtime. Without it, content blocks freeze at
+ * opacity:0 (white voids) and the leftover will-change layers make
+ * scrolling janky. Make content visible by default and shed the layers.
+ * ------------------------------------------------------------------ */
+
+/* Defeat the reveal-hiding: any block tagged for scroll-in shows at rest.
+   Beats Framer's inline opacity:0 and animations.js's rest state. */
+[data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* Shed compositing layers. ~90 will-change hints per page exhaust the GPU
+   and cause scroll jank on a static page that never animates them. */
+[class*="framer-"] {
+  will-change: auto !important;
+}
+
+/* About Us: hide two sections that are broken-blank in the static export and
+   still carry energy-template content with no magnetic replacement, the
+   scroll-pinned process section and the energy FAQ. */
+.framer-npxb0u,
+.framer-hx4zvr {
+  display: none !important;
+}
+
+/* Team grid keeps three column tracks for the original six profiles, so the
+   two partners left-align into the first two. Collapse to two content-width
+   columns, centred. */
+.framer-5bcce0 {
+  grid-template-columns: repeat(2, minmax(0, 360px)) !important;
+  grid-template-rows: auto !important;
+  justify-content: center !important;
+}
+
 /* About Us hero banner uses the real team-under-signboard photo. The wide
    banner slot would centre-crop through the team's midriffs, so bias the cover
    crop upward to keep faces in frame. Scoped by src; this image is only used
@@ -368,4 +408,381 @@ img[src="assets/factory-team.jpg"] {
    the button receives them. */
 @media (max-width: 809.98px) {
   [data-framer-name="Overlay"] { pointer-events: none !important; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Benefits section
+ *
+ * The exported percentage gauge clips inside the industrial benefits card.
+ * Replace it with a SMAG-specific matched-circuit graphic and tighten headings.
+ * ------------------------------------------------------------------ */
+
+#benifit .framer-8qvgsd {
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+}
+
+#benifit .framer-8qvgsd .framer-140o1q3 {
+  display: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-1xqnjxx,
+#benifit .framer-8qvgsd .framer-1vgecn3,
+#benifit .framer-8qvgsd .framer-10aaajs {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-1xqnjxx {
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+#benifit .framer-8qvgsd .framer-nwjfqe,
+#benifit .framer-8qvgsd .framer-nwjfqe h5 {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+}
+
+#benifit .framer-8qvgsd .framer-1vgecn3 {
+  flex: 0 0 auto !important;
+  margin-top: clamp(30px, 3vw, 40px) !important;
+  min-height: clamp(108px, 9vw, 132px) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 18px !important;
+  background: url("matched-magnet-circuit.svg") top center / contain no-repeat !important;
+}
+
+#benifit .framer-8qvgsd .framer-1vgecn3::before {
+  content: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-1vgecn3::after {
+  content: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-1ixr6oi,
+#benifit .framer-8qvgsd .framer-182l8b4 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-1ixr6oi {
+  display: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-182l8b4 {
+  display: none !important;
+}
+
+#benifit .framer-8qvgsd .framer-10aaajs {
+  flex: 0 0 auto !important;
+  margin-top: clamp(28px, 2.5vw, 40px) !important;
+}
+
+#benifit .framer-8qvgsd .framer-10aaajs p {
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  font-size: clamp(17px, 1.25vw, 20px) !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0 !important;
+}
+
+@media (max-width: 809.98px) {
+  #benifit .framer-8qvgsd .framer-1vgecn3 {
+    margin-top: 28px !important;
+    min-height: 108px !important;
+  }
+
+  #benifit .framer-8qvgsd .framer-nwjfqe h5 {
+    white-space: normal !important;
+    text-wrap: balance !important;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Product families section
+ *
+ * The source Framer layout was tuned for short renewable-energy cards.
+ * SMAG product names and descriptions need a steadier industrial grid:
+ * no clipped headings, no staggered card offsets, and equal-height cards.
+ * ------------------------------------------------------------------ */
+
+#benifit-1,
+#benifit-1 .framer-4gtwfq,
+#benifit-1 .framer-16xhbi3,
+#benifit-1 .framer-72nwhk,
+#benifit-1 .framer-41y4vv,
+#benifit-1 .framer-v6remb,
+#benifit-1 .framer-179itf5 {
+  overflow: visible !important;
+}
+
+#benifit-1 {
+  scroll-margin-top: 120px !important;
+}
+
+#benifit-1 .framer-4gtwfq {
+  gap: clamp(36px, 4vw, 60px) !important;
+}
+
+#benifit-1 .framer-16xhbi3 {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 520px) !important;
+  align-items: start !important;
+  column-gap: clamp(48px, 8vw, 120px) !important;
+  row-gap: 28px !important;
+  height: auto !important;
+}
+
+#benifit-1 .framer-72nwhk {
+  display: contents !important;
+}
+
+#benifit-1 .framer-41y4vv,
+#benifit-1 .framer-6zd2vl {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+#benifit-1 .framer-41y4vv {
+  grid-column: 1 !important;
+  min-height: 1.25em !important;
+  padding-bottom: 14px !important;
+}
+
+#benifit-1 .framer-6zd2vl {
+  grid-column: 2 !important;
+  padding-top: 10px !important;
+}
+
+#benifit-1 .framer-41y4vv h2 {
+  font-size: clamp(48px, 4.2vw, 72px) !important;
+  line-height: 1.14 !important;
+  max-width: 780px !important;
+  white-space: normal !important;
+}
+
+#benifit-1 .framer-6zd2vl p {
+  font-size: clamp(18px, 1.3vw, 24px) !important;
+  line-height: 1.55 !important;
+  max-width: 600px !important;
+}
+
+#benifit-1 .framer-v6remb {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+#benifit-1 .framer-179itf5 {
+  width: 100% !important;
+  height: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: clamp(18px, 2vw, 28px) !important;
+}
+
+#benifit-1 .framer-1faa9ry,
+#benifit-1 .framer-19cvw77,
+#benifit-1 .framer-3h7pth,
+#benifit-1 .framer-ib9i7h {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-height: 360px !important;
+  height: auto !important;
+  transform: none !important;
+  display: grid !important;
+  grid-template-rows: 56px 70px 1fr !important;
+  align-items: start !important;
+  row-gap: 0 !important;
+  padding: clamp(32px, 2.5vw, 44px) !important;
+}
+
+#benifit-1 .framer-1faa9ry > *,
+#benifit-1 .framer-19cvw77 > *,
+#benifit-1 .framer-3h7pth > *,
+#benifit-1 .framer-ib9i7h > * {
+  position: relative !important;
+  inset: auto !important;
+}
+
+#benifit-1 .framer-17o0bye,
+#benifit-1 .framer-1v6re9q,
+#benifit-1 .framer-h6bol8,
+#benifit-1 .framer-901eu1,
+#benifit-1 .framer-1xjbe52 {
+  display: contents !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+#benifit-1 .framer-1hnyheg,
+#benifit-1 .framer-11tbb7o,
+#benifit-1 .framer-1qnn7pc,
+#benifit-1 .framer-lo5cqk {
+  grid-row: 1 !important;
+  width: 48px !important;
+  height: 48px !important;
+  align-self: start !important;
+}
+
+#benifit-1 .framer-r8dlhl,
+#benifit-1 .framer-2o3cje,
+#benifit-1 .framer-1owtgy5,
+#benifit-1 .framer-6560x4 {
+  width: 48px !important;
+  height: 48px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+#benifit-1 .framer-r8dlhl {
+  background-image: url("product-separator.svg") !important;
+}
+
+#benifit-1 .framer-2o3cje {
+  background-image: url("product-lifter.svg") !important;
+}
+
+#benifit-1 .framer-1owtgy5 {
+  background-image: url("product-chuck.svg") !important;
+}
+
+#benifit-1 .framer-6560x4 {
+  background-image: url("product-filter.svg") !important;
+}
+
+#benifit-1 .framer-r8dlhl img,
+#benifit-1 .framer-2o3cje img,
+#benifit-1 .framer-1owtgy5 img,
+#benifit-1 .framer-6560x4 img {
+  opacity: 0 !important;
+}
+
+#benifit-1 .framer-v6ejtb h5,
+#benifit-1 .framer-1lieo2x h5,
+#benifit-1 .framer-1z090yv h5,
+#benifit-1 .framer-12q5djd h5 {
+  height: auto !important;
+  min-height: 0 !important;
+  font-size: clamp(21px, 1.38vw, 25px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: 0 !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+}
+
+#benifit-1 .framer-v6ejtb,
+#benifit-1 .framer-1lieo2x,
+#benifit-1 .framer-1z090yv,
+#benifit-1 .framer-12q5djd {
+  grid-row: 2 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  align-self: start !important;
+  display: block !important;
+}
+
+#benifit-1 .framer-5ddho3,
+#benifit-1 .framer-1789k13,
+#benifit-1 .framer-1o415o,
+#benifit-1 .framer-1iizkwa {
+  grid-row: 3 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  align-self: start !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+}
+
+#benifit-1 .framer-5ddho3 p,
+#benifit-1 .framer-1789k13 p,
+#benifit-1 .framer-1o415o p,
+#benifit-1 .framer-1iizkwa p {
+  height: auto !important;
+  min-height: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.55 !important;
+  letter-spacing: 0 !important;
+  max-width: 100% !important;
+}
+
+@media (min-width: 810px) and (max-width: 1439.98px) {
+  #benifit-1 .framer-16xhbi3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  #benifit-1 .framer-41y4vv,
+  #benifit-1 .framer-6zd2vl {
+    grid-column: 1 !important;
+    text-align: center !important;
+  }
+
+  #benifit-1 .framer-41y4vv h2,
+  #benifit-1 .framer-6zd2vl p {
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  #benifit-1 .framer-179itf5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 809.98px) {
+  #benifit-1 .framer-16xhbi3,
+  #benifit-1 .framer-179itf5 {
+    grid-template-columns: 1fr !important;
+  }
+
+  #benifit-1 .framer-41y4vv,
+  #benifit-1 .framer-6zd2vl {
+    grid-column: 1 !important;
+  }
+
+  #benifit-1 .framer-41y4vv h2 {
+    font-size: clamp(36px, 10vw, 48px) !important;
+  }
+
+  #benifit-1 .framer-1faa9ry,
+  #benifit-1 .framer-19cvw77,
+  #benifit-1 .framer-3h7pth,
+  #benifit-1 .framer-ib9i7h {
+    min-height: 300px !important;
+  }
+}
+
+/* Keep this after responsive product-family rules. Framer writes an inline
+   translateY(30px) to the second card during reveal, which breaks the row. */
+#benifit-1 .framer-19cvw77[style*="translateY"] {
+  transform: none !important;
+}
+
+/* Section trim: hide the exported renewable-energy project cards until SMAG
+   has real applications or project references to show. */
+#our-projects {
+  display: none !important;
 }
