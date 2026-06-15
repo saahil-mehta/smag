@@ -10,6 +10,20 @@
   var html = document.documentElement;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Framer baked scroll-reveal rest states (opacity:0, plus a translate
+  // offset) into the exported HTML, expecting its runtime to animate them in.
+  // That runtime was removed, so any reveal container we don't manage below
+  // stays invisible (e.g. the CTA image bands, the "what sets us apart"
+  // cards). Neutralise these orphaned rest states up front so all content is
+  // visible by default; the managed reveals further down re-apply their own
+  // clean start state when Motion is available. The Framer mobile menu keeps
+  // its opacity:0 (it is a real hidden state, replaced by #smag-mm).
+  document.querySelectorAll('[style*="opacity:0"], [style*="opacity: 0"]').forEach(function (el) {
+    if (el.closest('nav[name="Navbar"], [data-framer-name="Nav menu"], #smag-mm')) return;
+    el.style.opacity = '1';
+    if (/translate|matrix/.test(el.style.transform)) el.style.transform = 'none';
+  });
+
   // Pill+arrow CTA hover/click is CSS-driven (see animations.css). We only
   // need to index each letter span so the per-letter stagger works. The
   // class .framer-m76ur6 marks every pill+arrow anchor across the site.
