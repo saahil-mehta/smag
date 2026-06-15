@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" role="img" aria-labelledby="title desc">
+  <title id="title">Matched magnet circuit arc</title>
+  <desc id="desc">A clean semicircular magnetic field arc for the matched magnet circuit card.</desc>
+  <defs>
+    <linearGradient id="field" x1="92" y1="142" x2="414" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8231a" stop-opacity=".32"/>
+      <stop offset=".72" stop-color="#e8231a" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#f3b6b2" stop-opacity=".76"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="170" rx="24" fill="#fff"/>
+  <path d="M92 142a168 168 0 0 1 336 0" fill="none" stroke="#ececec" stroke-width="52" stroke-linecap="butt"/>
+  <path d="M92 142A168 168 0 0 1 390 46" fill="none" stroke="url(#field)" stroke-width="52" stroke-linecap="butt"/>
+  <path d="M148 142a112 112 0 0 1 224 0" fill="none" stroke="#fff" stroke-width="32" stroke-linecap="butt"/>
+  <path d="M214 116c22 17 46 17 68 0s46-17 68 0" fill="none" stroke="#16838b" stroke-width="5" stroke-linecap="round"/>
+</svg>
