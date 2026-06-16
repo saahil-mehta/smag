@@ -98,8 +98,12 @@
   // charcoal and the pink (brand-red @20%) circle becomes a clean white badge.
   // Matched by the small glyph image, so it covers every page and variant.
   document.querySelectorAll('img[src*="framerusercontent"]').forEach(function (img) {
-    var w = parseInt(img.getAttribute('width') || '0', 10);
-    if (!w || w > 72) return;             // glyph icons only, never photos
+    // glyph icons only, never photos: glyphs render small (<=80px); for lazy
+    // not-yet-loaded images fall back to the width attribute (glyphs are <=128,
+    // photos are 512+).
+    var wAttr = parseInt(img.getAttribute('width') || '0', 10);
+    var rw = img.getBoundingClientRect().width;
+    if (!((rw > 0 && rw <= 80) || (rw === 0 && wAttr > 0 && wAttr <= 128))) return;
     img.classList.add('smag-iconglyph');
     var el = img.parentElement;
     for (var i = 0; i < 4 && el; i++) {
