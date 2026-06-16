@@ -471,7 +471,7 @@ img[src="assets/factory-team.jpg"] {
   content: "" !important;
   display: block !important;
   width: 100% !important;
-  height: clamp(84px, 7.5vw, 100px) !important;
+  height: clamp(132px, 12vw, 170px) !important;
   background: url("matched-magnet-circuit.svg") center / contain no-repeat !important;
 }
 
@@ -837,3 +837,50 @@ img[src="assets/factory-team.jpg"] {
 /* Services grid: pack rows to content height so cards do not leave dead space. */
 #services .framer-1uawz3h { grid-auto-rows: min-content !important; align-content: start !important; }
 
+
+/* Bento section polish ------------------------------------------------------ */
+
+/* Header icon badges: white instead of pink, with a hairline so they read on
+   the white cards too. */
+#benifit .framer-4su6la, #benifit .framer-1t4ct7j, #benifit .framer-1n0mhjs {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 1px 2px rgba(20, 20, 20, 0.05) !important;
+}
+
+/* Proven Workshop photo tile: dark scrim top and bottom so the overlaid text
+   is legible, plus a text shadow as a safety net. */
+#benifit .framer-1yw2d8l::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.66) 100%);
+}
+#benifit .framer-1yw2d8l .framer-text { text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+/* ISO 9001 mark: kill the gradient fade that was clipping the final digit. */
+#benifit .framer-1yw2d8l [data-text-fill] {
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Micro-interactions: gentle hover lift on card surfaces (bento + services),
+   matching the family and catalogue cards for a consistent, lively feel. */
+#benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l,
+#services .framer-12rgd66 {
+  transition: transform .28s cubic-bezier(.16,1,.3,1), box-shadow .28s ease !important;
+}
+#benifit .framer-zifv6d:hover, #benifit .framer-8qvgsd:hover, #benifit .framer-qq6gqa:hover, #benifit .framer-1yw2d8l:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 18px 40px rgba(20, 20, 20, 0.12) !important;
+}
+#services .framer-12rgd66:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 32px rgba(20, 20, 20, 0.08) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  #benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l,
+  #services .framer-12rgd66 { transition: none !important; }
+}
