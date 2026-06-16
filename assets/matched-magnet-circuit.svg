@@ -1,22 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150" role="img" aria-labelledby="t d">
-  <title id="t">Matched magnet circuit</title>
-  <desc id="d">A horseshoe magnet with pulsing field lines attracting ferrous particles.</desc>
-  <g fill="none" stroke="#e8231a" stroke-linecap="round" stroke-width="2.6">
-    <path d="M100 72 Q130 24 160 72"><animate attributeName="opacity" values=".12;.95;.12" dur="2.6s" begin="0s" repeatCount="indefinite"/></path>
-    <path d="M105 70 Q130 36 155 70"><animate attributeName="opacity" values=".12;.95;.12" dur="2.6s" begin=".5s" repeatCount="indefinite"/></path>
-    <path d="M110 68 Q130 47 150 68"><animate attributeName="opacity" values=".12;.95;.12" dur="2.6s" begin="1s" repeatCount="indefinite"/></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none" role="img" aria-labelledby="mmc-t mmc-d">
+  <title id="mmc-t">Matched magnet circuit</title>
+  <desc id="mmc-d">A horseshoe magnet with flowing field lines drawing ferrous particles to its poles.</desc>
+  <defs>
+    <linearGradient id="mmc-pole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5d4b"/>
+      <stop offset="1" stop-color="#d81d12"/>
+    </linearGradient>
+    <radialGradient id="mmc-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8231a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e8231a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- pole glow -->
+  <circle cx="104" cy="58" r="30" fill="url(#mmc-glow)">
+    <animate attributeName="opacity" values="0.35;0.85;0.35" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="136" cy="58" r="30" fill="url(#mmc-glow)">
+    <animate attributeName="opacity" values="0.35;0.85;0.35" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- field lines: faint base + a bright segment flowing pole to pole -->
+  <g stroke="#e8231a" stroke-linecap="round" fill="none">
+    <g opacity="0.16" stroke-width="2.4">
+      <path d="M104 54 Q120 12 136 54"/>
+      <path d="M104 54 Q120 26 136 54"/>
+      <path d="M104 54 Q120 40 136 54"/>
+    </g>
+    <g stroke-width="2.8">
+      <path d="M104 54 Q120 12 136 54" stroke-dasharray="15 150" stroke-dashoffset="15">
+        <animate attributeName="stroke-dashoffset" values="15;-95" dur="2.4s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1"/>
+      </path>
+      <path d="M104 54 Q120 26 136 54" stroke-dasharray="13 150" stroke-dashoffset="13">
+        <animate attributeName="stroke-dashoffset" values="13;-78" dur="2.4s" begin="0.35s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1"/>
+      </path>
+      <path d="M104 54 Q120 40 136 54" stroke-dasharray="11 150" stroke-dashoffset="11">
+        <animate attributeName="stroke-dashoffset" values="11;-62" dur="2.4s" begin="0.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1"/>
+      </path>
+    </g>
   </g>
-  <circle r="3.6" fill="#1a1a1a" opacity="0">
-    <animate attributeName="cx" values="34;98" dur="2.8s" begin="0s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="cy" values="128;84" dur="2.8s" begin="0s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="opacity" values="0;.9;0" dur="2.8s" begin="0s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="3.6" fill="#1a1a1a" opacity="0">
-    <animate attributeName="cx" values="226;162" dur="2.8s" begin="1.4s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="cy" values="120;84" dur="2.8s" begin="1.4s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="opacity" values="0;.9;0" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
-  </circle>
-  <path d="M100 78 L100 106 Q100 130 130 130 Q160 130 160 106 L160 78" fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linejoin="round"/>
-  <rect x="92" y="66" width="16" height="14" fill="#e8231a"/>
-  <rect x="152" y="66" width="16" height="14" fill="#1a1a1a"/>
+
+  <!-- ferrous filings drawn toward the poles (eased, staggered) -->
+  <g fill="#222">
+    <circle r="3" opacity="0">
+      <animate attributeName="cx" values="56;104" dur="2.8s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="cy" values="34;56" dur="2.8s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.85;1" dur="2.8s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" opacity="0">
+      <animate attributeName="cx" values="184;136" dur="2.8s" begin="0.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="cy" values="34;56" dur="2.8s" begin="0.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.85;1" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.6" opacity="0">
+      <animate attributeName="cx" values="48;104" dur="2.8s" begin="1.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="cy" values="80;58" dur="2.8s" begin="1.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.85;1" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.6" opacity="0">
+      <animate attributeName="cx" values="192;136" dur="2.8s" begin="2.1s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="cy" values="80;58" dur="2.8s" begin="2.1s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.85;1" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.4" opacity="0">
+      <animate attributeName="cx" values="120;136" dur="2.8s" begin="1.05s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="cy" values="10;56" dur="2.8s" begin="1.05s" repeatCount="indefinite" calcMode="spline" keySplines="0.55 0 0.85 1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.85;1" dur="2.8s" begin="1.05s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- magnet body -->
+  <path d="M104 62 L104 102 Q104 126 120 126 Q136 126 136 102 L136 62" stroke="#1a1a1a" stroke-width="20" stroke-linecap="butt" stroke-linejoin="round"/>
+  <!-- pole caps -->
+  <rect x="93.5" y="50" width="21" height="14" rx="3" fill="url(#mmc-pole)"/>
+  <rect x="125.5" y="50" width="21" height="14" rx="3" fill="url(#mmc-pole)"/>
+  <!-- filings already clinging to the poles -->
+  <g fill="#1a1a1a">
+    <circle cx="99" cy="48" r="2.1"/>
+    <circle cx="108" cy="47" r="1.7"/>
+    <circle cx="131" cy="48" r="2.1"/>
+    <circle cx="141" cy="47" r="1.7"/>
+  </g>
 </svg>

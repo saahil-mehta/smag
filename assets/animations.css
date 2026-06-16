@@ -501,8 +501,8 @@ img[src="assets/factory-team.jpg"] {
   content: "" !important;
   display: block !important;
   width: 100% !important;
-  height: clamp(132px, 12vw, 170px) !important;
-  background: url("matched-magnet-circuit.svg") center / contain no-repeat !important;
+  height: clamp(168px, 15vw, 216px) !important;
+  background: url("matched-magnet-circuit.svg?v=2") center / contain no-repeat !important;
 }
 
 #benifit .framer-8qvgsd .framer-1vgecn3::after {
@@ -937,6 +937,11 @@ img[src="assets/factory-team.jpg"] {
   background: #ffffff !important;
   border: 1px solid rgba(0, 0, 0, 0.08) !important;
   box-shadow: 0 1px 2px rgba(20, 20, 20, 0.05) !important;
+}
+/* The badge glyphs are off-brand teal template PNGs; recolour them to charcoal
+   so they read as clean, neutral icons on the white badges. */
+#benifit .framer-4su6la img, #benifit .framer-1t4ct7j img, #benifit .framer-1n0mhjs img {
+  filter: brightness(0) !important;
 }
 
 /* Proven Workshop photo tile: dark scrim top and bottom so the overlaid text
