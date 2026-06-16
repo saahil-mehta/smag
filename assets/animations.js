@@ -69,8 +69,7 @@
       ['index.html', 'Home'],
       ['about-us.html', 'About'],
       ['services.html', 'Services'],
-      ['package.html', 'Packages'],
-      ['blogs.html', 'Blogs'],
+      ['products.html', 'Products'],
       ['contact.html', 'Contact'],
     ];
     var mm = document.createElement('div');
