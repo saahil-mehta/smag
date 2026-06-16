@@ -847,22 +847,35 @@ img[src="assets/factory-team.jpg"] {
 #services .framer-ljkzq1 { justify-content: center !important; gap: 10px !important; }
 
 
-/* Services cards: small brand accent above each title and content-height cards
-   so they read as intentional rather than sparse. */
+/* Service cards: one uniform, attached grid. The cells snap together as a
+   rounded, bordered panel separated by hairlines (1px gaps over the grid's
+   own background), with equal-height cells and a small brand accent above each
+   title. */
+#services .framer-3moqhw {
+  gap: 1px !important;
+  background: rgba(20, 20, 20, 0.1) !important;
+  border: 1px solid rgba(20, 20, 20, 0.1) !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+/* Make every cell fill its (equal-height) row so the panel is uniform: the
+   grid-item container and the card both stretch to the full cell height. */
+#services .framer-3moqhw [class*="-container"] { height: 100% !important; }
 #services .framer-1wr54ol { gap: 14px !important; }
 #services .framer-1wr54ol::before {
-  content: ""; display: block; width: 26px; height: 3px;
+  content: ""; display: block; width: 28px; height: 3px;
   background: #e8231a; border-radius: 2px;
+  transition: width .3s cubic-bezier(.16, 1, .3, 1);
 }
 #services .framer-12rgd66 {
-  height: auto !important;
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  height: 100% !important;
   min-height: 0 !important;
   justify-content: flex-start !important;
-  padding: 30px !important;
+  padding: 34px !important;
 }
-
-/* Services grid: pack rows to content height so cards do not leave dead space. */
-#services .framer-1uawz3h { grid-auto-rows: min-content !important; align-content: start !important; }
+#services .framer-1neyqa6 .framer-text { transition: color .3s ease; }
 
 
 /* Bento section polish ------------------------------------------------------ */
@@ -893,23 +906,23 @@ img[src="assets/factory-team.jpg"] {
   background-image: none !important;
 }
 
-/* Micro-interactions: gentle hover lift on card surfaces (bento + services),
-   matching the family and catalogue cards for a consistent, lively feel. */
-#benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l,
-#services .framer-12rgd66 {
+/* Micro-interactions: gentle hover lift on the bento cards. */
+#benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l {
   transition: transform .28s cubic-bezier(.16,1,.3,1), box-shadow .28s ease !important;
 }
 #benifit .framer-zifv6d:hover, #benifit .framer-8qvgsd:hover, #benifit .framer-qq6gqa:hover, #benifit .framer-1yw2d8l:hover {
   transform: translateY(-5px) !important;
   box-shadow: 0 18px 40px rgba(20, 20, 20, 0.12) !important;
 }
-#services .framer-12rgd66:hover {
-  transform: translateY(-4px) !important;
-  box-shadow: 0 14px 32px rgba(20, 20, 20, 0.08) !important;
-}
+/* Attached service cells: tint, grow the accent and redden the title on hover.
+   No lift, so the grid seams stay intact. */
+#services .framer-12rgd66 { transition: background-color .3s ease !important; }
+#services .framer-12rgd66:hover { background-color: rgba(232, 35, 26, 0.05) !important; }
+#services .framer-12rgd66:hover .framer-1wr54ol::before { width: 48px !important; }
+#services .framer-12rgd66:hover .framer-1neyqa6 .framer-text { color: #e8231a !important; }
 @media (prefers-reduced-motion: reduce) {
   #benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l,
-  #services .framer-12rgd66 { transition: none !important; }
+  #services .framer-12rgd66, #services .framer-1wr54ol::before, #services .framer-1neyqa6 .framer-text { transition: none !important; }
 }
 
 /* Liquid-glass pill navbar: a floating frosted pill that hugs its content,
