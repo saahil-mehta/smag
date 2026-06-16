@@ -1046,6 +1046,16 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
   filter: brightness(1.06) !important;
   box-shadow: 0 8px 20px rgba(232, 35, 26, 0.32) !important;
 }
+#cta .framer-YHHwL .framer-the1i2,
+#cta .framer-YHHwL .framer-1lzkxbs {
+  background-color: #fff !important;
+}
+#cta .framer-YHHwL .framer-the1i2 span {
+  color: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;
+}
+#cta .framer-YHHwL .framer-1lzkxbs svg path {
+  stroke: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;
+}
 @media (prefers-reduced-motion: reduce) {
   nav.framer-ur6jyi, .framer-p4v845 .framer-129fhqs, .framer-1ozs3r7,
   nav.framer-ur6jyi .framer-nb922b a { transition: none !important; }
@@ -1089,13 +1099,15 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
  * Footer (rewritten clean + responsive, replacing the Framer block)
  * ------------------------------------------------------------------ */
 .smag-footer {
+  width: 100%;
+  align-self: stretch;
   padding: 0 clamp(8px, 2vw, 24px) clamp(8px, 2vw, 24px);
   font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
 }
 .smag-footer-inner {
   position: relative;
   overflow: hidden;
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
   background: #f4f4f5;
   color: #1f1f24;
