@@ -823,6 +823,64 @@ img[src="assets/factory-team.jpg"] {
   display: none !important;
 }
 
+/* Client logo ticker: replace the exported boxed logo capsules with a single
+   precision rail and fine separators. */
+.framer-1phiz6o {
+  width: 100% !important;
+}
+.framer-1phiz6o .framer-328lw4 {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 20px 0 !important;
+  border-top: 1px solid rgba(20, 20, 20, 0.08);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.08);
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0.74), rgba(255, 255, 255, 0.96));
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+.framer-1phiz6o [data-marquee] {
+  gap: 0 !important;
+}
+.framer-1phiz6o .ticker-item {
+  position: relative !important;
+  min-width: 170px !important;
+  height: 60px !important;
+  padding: 0 clamp(32px, 3.4vw, 46px) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+.framer-1phiz6o .ticker-item::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 1px;
+  height: 42px;
+  background: linear-gradient(180deg, transparent, rgba(232, 35, 26, 0.32) 50%, transparent);
+}
+.framer-1phiz6o .ticker-item img {
+  max-height: 36px !important;
+  filter: grayscale(1) saturate(0.8) contrast(1.04);
+  opacity: 0.78;
+  transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+.framer-1phiz6o .ticker-item:hover img {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-1px);
+}
+@media (max-width: 809.98px) {
+  .framer-1phiz6o .framer-328lw4 {
+    padding: 16px 0 !important;
+  }
+  .framer-1phiz6o .ticker-item {
+    min-width: 148px !important;
+    height: 54px !important;
+    padding-inline: 28px !important;
+  }
+}
+
 /* Shared call-to-action band ("Need the right magnet for the job?"). It relied
    on a Framer CDN background image that is unreliable, leaving white text on an
    empty band. Give it a solid brand background so the heading is always legible
@@ -933,17 +991,14 @@ img[src="assets/factory-team.jpg"] {
 
 /* Bento section polish ------------------------------------------------------ */
 
-/* Header icon badges: white instead of pink, with a hairline so they read on
-   the white cards too. */
-#benifit .framer-4su6la, #benifit .framer-1t4ct7j, #benifit .framer-1n0mhjs {
+/* Template icon badges normalised site-wide (classes applied by animations.js):
+   the teal glyph PNG becomes charcoal, and the pink (brand-red @20%) circle
+   becomes a clean white badge with a hairline so it reads on white cards. */
+.smag-iconglyph { filter: brightness(0) !important; }
+.smag-iconbadge {
   background: #ffffff !important;
-  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(20, 20, 20, 0.08) !important;
   box-shadow: 0 1px 2px rgba(20, 20, 20, 0.05) !important;
-}
-/* The badge glyphs are off-brand teal template PNGs; recolour them to charcoal
-   so they read as clean, neutral icons on the white badges. */
-#benifit .framer-4su6la img, #benifit .framer-1t4ct7j img, #benifit .framer-1n0mhjs img {
-  filter: brightness(0) !important;
 }
 
 /* Proven Workshop photo tile: dark scrim top and bottom so the overlaid text
@@ -1050,8 +1105,24 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 #cta .framer-YHHwL .framer-1lzkxbs {
   background-color: #fff !important;
 }
+#cta .framer-YHHwL [class*="rolling-text-inner-"] {
+  --text: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;
+  text-shadow: 0 var(--line-height-abs) 0 var(--text) !important;
+}
 #cta .framer-YHHwL .framer-the1i2 span {
   color: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;
+}
+#cta .framer-YHHwL .framer-1lzkxbs [data-framer-name="vuesax/linear/send"] {
+  color: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;
+  fill: currentColor !important;
+}
+#cta .framer-YHHwL .framer-1lzkxbs use {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+#cta .framer-YHHwL .framer-1lzkxbs svg {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(94%) saturate(3444%) hue-rotate(353deg) brightness(97%) contrast(89%) !important;
 }
 #cta .framer-YHHwL .framer-1lzkxbs svg path {
   stroke: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important;

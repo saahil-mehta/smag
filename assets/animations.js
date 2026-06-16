@@ -94,6 +94,26 @@
     });
   });
 
+  // Normalise the template icon badges site-wide: the teal glyph becomes
+  // charcoal and the pink (brand-red @20%) circle becomes a clean white badge.
+  // Matched by the small glyph image, so it covers every page and variant.
+  document.querySelectorAll('img[src*="framerusercontent"]').forEach(function (img) {
+    var w = parseInt(img.getAttribute('width') || '0', 10);
+    if (!w || w > 72) return;             // glyph icons only, never photos
+    img.classList.add('smag-iconglyph');
+    var el = img.parentElement;
+    for (var i = 0; i < 4 && el; i++) {
+      var s = getComputedStyle(el);
+      var bg = s.backgroundColor;
+      var transparent = /rgba?\(0, 0, 0, 0\)|transparent/.test(bg);
+      if (/^rgba?\(\s*232,\s*35,\s*26/.test(bg) || (parseFloat(s.borderRadius) >= 40 && !transparent)) {
+        el.classList.add('smag-iconbadge');
+        break;
+      }
+      el = el.parentElement;
+    }
+  });
+
   // Pill+arrow CTA hover/click is CSS-driven (see animations.css). We only
   // need to index each letter span so the per-letter stagger works. The
   // class .framer-m76ur6 marks every pill+arrow anchor across the site.
