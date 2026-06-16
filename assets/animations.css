@@ -1156,16 +1156,6 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
   border-radius: 26px;
   padding: clamp(36px, 5vw, 68px) clamp(24px, 4vw, 60px) 0;
 }
-/* Subtle industrial-doodle motif along the bottom of the footer (site-wide). */
-.smag-footer-inner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("footer-doodles.png") center bottom / 100% auto no-repeat;
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 0;
-}
 .smag-footer-grid {
   position: relative;
   z-index: 1;
