@@ -113,7 +113,7 @@
     if (!items.length) return;
     items.forEach(function (it) { track.appendChild(it.cloneNode(true)); });
     var half = track.scrollWidth / 2;
-    if (half > 0) M.animate(track, { x: [0, -half] }, { duration: half / 80, ease: 'linear', repeat: Infinity });
+    if (half > 0) M.animate(track, { x: [0, -half] }, { duration: half / 40, ease: 'linear', repeat: Infinity });
   });
 
   // No motion library or reduced motion: reveal everything statically and stop.

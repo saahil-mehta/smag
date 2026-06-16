@@ -799,3 +799,25 @@ img[src="assets/factory-team.jpg"] {
 [data-framer-name="Images"]:has([data-framer-name="Need the right magnet for the job?"]) img {
   display: none !important;
 }
+
+/* Client-logo ticker: give it its own contained banner with a caption so it
+   reads as an intentional section rather than logos floating on the page. */
+[data-framer-name="Company Logo"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 22px;
+  width: 100%;
+  background: #f5f4f2;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding: 30px 0 32px !important;
+}
+[data-framer-name="Company Logo"]::before {
+  content: "Trusted by leading manufacturers";
+  font: 500 13px/1 "Satoshi", "Satoshi Placeholder", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+[data-framer-name="Company Logo"] .framer-328lw4 { width: 100%; }
