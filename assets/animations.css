@@ -851,7 +851,10 @@ img[src="assets/factory-team.jpg"] {
    rounded, bordered panel separated by hairlines (1px gaps over the grid's
    own background), with equal-height cells and a small brand accent above each
    title. */
-#services .framer-3moqhw {
+/* The services grid uses a different Framer class hash per page
+   (framer-3moqhw on services.html, framer-1uawz3h on the home page), so both
+   are matched here. */
+#services .framer-3moqhw, #services .framer-1uawz3h {
   gap: 1px !important;
   background: rgba(20, 20, 20, 0.1) !important;
   border: 1px solid rgba(20, 20, 20, 0.1) !important;
@@ -860,7 +863,8 @@ img[src="assets/factory-team.jpg"] {
 }
 /* Make every cell fill its (equal-height) row so the panel is uniform: the
    grid-item container and the card both stretch to the full cell height. */
-#services .framer-3moqhw [class*="-container"] { height: 100% !important; }
+#services .framer-3moqhw [class*="-container"],
+#services .framer-1uawz3h [class*="-container"] { height: 100% !important; }
 #services .framer-1wr54ol { gap: 14px !important; }
 #services .framer-1wr54ol::before {
   content: ""; display: block; width: 28px; height: 3px;
