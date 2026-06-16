@@ -1088,14 +1088,18 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 /* ------------------------------------------------------------------ *
  * Footer (rewritten clean + responsive, replacing the Framer block)
  * ------------------------------------------------------------------ */
-.smag-footer { padding: 0 clamp(8px, 2vw, 24px) clamp(8px, 2vw, 24px); }
+.smag-footer {
+  padding: 0 clamp(8px, 2vw, 24px) clamp(8px, 2vw, 24px);
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+}
 .smag-footer-inner {
   position: relative;
   overflow: hidden;
   max-width: 1400px;
   margin: 0 auto;
-  background: #161618;
-  color: #e8e8ea;
+  background: #f4f4f5;
+  color: #1f1f24;
+  border: 1px solid rgba(20, 20, 20, 0.07);
   border-radius: 26px;
   padding: clamp(36px, 5vw, 68px) clamp(24px, 4vw, 60px) 0;
 }
@@ -1110,27 +1114,27 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 .smag-footer-brand { max-width: 320px; }
 .smag-footer-logo { display: inline-block; }
 .smag-footer-logo img { height: 40px; width: auto; display: block; }
-.smag-footer-blurb { margin: 18px 0 0; font-size: 15px; line-height: 1.6; color: #a7a7ad; }
-.smag-footer-iso { margin: 12px 0 0; font-size: 13px; color: #74747a; }
+.smag-footer-blurb { margin: 18px 0 0; font-size: 15px; line-height: 1.6; color: #56565c; }
+.smag-footer-iso { margin: 12px 0 0; font-size: 13px; color: #8a8a90; }
 .smag-footer-h {
   margin: 0 0 16px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #ff5d4b;
+  color: #e8231a;
 }
 .smag-footer-col { display: flex; flex-direction: column; gap: 12px; font-size: 15px; }
 .smag-footer-col a {
-  color: #cfcfd3;
+  color: #36363c;
   text-decoration: none;
   transition: color 0.2s ease;
   width: fit-content;
 }
-.smag-footer-col a:hover { color: #ffffff; }
-.smag-footer-col a[data-framer-page-link-current="true"] { color: #ffffff; }
+.smag-footer-col a:hover { color: #e8231a; }
+.smag-footer-col a[data-framer-page-link-current="true"] { color: #e8231a; }
 .smag-footer-address { line-height: 1.55; max-width: 290px; }
-.smag-footer-muted { color: #74747a; font-size: 14px; }
+.smag-footer-muted { color: #8a8a90; font-size: 14px; }
 .smag-footer-legal { text-align: right; align-items: flex-end; }
 .smag-footer-watermark {
   position: relative;
@@ -1142,7 +1146,7 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
   font-size: clamp(76px, 19vw, 280px);
   line-height: 0.78;
   margin-bottom: -0.14em;
-  background: linear-gradient(180deg, rgba(232, 35, 26, 0.42) 0%, rgba(232, 35, 26, 0) 80%);
+  background: linear-gradient(180deg, rgba(232, 35, 26, 0.20) 0%, rgba(232, 35, 26, 0) 82%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
