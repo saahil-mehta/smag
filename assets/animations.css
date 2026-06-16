@@ -457,16 +457,22 @@ img[src="assets/factory-team.jpg"] {
 
 #benifit .framer-8qvgsd .framer-1vgecn3 {
   flex: 0 0 auto !important;
-  margin-top: clamp(30px, 3vw, 40px) !important;
-  min-height: clamp(108px, 9vw, 132px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-top: clamp(24px, 2.4vw, 34px) !important;
   padding: 0 !important;
   border: 0 !important;
-  border-radius: 18px !important;
-  background: url("matched-magnet-circuit.svg") top center / contain no-repeat !important;
+  background: none !important;
 }
 
 #benifit .framer-8qvgsd .framer-1vgecn3::before {
-  content: none !important;
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: clamp(84px, 7.5vw, 100px) !important;
+  background: url("matched-magnet-circuit.svg") center / contain no-repeat !important;
 }
 
 #benifit .framer-8qvgsd .framer-1vgecn3::after {
@@ -800,24 +806,34 @@ img[src="assets/factory-team.jpg"] {
   display: none !important;
 }
 
-/* Client-logo ticker: give it its own contained banner with a caption so it
-   reads as an intentional section rather than logos floating on the page. */
-[data-framer-name="Company Logo"] {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 22px;
-  width: 100%;
-  background: #f5f4f2;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  padding: 30px 0 32px !important;
+/* Remove the leftover empty template background-video banner that sat between
+   the services section and the call-to-action, leaving a large blank gap. */
+#projects { display: none !important; }
+
+/* Service and product-family cards: drop the broken 9px "Ellipse" icon dot and
+   centre the content so the title and text group cleanly instead of floating. */
+#services [data-framer-name="Ellipse 51"], #benifit-1 [data-framer-name="Ellipse 51"],
+#services .framer-awv0im, #benifit-1 .framer-awv0im { display: none !important; }
+#services .framer-ljkzq1 { justify-content: center !important; gap: 10px !important; }
+
+/* Product-family cards link through to the matching catalogue section. */
+#benifit-1 [data-framer-name="Card"] { cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+#benifit-1 [data-framer-name="Card"]:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(20,20,20,.08); }
+
+/* Services cards: small brand accent above each title and content-height cards
+   so they read as intentional rather than sparse. */
+#services .framer-1wr54ol { gap: 14px !important; }
+#services .framer-1wr54ol::before {
+  content: ""; display: block; width: 26px; height: 3px;
+  background: #e8231a; border-radius: 2px;
 }
-[data-framer-name="Company Logo"]::before {
-  content: "Trusted by leading manufacturers";
-  font: 500 13px/1 "Satoshi", "Satoshi Placeholder", sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #8a8a8a;
+#services .framer-12rgd66 {
+  height: auto !important;
+  min-height: 0 !important;
+  justify-content: flex-start !important;
+  padding: 30px !important;
 }
-[data-framer-name="Company Logo"] .framer-328lw4 { width: 100%; }
+
+/* Services grid: pack rows to content height so cards do not leave dead space. */
+#services .framer-1uawz3h { grid-auto-rows: min-content !important; align-content: start !important; }
+

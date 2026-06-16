@@ -104,6 +104,50 @@
     });
   })();
 
+  // Product-family cards (home) link through to the matching catalogue section.
+  (function () {
+    var sec = document.getElementById('benifit-1');
+    if (!sec) return;
+    var map = {
+      'Magnetic Separators': 'separators',
+      'Magnetic Lifters': 'lifters',
+      'Magnetic Chucks': 'chucks',
+      'Grills and Filters': 'grills'
+    };
+    var probe = document.querySelector('a[href$="products.html"]');
+    var prefix = probe ? (probe.getAttribute('href').match(/^((?:\.\.\/)*)/) || [''])[0] : '';
+    [].forEach.call(sec.querySelectorAll('h3,h4,h5,p'), function (el) {
+      var title = (el.textContent || '').trim();
+      if (!map[title]) return;
+      var card = el;
+      while (card && !(card.getAttribute && card.getAttribute('data-framer-name') === 'Card')) card = card.parentElement;
+      if (!card || card.__smagLinked) return;
+      card.__smagLinked = true;
+      var href = prefix + 'products.html#' + map[title];
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', title + ' products');
+      card.addEventListener('click', function () { location.href = href; });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); location.href = href; }
+      });
+    });
+  })();
+
+  // Contact info cards render each value twice (legacy two-slot layout); show
+  // each detail once by hiding exact-duplicate links within a card.
+  document.querySelectorAll('[data-framer-name="Icon Image"]').forEach(function (icon) {
+    var card = icon.parentElement;
+    while (card && card.querySelectorAll('a').length < 2) card = card.parentElement;
+    if (!card) return;
+    var seen = {};
+    card.querySelectorAll('a').forEach(function (a) {
+      var t = (a.textContent || '').trim().toLowerCase();
+      if (!t) return;
+      if (seen[t]) a.style.display = 'none'; else seen[t] = 1;
+    });
+  });
+
   // Marquee: always make the track visible; animate only when motion is allowed.
   document.querySelectorAll('[data-marquee]').forEach(function (track) {
     track.style.opacity = '1';
