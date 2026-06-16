@@ -20,6 +20,14 @@ nav.framer-ur6jyi { view-transition-name: smag-nav; }
    animation on every navigation (that was the "flicker then load" effect). */
 .motion-ready [data-reveal="nav"] { opacity: 1 !important; }
 
+/* Lenis smooth scroll (assets/smooth-scroll.js): required hooks. Lenis adds
+   the .lenis/.lenis-smooth classes to <html> when it is active. */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
 /* Hero depth treatment.
    The hero image is a flattened render, so the foreground layer repeats
    the same image and clips it around the machinery. This lets the large
