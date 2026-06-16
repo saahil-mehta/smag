@@ -127,6 +127,31 @@
     if (basename === here) a.setAttribute('data-framer-page-link-current', 'true');
   });
 
+  // Contact page: list the GSTIN under the email in the contact card. Clone the
+  // email field so it inherits the exact styling for each SSR variant, then
+  // neutralise the link and set the GSTIN text. Skips the footer (which carries
+  // its own GSTIN line) and is idempotent.
+  document.querySelectorAll('a[href^="mailto:queries@santoshmagneticworks.com"]').forEach(function (mail) {
+    if (mail.closest('.smag-footer')) return;
+    var field = mail.closest('[data-framer-name]');
+    if (!field || !field.parentNode) return;
+    if (field.parentNode.querySelector('[data-smag-gstin]')) return;
+    var g = field.cloneNode(true);
+    g.setAttribute('data-smag-gstin', '');
+    g.removeAttribute('data-framer-name');
+    var a = g.querySelector('a');
+    if (a) {
+      a.removeAttribute('href');
+      a.removeAttribute('target');
+      a.textContent = 'GSTIN 27ABDFS2378H1ZY';
+      a.style.pointerEvents = 'none';
+      a.style.textDecoration = 'none';
+    } else {
+      g.textContent = 'GSTIN 27ABDFS2378H1ZY';
+    }
+    field.parentNode.insertBefore(g, field.nextSibling);
+  });
+
   // Mobile drawer menu. Replaces Framer's runtime-driven mobile menu.
   // Hrefs use the same relative prefix as the existing navbar links on this
   // page (pages under blogs/, projects/, package/ need a "../" prefix), so
