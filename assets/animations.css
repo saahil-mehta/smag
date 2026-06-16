@@ -20,6 +20,17 @@ nav.framer-ur6jyi { view-transition-name: smag-nav; }
    animation on every navigation (that was the "flicker then load" effect). */
 .motion-ready [data-reveal="nav"] { opacity: 1 !important; }
 
+/* Hero image flash fix: the hero photo is not painted at first paint (first
+   paint is gated by CSS, not images), so the area used to flash white/grey
+   until the photo popped in. Tint each hero wrapper with the photo's average
+   colour so there is never a white gap, and fade the photo in over it
+   (animations.js adds .smag-imgfade-in once the photo has loaded). */
+.framer-176qp25 { background-color: rgb(128, 129, 121) !important; }   /* index hero */
+.framer-5fqrd0  { background-color: rgb(129, 110, 92)  !important; }   /* about-us hero */
+.framer-1v7v30q { background-color: rgb(131, 167, 145) !important; }   /* services hero */
+.smag-imgfade { opacity: 0; }
+.smag-imgfade.smag-imgfade-in { opacity: 1; transition: opacity .6s ease; }
+
 /* Lenis smooth scroll (assets/smooth-scroll.js): required hooks. Lenis adds
    the .lenis/.lenis-smooth classes to <html> when it is active. */
 html.lenis, html.lenis body { height: auto; }

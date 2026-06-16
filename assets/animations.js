@@ -24,6 +24,21 @@
     if (/translate|matrix/.test(el.style.transform)) el.style.transform = 'none';
   });
 
+  // Hero photo fade-in: the hero area is tinted with the photo's average colour
+  // (animations.css), and the photo fades in over it instead of flashing white
+  // then popping. Only hide-then-fade photos that have not loaded yet; cached
+  // ones stay visible. Skipped under reduced motion (instant, tint then photo).
+  if (!reduce) {
+    ['.framer-176qp25 img', '.framer-5fqrd0 img', '.framer-1v7v30q img'].forEach(function (sel) {
+      var img = document.querySelector(sel);
+      if (!img || (img.complete && img.naturalWidth > 0)) return;
+      img.classList.add('smag-imgfade');
+      var show = function () { img.classList.add('smag-imgfade-in'); };
+      img.addEventListener('load', show, { once: true });
+      img.addEventListener('error', show, { once: true });
+    });
+  }
+
   // Pill+arrow CTA hover/click is CSS-driven (see animations.css). We only
   // need to index each letter span so the per-letter stagger works. The
   // class .framer-m76ur6 marks every pill+arrow anchor across the site.
