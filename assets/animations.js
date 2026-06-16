@@ -104,7 +104,20 @@
     });
   })();
 
-  // Product-family cards (home) link through to the matching catalogue section.
+  // Sticky navbar: give it a background + lift once the page is scrolled so it
+  // stays readable over content, and keep it above everything (z-index).
+  (function () {
+    var bar = document.querySelector('[data-framer-name="Navbar"]');
+    if (!bar) return;
+    var onScroll = function () {
+      bar.classList.toggle('smag-nav-scrolled', window.scrollY > 24);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+
+  // Product-family cards: each individual card links to its catalogue section,
+  // reacts to the cursor with a 3D tilt, and shows a "View products" affordance.
   (function () {
     var sec = document.getElementById('benifit-1');
     if (!sec) return;
@@ -116,22 +129,50 @@
     };
     var probe = document.querySelector('a[href$="products.html"]');
     var prefix = probe ? (probe.getAttribute('href').match(/^((?:\.\.\/)*)/) || [''])[0] : '';
-    [].forEach.call(sec.querySelectorAll('h3,h4,h5,p'), function (el) {
-      var title = (el.textContent || '').trim();
-      if (!map[title]) return;
-      var card = el;
-      while (card && !(card.getAttribute && card.getAttribute('data-framer-name') === 'Card')) card = card.parentElement;
-      if (!card || card.__smagLinked) return;
-      card.__smagLinked = true;
-      var href = prefix + 'products.html#' + map[title];
+    [].forEach.call(sec.querySelectorAll('.framer-1faa9ry, .framer-19cvw77, .framer-3h7pth, .framer-ib9i7h'), function (card) {
+      var titleEl = card.querySelector('h3, h4, h5');
+      var title = titleEl ? titleEl.textContent.trim() : '';
+      var anchor = map[title];
+      if (!anchor) return;
+      var href = prefix + 'products.html#' + anchor;
+      card.classList.add('smag-tilt');
+      card.style.cursor = 'pointer';
       card.setAttribute('role', 'link');
       card.setAttribute('tabindex', '0');
       card.setAttribute('aria-label', title + ' products');
-      card.addEventListener('click', function () { location.href = href; });
+      card.style.setProperty('transform', 'none', 'important');
+
+      var cta = document.createElement('span');
+      cta.className = 'smag-fam-cta';
+      cta.innerHTML = 'View products <span aria-hidden="true">&rarr;</span>';
+      card.appendChild(cta);
+
+      var go = function () { location.href = href; };
+      card.addEventListener('click', go);
       card.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); location.href = href; }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
       });
+      if (!reduce) {
+        card.addEventListener('mousemove', function (e) {
+          var r = card.getBoundingClientRect();
+          var rx = ((e.clientY - r.top) / r.height - 0.5) * -10;
+          var ry = ((e.clientX - r.left) / r.width - 0.5) * 10;
+          card.style.setProperty('transform', 'perspective(760px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) scale(1.03)', 'important');
+        });
+        card.addEventListener('mouseleave', function () {
+          card.style.setProperty('transform', 'none', 'important');
+        });
+      }
     });
+
+    // Prominent CTA to the full catalogue below the family cards.
+    if (!sec.querySelector('.smag-fam-bottomcta')) {
+      var bcta = document.createElement('a');
+      bcta.className = 'smag-fam-bottomcta';
+      bcta.href = prefix + 'products.html';
+      bcta.innerHTML = 'View the full product catalogue <span aria-hidden="true">&rarr;</span>';
+      sec.appendChild(bcta);
+    }
   })();
 
   // Contact info cards render each value twice (legacy two-slot layout); show

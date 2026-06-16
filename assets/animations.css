@@ -816,9 +816,6 @@ img[src="assets/factory-team.jpg"] {
 #services .framer-awv0im, #benifit-1 .framer-awv0im { display: none !important; }
 #services .framer-ljkzq1 { justify-content: center !important; gap: 10px !important; }
 
-/* Product-family cards link through to the matching catalogue section. */
-#benifit-1 [data-framer-name="Card"] { cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
-#benifit-1 [data-framer-name="Card"]:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(20,20,20,.08); }
 
 /* Services cards: small brand accent above each title and content-height cards
    so they read as intentional rather than sparse. */
@@ -856,7 +853,7 @@ img[src="assets/factory-team.jpg"] {
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.66) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 44%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.88) 100%);
 }
 #benifit .framer-1yw2d8l .framer-text { text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
 /* ISO 9001 mark: kill the gradient fade that was clipping the final digit. */
@@ -883,4 +880,48 @@ img[src="assets/factory-team.jpg"] {
 @media (prefers-reduced-motion: reduce) {
   #benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l,
   #services .framer-12rgd66 { transition: none !important; }
+}
+
+/* Sticky navbar: keep it above all content, and add a blurred background with a
+   lift once the page is scrolled so it never gets masked by content behind it. */
+[data-framer-name="Navbar"] { z-index: 200 !important; transition: background .3s ease, box-shadow .3s ease, backdrop-filter .3s ease; }
+[data-framer-name="Navbar"].smag-nav-scrolled {
+  background: rgba(255, 255, 255, 0.82) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
+  box-shadow: 0 6px 22px rgba(20, 20, 20, 0.09);
+}
+
+/* Product-family interactive tiles: cursor-tracking 3D tilt, a "View products"
+   affordance, and a prominent catalogue CTA below the row. */
+#benifit-1 .smag-tilt {
+  position: relative !important;
+  transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s ease !important;
+  will-change: transform;
+}
+#benifit-1 .smag-tilt:hover {
+  box-shadow: 0 22px 46px rgba(20, 20, 20, 0.16) !important;
+}
+.smag-fam-cta {
+  position: absolute; left: 28px; bottom: 24px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: "Satoshi","Satoshi Placeholder",sans-serif;
+  font-weight: 700; font-size: 14px; color: #e8231a; pointer-events: none;
+}
+.smag-fam-cta span { transition: transform .2s ease; }
+.smag-tilt:hover .smag-fam-cta span { transform: translateX(5px); }
+.smag-fam-bottomcta {
+  display: flex; width: max-content; max-width: 92%;
+  margin: 44px auto 0; align-self: center; align-items: center; gap: 10px;
+  background: #e8231a; color: #fff;
+  font-family: "Satoshi","Satoshi Placeholder",sans-serif;
+  font-weight: 700; font-size: 16px;
+  padding: 16px 32px; border-radius: 999px; text-decoration: none;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.smag-fam-bottomcta:hover { background: #c71d14; transform: translateY(-2px); box-shadow: 0 14px 30px rgba(232,35,26,.28); }
+.smag-fam-bottomcta span { transition: transform .2s ease; }
+.smag-fam-bottomcta:hover span { transform: translateX(5px); }
+@media (prefers-reduced-motion: reduce) {
+  #benifit-1 .smag-tilt { transition: none !important; }
 }
