@@ -1133,7 +1133,19 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 }
 .smag-footer-col a:hover { color: #e8231a; }
 .smag-footer-col a[data-framer-page-link-current="true"] { color: #e8231a; }
-.smag-footer-address { line-height: 1.55; max-width: 290px; }
+.smag-footer-contact { display: flex; align-items: flex-start; gap: 10px; }
+.smag-footer-ico {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.smag-footer-address { line-height: 1.55; max-width: 300px; }
 .smag-footer-muted { color: #8a8a90; font-size: 14px; }
 .smag-footer-legal { text-align: right; align-items: flex-end; }
 .smag-footer-watermark {
