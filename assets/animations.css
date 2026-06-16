@@ -490,8 +490,8 @@ img[src="assets/factory-team.jpg"] {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  gap: 16px !important;
-  margin-top: clamp(24px, 2.4vw, 34px) !important;
+  gap: 12px !important;
+  margin-top: clamp(12px, 1.4vw, 20px) !important;
   padding: 0 !important;
   border: 0 !important;
   background: none !important;
@@ -501,7 +501,7 @@ img[src="assets/factory-team.jpg"] {
   content: "" !important;
   display: block !important;
   width: 100% !important;
-  height: clamp(168px, 15vw, 216px) !important;
+  height: clamp(122px, 12vw, 176px) !important;
   background: url("matched-magnet-circuit.svg?v=2") center / contain no-repeat !important;
 }
 
@@ -898,9 +898,11 @@ img[src="assets/factory-team.jpg"] {
 .smag-svc-icon .smag-ic-draw { stroke-dasharray: 26; stroke-dashoffset: 26; opacity: 0; }
 /* a stroke that is visible by default and re-draws itself on hover */
 .smag-ic-redraw { stroke-dasharray: 26; stroke-dashoffset: 0; }
-#services .framer-12rgd66:hover .smag-ic-redraw { animation: smag-redraw .6s cubic-bezier(.16, 1, .3, 1); }
+#services .framer-12rgd66:hover .smag-ic-redraw { animation: smag-redraw 1.15s cubic-bezier(.4, 0, .2, 1); }
 @keyframes smag-redraw { from { stroke-dashoffset: 26; } to { stroke-dashoffset: 0; } }
-.smag-needle { transform-origin: 0% 100%; }
+/* pivot the needle at the gauge hub (path start), beating the generic
+   .smag-ic * { transform-origin: center } rule so it does not detach */
+.smag-svc-icon .smag-needle { transform-origin: 0% 100% !important; }
 /* hover: recolour and morph (scoped to the service cards) */
 #services .framer-12rgd66:hover .smag-svc-icon { color: #e8231a; }
 #services .framer-12rgd66:hover .smag-ic-draw { stroke-dashoffset: 0; opacity: 1; }
@@ -962,7 +964,10 @@ img[src="assets/factory-team.jpg"] {
   background-image: none !important;
 }
 
-/* Micro-interactions: gentle hover lift on the bento cards. */
+/* Micro-interactions: gentle hover lift on the bento cards. The wrapper rows
+   are overflow:clip, which sliced the lifted card's soft shadow into a hard
+   edge; let the shadow spill out of them. */
+#benifit .framer-15c7ota, #benifit .framer-5at6j7 { overflow: visible !important; }
 #benifit .framer-zifv6d, #benifit .framer-8qvgsd, #benifit .framer-qq6gqa, #benifit .framer-1yw2d8l {
   transition: transform .28s cubic-bezier(.16,1,.3,1), box-shadow .28s ease !important;
 }
