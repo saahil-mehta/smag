@@ -57,9 +57,9 @@
   var SVC_ICONS = {
     magnet: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M6 20v-8a6 6 0 0 1 12 0v8"/><path d="M4 20h4M16 20h4"/><path class="smag-ic-draw" d="M8 21.4q4 2.4 8 0"/></svg>',
     layers: '<svg class="smag-ic" viewBox="0 0 24 24"><path class="smag-lyr-top" d="M12 3l8.5 4.7-8.5 4.7L3.5 7.7 12 3z"/><path d="M3.5 12.2l8.5 4.7 8.5-4.7"/><path d="M3.5 16.7l8.5 4.7 8.5-4.7"/></svg>',
-    gauge: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M4 17a8 8 0 0 1 16 0"/><path class="smag-needle" d="M12 17l5-3.2"/><circle cx="12" cy="17" r="1.3" fill="currentColor" stroke="none"/></svg>',
+    gauge: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M5 18a7 7 0 1 1 14 0"/><path class="smag-needle" d="M12 18l4.4-4.2"/><circle cx="12" cy="18" r="1.45" fill="currentColor" stroke="none"/></svg>',
     gear: '<svg class="smag-ic" viewBox="0 0 24 24"><g class="smag-gear"><circle cx="12" cy="12" r="6.4"/><circle cx="12" cy="12" r="2.5"/><path d="M12 5.6V2.6M12 18.4v2.8M18.4 12h2.8M5.6 12H2.8M16.5 7.5l2.2-2.2M7.5 16.5l-2.2 2.2M16.5 16.5l2.2 2.2M7.5 7.5L5.3 5.3"/></g></svg>',
-    check: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M12 3l7 2.5v5.6c0 4.2-3 7.4-7 8.6-4-1.2-7-4.4-7-8.6V5.5L12 3z"/><path class="smag-ic-draw" d="M8.5 12l2.5 2.5L15.6 9.4"/></svg>',
+    check: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M12 3l7 2.5v5.6c0 4.2-3 7.4-7 8.6-4-1.2-7-4.4-7-8.6V5.5L12 3z"/><path class="smag-ic-redraw" d="M8.5 12l2.5 2.5L15.6 9.4"/></svg>',
     truck: '<svg class="smag-ic" viewBox="0 0 24 24"><g class="smag-truck"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h3.8l3.2 3.2v2.8h-7z"/></g><circle cx="6.6" cy="17.4" r="1.6"/><circle cx="16.6" cy="17.4" r="1.6"/></svg>'
   };
   var SVC_CONFIRM = '<svg class="smag-ic-confirm" viewBox="0 0 24 24" aria-hidden="true"><path class="smag-confirm-check" d="M5 12.5l4.5 4.5L19 7"/></svg>';

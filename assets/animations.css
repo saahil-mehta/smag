@@ -844,7 +844,7 @@ img[src="assets/factory-team.jpg"] {
    centre the content so the title and text group cleanly instead of floating. */
 #services [data-framer-name="Ellipse 51"], #benifit-1 [data-framer-name="Ellipse 51"],
 #services .framer-awv0im, #benifit-1 .framer-awv0im { display: none !important; }
-#services .framer-ljkzq1 { justify-content: center !important; gap: 10px !important; }
+#services .framer-ljkzq1 { justify-content: center !important; gap: 10px !important; overflow: visible !important; }
 
 
 /* Service cards: one uniform, attached grid. The cells snap together as a
@@ -896,6 +896,10 @@ img[src="assets/factory-team.jpg"] {
   transform-box: fill-box; transform-origin: center;
 }
 .smag-svc-icon .smag-ic-draw { stroke-dasharray: 26; stroke-dashoffset: 26; opacity: 0; }
+/* a stroke that is visible by default and re-draws itself on hover */
+.smag-ic-redraw { stroke-dasharray: 26; stroke-dashoffset: 0; }
+#services .framer-12rgd66:hover .smag-ic-redraw { animation: smag-redraw .6s cubic-bezier(.16, 1, .3, 1); }
+@keyframes smag-redraw { from { stroke-dashoffset: 26; } to { stroke-dashoffset: 0; } }
 .smag-needle { transform-origin: 0% 100%; }
 /* hover: recolour and morph (scoped to the service cards) */
 #services .framer-12rgd66:hover .smag-svc-icon { color: #e8231a; }
@@ -920,7 +924,8 @@ img[src="assets/factory-team.jpg"] {
 @keyframes smag-ring { 0% { opacity: .5; transform: scale(.55); } 100% { opacity: 0; transform: scale(1.35); } }
 @media (prefers-reduced-motion: reduce) {
   .smag-svc-icon, .smag-svc-icon * { transition: none !important; }
-  .smag-svc-icon.smag-confirm .smag-confirm-check, .smag-svc-icon.smag-confirm::after { animation: none !important; }
+  .smag-svc-icon.smag-confirm .smag-confirm-check, .smag-svc-icon.smag-confirm::after,
+  #services .framer-12rgd66:hover .smag-ic-redraw { animation: none !important; }
 }
 
 
