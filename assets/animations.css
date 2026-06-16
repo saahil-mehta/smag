@@ -786,3 +786,16 @@ img[src="assets/factory-team.jpg"] {
 #our-projects {
   display: none !important;
 }
+
+/* Shared call-to-action band ("Need the right magnet for the job?"). It relied
+   on a Framer CDN background image that is unreliable, leaving white text on an
+   empty band. Give it a solid brand background so the heading is always legible
+   (the image, when present, still renders on top). */
+[data-framer-name="Images"]:has([data-framer-name="Need the right magnet for the job?"]) {
+  background-color: #e8231a !important;
+  border-radius: 24px;
+  padding: 8px;
+}
+[data-framer-name="Images"]:has([data-framer-name="Need the right magnet for the job?"]) img {
+  display: none !important;
+}
