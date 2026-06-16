@@ -24,6 +24,17 @@
     if (/translate|matrix/.test(el.style.transform)) el.style.transform = 'none';
   });
 
+  // Framer also bakes a `transform: scale(<1)` appear rest state on some
+  // component containers, meant to grow to scale(1) on load. Without the runtime
+  // these freeze shrunk (e.g. the services cards rendered at half size). Reset
+  // the baked scale so they render full size. Runs once at load, before any
+  // interaction, so it only clears static rest states (press/tilt set their own
+  // transforms later and are unaffected).
+  document.querySelectorAll('[style*="transform:scale"], [style*="transform: scale"]').forEach(function (el) {
+    if (el.closest('nav[name="Navbar"], [data-framer-name="Nav menu"], #smag-mm, [data-marquee]')) return;
+    el.style.transform = 'none';
+  });
+
   // Hero photo fade-in: the hero area is tinted with the photo's average colour
   // (animations.css), and the photo fades in over it instead of flashing white
   // then popping. Only hide-then-fade photos that have not loaded yet; cached
