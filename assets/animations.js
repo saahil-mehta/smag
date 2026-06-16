@@ -122,7 +122,7 @@
   // this attribute (it would otherwise be frozen to the page each partial
   // was extracted from), so we re-set it here per page.
   var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  document.querySelectorAll('nav[name="Navbar"] a[href], .framer-plv1rs-container a[href]').forEach(function (a) {
+  document.querySelectorAll('nav[name="Navbar"] a[href], .smag-footer a[href]').forEach(function (a) {
     var basename = (a.getAttribute('href').split('/').pop() || '').toLowerCase();
     if (basename === here) a.setAttribute('data-framer-page-link-current', 'true');
   });
@@ -312,7 +312,7 @@
   var sectionSelectorList = sectionSelectors.join(',');
   document.querySelectorAll(sectionSelectorList).forEach(function (el) {
     if (el.hasAttribute('data-reveal')) return;
-    if (el.closest('nav[name="Navbar"], .framer-plv1rs-container, [data-marquee]')) return;
+    if (el.closest('nav[name="Navbar"], .smag-footer, [data-marquee]')) return;
     // Skip the hero: it already animates its subtitle letter-by-letter
     // via the existing "blur" reveal, and a section-level slide on top
     // would fight that. Detect by descendant data-reveal.
