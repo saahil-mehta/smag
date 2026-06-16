@@ -49,7 +49,7 @@ html.lenis, html.lenis body { height: auto; }
 
 .framer-VLcRh .framer-1tels6l {
   z-index: 3 !important;
-  top: 26% !important;
+  top: 34% !important;
   left: 50% !important;
   max-width: min(1280px, 92vw) !important;
   place-content: center !important;
@@ -267,7 +267,7 @@ img[src="assets/factory-team.jpg"] {
 
 @media (min-width: 810px) and (max-width: 1439.98px) {
   .framer-VLcRh .framer-1tels6l {
-    top: 24% !important;
+    top: 32% !important;
     max-width: min(1040px, 94vw) !important;
   }
 
@@ -283,7 +283,7 @@ img[src="assets/factory-team.jpg"] {
 
 @media (max-width: 809.98px) {
   .framer-VLcRh .framer-1tels6l {
-    top: 24% !important;
+    top: 30% !important;
     max-width: 92vw !important;
   }
 
@@ -823,10 +823,13 @@ img[src="assets/factory-team.jpg"] {
   display: none !important;
 }
 
-/* Client logo ticker: keep the original logo capsules, but replace the bracket
-   feel with a fine red separator between logos. */
+/* Client logo ticker: remove the exported capsule brackets around each logo,
+   but keep a fine red separator between marks. */
 .framer-1phiz6o .ticker-item {
   position: relative !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
 }
 .framer-1phiz6o .ticker-item::after {
   content: "";
