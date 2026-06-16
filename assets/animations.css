@@ -7,7 +7,18 @@
 
 #__framer-badge-container { display: none !important; }
 
+/* Smooth cross-document page transitions: the browser crossfades the old page
+   into the new one instead of a white flash. Progressive enhancement: browsers
+   without support just navigate normally. */
+@view-transition { navigation: auto; }
+/* The navbar is persistent chrome: name it so it is carried across the
+   transition (stays put, no crossfade) rather than re-appearing each load. */
+nav.framer-ur6jyi { view-transition-name: smag-nav; }
+
 .motion-ready [data-reveal] { opacity: 0; }
+/* Keep the persistent navbar visible at load; it must not re-run an entrance
+   animation on every navigation (that was the "flicker then load" effect). */
+.motion-ready [data-reveal="nav"] { opacity: 1 !important; }
 
 /* Hero depth treatment.
    The hero image is a flattened render, so the foreground layer repeats
@@ -888,9 +899,9 @@ img[src="assets/factory-team.jpg"] {
 [data-framer-name="Navbar"] { z-index: 200 !important; top: 14px !important; }
 nav.framer-ur6jyi {
   width: fit-content !important;
-  max-width: 100% !important;
+  max-width: calc(100vw - 28px) !important;
   margin: 0 auto !important;
-  padding: 0 10px 0 22px !important;
+  padding: 0 14px 0 30px !important;
   background: rgba(255, 255, 255, 0.5) !important;
   -webkit-backdrop-filter: blur(22px) saturate(180%);
   backdrop-filter: blur(22px) saturate(180%);
@@ -909,7 +920,7 @@ nav.framer-ur6jyi .framer-af31sf,
 nav.framer-ur6jyi .framer-2pc77y { width: auto !important; }
 nav.framer-ur6jyi .framer-2pc77y {
   justify-content: center !important;
-  gap: clamp(20px, 3vw, 44px) !important;
+  gap: clamp(28px, 5vw, 64px) !important;
 }
 /* merge the inner links pill into the glass so it reads as one clean surface */
 .framer-p4v845 { background: transparent !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; padding: 0 !important; gap: 6px !important; }

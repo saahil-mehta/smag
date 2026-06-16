@@ -258,10 +258,12 @@
     el.style.transform = 'translateY(32px)';
   });
 
-  // Navbar reveals on load; the rest on scroll into view (one shared observer).
+  // The navbar is persistent chrome: mark it revealed so it stays visible
+  // without re-running an entrance animation on every navigation. The rest
+  // reveal on scroll into view (one shared observer).
   var deferred = [];
   document.querySelectorAll('[data-reveal]').forEach(function (el) {
-    if (el.getAttribute('data-reveal') === 'nav') reveal(el);
+    if (el.getAttribute('data-reveal') === 'nav') el.__revealed = true;
     else deferred.push(el);
   });
 
