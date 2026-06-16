@@ -882,25 +882,71 @@ img[src="assets/factory-team.jpg"] {
   #services .framer-12rgd66 { transition: none !important; }
 }
 
-/* Liquid-glass pill navbar: a floating frosted pill that stays above content
-   and gently deepens once scrolled. The nav element already carries the pill
-   radius; the square wrapper just keeps it fixed, floating and on top. */
+/* Liquid-glass pill navbar: a floating frosted pill that hugs its content,
+   stays above everything and gently deepens once scrolled. The nav element
+   already carries the pill radius; the square wrapper keeps it fixed and centred. */
 [data-framer-name="Navbar"] { z-index: 200 !important; top: 14px !important; }
 nav.framer-ur6jyi {
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 10px 0 22px !important;
   background: rgba(255, 255, 255, 0.5) !important;
   -webkit-backdrop-filter: blur(22px) saturate(180%);
   backdrop-filter: blur(22px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
   box-shadow: 0 12px 34px rgba(20, 20, 20, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
-  height: 72px !important;
-  transition: background .3s ease, box-shadow .3s ease !important;
+  height: 68px !important;
+  transition: background .3s ease, box-shadow .3s ease, transform .4s cubic-bezier(.16,1,.3,1) !important;
 }
 [data-framer-name="Navbar"].smag-nav-scrolled nav.framer-ur6jyi {
-  background: rgba(255, 255, 255, 0.64) !important;
+  background: rgba(255, 255, 255, 0.66) !important;
   box-shadow: 0 14px 40px rgba(20, 20, 20, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.78) !important;
 }
-/* merge the inner links pill into the glass so it is one clean pill */
-.framer-p4v845 { background: transparent !important; }
+/* collapse the full-width container so the three groups sit together, centred,
+   with breathing room instead of being flung to the glass edges */
+nav.framer-ur6jyi .framer-af31sf,
+nav.framer-ur6jyi .framer-2pc77y { width: auto !important; }
+nav.framer-ur6jyi .framer-2pc77y {
+  justify-content: center !important;
+  gap: clamp(20px, 3vw, 44px) !important;
+}
+/* merge the inner links pill into the glass so it reads as one clean surface */
+.framer-p4v845 { background: transparent !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; padding: 0 !important; gap: 6px !important; }
+
+/* Joyful nav links: each link gets a soft pill that warms to brand red and lifts
+   on hover, so the bar feels alive rather than flat. */
+.framer-p4v845 .framer-129fhqs {
+  border-radius: 360px !important;
+  padding: 7px 14px !important;
+  transition: transform .25s cubic-bezier(.16,1,.3,1), background-color .25s ease !important;
+}
+.framer-p4v845 .framer-129fhqs .framer-text {
+  transition: color .25s ease !important;
+}
+.framer-p4v845 .framer-129fhqs:hover {
+  background-color: rgba(232, 35, 26, 0.09) !important;
+  transform: translateY(-1px) !important;
+}
+.framer-p4v845 .framer-129fhqs:hover .framer-text {
+  color: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, rgb(232, 35, 26)) !important;
+}
+/* Logo: a gentle nudge on hover */
+.framer-1ozs3r7 { transition: transform .3s cubic-bezier(.16,1,.3,1) !important; }
+.framer-1ozs3r7:hover { transform: scale(1.04) !important; }
+/* Contact button: lift and brighten the whole pill on hover */
+nav.framer-ur6jyi .framer-nb922b a {
+  transition: transform .25s cubic-bezier(.16,1,.3,1), filter .25s ease, box-shadow .25s ease !important;
+}
+nav.framer-ur6jyi .framer-nb922b a:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.06) !important;
+  box-shadow: 0 8px 20px rgba(232, 35, 26, 0.32) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  nav.framer-ur6jyi, .framer-p4v845 .framer-129fhqs, .framer-1ozs3r7,
+  nav.framer-ur6jyi .framer-nb922b a { transition: none !important; }
+}
 
 /* Product-family interactive tiles: cursor-tracking 3D tilt, a "View products"
    affordance, and a prominent catalogue CTA below the row. */
