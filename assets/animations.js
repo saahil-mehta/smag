@@ -50,6 +50,50 @@
     });
   }
 
+  // Service-card icons: inject a line-art icon per service. They morph and
+  // recolour on card hover and play a confirm (check + ring) on click, all
+  // CSS-driven (see animations.css). Works on the home and services pages
+  // (both use #services .framer-12rgd66). Matched to each card by its title.
+  var SVC_ICONS = {
+    magnet: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M6 20v-8a6 6 0 0 1 12 0v8"/><path d="M4 20h4M16 20h4"/><path class="smag-ic-draw" d="M8 21.4q4 2.4 8 0"/></svg>',
+    layers: '<svg class="smag-ic" viewBox="0 0 24 24"><path class="smag-lyr-top" d="M12 3l8.5 4.7-8.5 4.7L3.5 7.7 12 3z"/><path d="M3.5 12.2l8.5 4.7 8.5-4.7"/><path d="M3.5 16.7l8.5 4.7 8.5-4.7"/></svg>',
+    gauge: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M4 17a8 8 0 0 1 16 0"/><path class="smag-needle" d="M12 17l5-3.2"/><circle cx="12" cy="17" r="1.3" fill="currentColor" stroke="none"/></svg>',
+    gear: '<svg class="smag-ic" viewBox="0 0 24 24"><g class="smag-gear"><circle cx="12" cy="12" r="6.4"/><circle cx="12" cy="12" r="2.5"/><path d="M12 5.6V2.6M12 18.4v2.8M18.4 12h2.8M5.6 12H2.8M16.5 7.5l2.2-2.2M7.5 16.5l-2.2 2.2M16.5 16.5l2.2 2.2M7.5 7.5L5.3 5.3"/></g></svg>',
+    check: '<svg class="smag-ic" viewBox="0 0 24 24"><path d="M12 3l7 2.5v5.6c0 4.2-3 7.4-7 8.6-4-1.2-7-4.4-7-8.6V5.5L12 3z"/><path class="smag-ic-draw" d="M8.5 12l2.5 2.5L15.6 9.4"/></svg>',
+    truck: '<svg class="smag-ic" viewBox="0 0 24 24"><g class="smag-truck"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h3.8l3.2 3.2v2.8h-7z"/></g><circle cx="6.6" cy="17.4" r="1.6"/><circle cx="16.6" cy="17.4" r="1.6"/></svg>'
+  };
+  var SVC_CONFIRM = '<svg class="smag-ic-confirm" viewBox="0 0 24 24" aria-hidden="true"><path class="smag-confirm-check" d="M5 12.5l4.5 4.5L19 7"/></svg>';
+  var SVC_MAP = [
+    { re: /custom|magnet design/i, k: 'magnet' },
+    { re: /standard|product range/i, k: 'layers' },
+    { re: /duty|match|select/i, k: 'gauge' },
+    { re: /in.?house|manufactur/i, k: 'gear' },
+    { re: /test|quality/i, k: 'check' },
+    { re: /supply|after.?sales|deliver/i, k: 'truck' }
+  ];
+  document.querySelectorAll('#services .framer-12rgd66').forEach(function (card) {
+    if (card.querySelector('.smag-svc-icon')) return;
+    var wrap = card.querySelector('.framer-ljkzq1') || card;
+    var titleEl = card.querySelector('h1,h2,h3,h4,h5,h6');
+    var title = ((titleEl && titleEl.textContent) || '').trim();
+    var match = SVC_MAP.filter(function (m) { return m.re.test(title); })[0];
+    var key = match ? match.k : 'layers';
+    var span = document.createElement('span');
+    span.className = 'smag-svc-icon';
+    span.setAttribute('data-svc-icon', key);
+    span.setAttribute('role', 'img');
+    span.setAttribute('aria-label', title || 'Service');
+    span.innerHTML = SVC_ICONS[key] + SVC_CONFIRM;
+    wrap.insertBefore(span, wrap.firstChild);
+    span.addEventListener('click', function (e) {
+      e.stopPropagation();
+      span.classList.remove('smag-confirm');
+      void span.offsetWidth;            // restart the animation
+      span.classList.add('smag-confirm');
+      setTimeout(function () { span.classList.remove('smag-confirm'); }, 850);
+    });
+  });
+
   // Pill+arrow CTA hover/click is CSS-driven (see animations.css). We only
   // need to index each letter span so the per-letter stagger works. The
   // class .framer-m76ur6 marks every pill+arrow anchor across the site.
