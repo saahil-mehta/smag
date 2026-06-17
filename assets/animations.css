@@ -468,6 +468,17 @@ img[src="assets/factory-team.jpg"] {
   [data-framer-name="Overlay"] { pointer-events: none !important; }
 }
 
+/* Contact form: Framer exports honeypot spam fields with only transform:scale(0).
+   Some browsers still paint a tiny native input box, so fully remove them from
+   visual layout while keeping the real fields intact. */
+.framer-AydYc form input[aria-hidden="true"][data-form-type="other"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+}
+
 /* ------------------------------------------------------------------ *
  * Benefits section
  *
@@ -1261,6 +1272,7 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 }
 .smag-footer-bottom a { color: #56565c; text-decoration: none; transition: color 0.2s ease; }
 .smag-footer-bottom a:hover { color: #e8231a; }
+.framer-4v1nxj { display: none !important; }
 @media (max-width: 900px) {
   .smag-footer-grid { grid-template-columns: 1fr 1fr; }
   .smag-footer-brand { grid-column: 1 / -1; max-width: none; }
