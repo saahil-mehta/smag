@@ -10,6 +10,11 @@
   var html = document.documentElement;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  function markPageReady() {
+    html.classList.remove('smag-page-loading');
+    html.classList.add('smag-page-ready');
+  }
+
   // Framer baked scroll-reveal rest states (opacity:0, plus a translate
   // offset) into the exported HTML, expecting its runtime to animate them in.
   // That runtime was removed, so any reveal container we don't manage below
@@ -34,6 +39,8 @@
     if (el.closest('nav[name="Navbar"], [data-framer-name="Nav menu"], #smag-mm, [data-marquee]')) return;
     el.style.transform = 'none';
   });
+
+  requestAnimationFrame(markPageReady);
 
   // Hero photo fade-in: the hero area is tinted with the photo's average colour
   // (animations.css), and the photo fades in over it instead of flashing white
@@ -383,7 +390,7 @@
   });
 
   // No motion library or reduced motion: reveal everything statically and stop.
-  if (!M || reduce) { html.classList.remove('motion-ready'); return; }
+  if (!M || reduce) { html.classList.remove('motion-ready'); markPageReady(); return; }
 
   var spring = { type: 'spring', stiffness: 400, damping: 58, mass: 1 };
   // Premium section reveal: slow ease-out-expo, larger offset. Used for

@@ -7,6 +7,34 @@
 
 #__framer-badge-container { display: none !important; }
 
+html.smag-page-loading body {
+  opacity: 0;
+}
+
+html.smag-page-ready body {
+  opacity: 1;
+  transition: opacity .32s ease;
+}
+
+html.smag-page-leaving body {
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.smag-page-ready body,
+  html.smag-page-leaving body {
+    transition: none;
+  }
+}
+
+/* Entered via a cross-document view transition: the transition overlay already
+   crossfades the pages, so suppress the body fade. Without this the two stack
+   and strobe (badly on Safari). Set by anim-init.js on the pagereveal event. */
+html.smag-vt-entrance body {
+  transition: none !important;
+}
+
 /* Smooth cross-document page transitions: the browser crossfades the old page
    into the new one instead of a white flash. Progressive enhancement: browsers
    without support just navigate normally. */
