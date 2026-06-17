@@ -151,30 +151,92 @@
     if (basename === here) a.setAttribute('data-framer-page-link-current', 'true');
   });
 
-  // Contact page: list the GSTIN under the email in the contact card. Clone the
-  // email field so it inherits the exact styling for each SSR variant, then
-  // neutralise the link and set the GSTIN text. Skips the footer (which carries
-  // its own GSTIN line) and is idempotent.
-  document.querySelectorAll('a[href^="mailto:queries@santoshmagneticworks.com"]').forEach(function (mail) {
-    if (mail.closest('.smag-footer')) return;
-    var field = mail.closest('[data-framer-name]');
-    if (!field || !field.parentNode) return;
-    if (field.parentNode.querySelector('[data-smag-gstin]')) return;
-    var g = field.cloneNode(true);
-    g.setAttribute('data-smag-gstin', '');
-    g.removeAttribute('data-framer-name');
-    var a = g.querySelector('a');
-    if (a) {
-      a.removeAttribute('href');
-      a.removeAttribute('target');
-      a.textContent = 'GSTIN 27ABDFS2378H1ZY';
-      a.style.pointerEvents = 'none';
-      a.style.textDecoration = 'none';
-    } else {
-      g.textContent = 'GSTIN 27ABDFS2378H1ZY';
+  function scrollToTarget(target) {
+    if (!target) return;
+    var offset = -110;
+    if (window.smagLenis && typeof window.smagLenis.scrollTo === 'function') {
+      window.smagLenis.scrollTo(target, { offset: offset, duration: 1.1 });
+      return;
     }
-    field.parentNode.insertBefore(g, field.nextSibling);
+    var y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+    window.scrollTo({ top: Math.max(0, y), behavior: reduce ? 'auto' : 'smooth' });
+  }
+
+  function isHomePath(pathname) {
+    var page = (pathname.split('/').pop() || 'index.html').toLowerCase();
+    return page === '' || page === 'index.html';
+  }
+
+  function scrollToServices() {
+    var target = document.getElementById('services');
+    if (!target) return;
+    scrollToTarget(target);
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var raw = a.getAttribute('href') || '';
+    var url;
+    try { url = new URL(raw, location.href); } catch (_) { return; }
+    if (url.hash !== '#services' || !isHomePath(url.pathname)) return;
+
+    e.preventDefault();
+    if (isHomePath(location.pathname)) {
+      scrollToServices();
+      history.replaceState(null, '', location.pathname + location.search);
+      return;
+    }
+    sessionStorage.setItem('smagScrollTarget', 'services');
+    url.hash = '';
+    location.href = url.href;
   });
+
+  if (isHomePath(location.pathname)) {
+    var pendingTarget = sessionStorage.getItem('smagScrollTarget');
+    if (pendingTarget === 'services') {
+      sessionStorage.removeItem('smagScrollTarget');
+      requestAnimationFrame(function () { setTimeout(scrollToServices, 120); });
+    } else if (location.hash === '#services') {
+      requestAnimationFrame(function () { setTimeout(scrollToServices, 120); });
+    }
+  }
+
+  // Product catalogue enquiry links carry the clicked product into the contact
+  // form, so buyers do not need to retype the equipment they selected.
+  document.querySelectorAll('.smag-cat-card .smag-cat-cta[href*="contact.html"]').forEach(function (a) {
+    var card = a.closest('.smag-cat-card');
+    if (!card) return;
+    var titleEl = card.querySelector('h3');
+    var detailEl = card.querySelector('p');
+    var title = titleEl ? titleEl.textContent.trim() : '';
+    var details = detailEl ? detailEl.textContent.trim() : '';
+    var specs = [].map.call(card.querySelectorAll('.smag-cat-specs li'), function (li) {
+      return li.textContent.trim();
+    }).filter(Boolean).join('; ');
+    if (!title) return;
+    var params = new URLSearchParams();
+    params.set('product', title);
+    if (details) params.set('details', details);
+    if (specs) params.set('specs', specs);
+    a.href = 'contact.html?' + params.toString();
+  });
+
+  (function prefillContactMessage() {
+    var product = new URLSearchParams(location.search).get('product');
+    if (!product) return;
+    var form = document.querySelector('form');
+    var message = form && form.querySelector('textarea[name="Message"]');
+    if (!message || message.value.trim()) return;
+    var params = new URLSearchParams(location.search);
+    var details = params.get('details') || '';
+    var specs = params.get('specs') || '';
+    var lines = ['I am enquiring about ' + product + '.'];
+    if (details) lines.push('', 'Product details: ' + details);
+    if (specs) lines.push('', 'Specifications: ' + specs);
+    message.value = lines.join('\n');
+    message.classList.remove('framer-form-input-empty');
+  })();
 
   // Mobile drawer menu. Replaces Framer's runtime-driven mobile menu.
   // Hrefs use the same relative prefix as the existing navbar links on this
@@ -187,7 +249,7 @@
     var links = [
       ['index.html', 'Home'],
       ['about-us.html', 'About'],
-      ['services.html', 'Services'],
+      ['index.html#services', 'Services'],
       ['products.html', 'Products'],
       ['contact.html', 'Contact'],
     ];

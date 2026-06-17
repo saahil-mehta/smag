@@ -13,6 +13,7 @@
     wheelMultiplier: 0.9, // trim wheel distance a touch so it is not too fast
     smoothWheel: true
   });
+  window.smagLenis = lenis;
 
   function raf(time) {
     lenis.raf(time);

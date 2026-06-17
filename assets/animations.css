@@ -869,9 +869,7 @@ img[src="assets/factory-team.jpg"] {
    rounded, bordered panel separated by hairlines (1px gaps over the grid's
    own background), with equal-height cells and a small brand accent above each
    title. */
-/* The services grid uses a different Framer class hash per page
-   (framer-3moqhw on services.html, framer-1uawz3h on the home page), so both
-   are matched here. */
+/* The services grid uses Framer's generated class hash on the home page. */
 #services .framer-3moqhw, #services .framer-1uawz3h {
   gap: 1px !important;
   background: rgba(20, 20, 20, 0.1) !important;
