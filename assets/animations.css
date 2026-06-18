@@ -881,15 +881,17 @@ img[src="assets/factory-team.jpg"] {
 }
 
 /* Shared call-to-action band ("Need the right magnet for the job?"). It relied
-   on a Framer CDN background image that is unreliable, leaving white text on an
-   empty band. Give it a solid brand background so the heading is always legible
-   (the image, when present, still renders on top). */
-[data-framer-name="Images"]:has([data-framer-name="Need the right magnet for the job?"]) {
+   on a Framer CDN background image (old EcoPower wind turbines) that is
+   unreliable and off-brand. Give it a solid brand background so the heading is
+   always legible. Key the rule on the structural "Heading+Button" layer, not on
+   a specific heading wording, so it applies to every CTA banner (home, about,
+   contact) regardless of the copy in the heading. */
+[data-framer-name="Images"]:has([data-framer-name="Heading+Button"]) {
   background-color: #e8231a !important;
   border-radius: 24px;
   padding: 8px;
 }
-[data-framer-name="Images"]:has([data-framer-name="Need the right magnet for the job?"]) img {
+[data-framer-name="Images"]:has([data-framer-name="Heading+Button"]) img {
   display: none !important;
 }
 
@@ -1279,4 +1281,95 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
 }
 @media (max-width: 520px) {
   .smag-footer-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* ── Leadership section (hand-built) ───────────────────────────────────────
+   The two leadership headshots (Rahul Ingle, Sushil Ingle) previously sat,
+   mislabelled, inside the "What stays under our control" strengths grid. They
+   now live in their own block with names, roles and an animated red sweep
+   border that rotates around the image on hover. */
+.smag-leadership { max-width: 1360px; margin: 0 auto; padding: 88px 40px; }
+.smag-lead-head { text-align: center; margin-bottom: 48px; }
+.smag-lead-eyebrow { font-family: "Satoshi", "Satoshi Placeholder", sans-serif; text-transform: uppercase; letter-spacing: .1em; color: #e8231a; font-weight: 600; font-size: 13px; margin: 0 0 14px; }
+.smag-lead-title { font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); line-height: 1.05; letter-spacing: -.03em; color: #111; margin: 0; }
+.smag-lead-grid { display: flex; flex-wrap: wrap; gap: 36px; justify-content: center; }
+.smag-lead-card { margin: 0; width: min(340px, 100%); }
+.smag-lead-photo { position: relative; border-radius: 18px; padding: 4px; transition: transform .35s ease; }
+.smag-lead-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; }
+.smag-lead-photo::before {
+  content: ""; position: absolute; inset: 0; border-radius: 18px; padding: 4px;
+  background: conic-gradient(from var(--smag-sweep, 0deg), #e8231a 0deg, #ff6a5e 50deg, transparent 130deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity .35s ease; pointer-events: none;
+}
+.smag-lead-card:hover .smag-lead-photo { transform: translateY(-6px); }
+.smag-lead-card:hover .smag-lead-photo::before { opacity: 1; animation: smag-sweep 2.4s linear infinite; }
+.smag-lead-info { display: flex; flex-direction: column; gap: 3px; padding: 18px 4px 0; }
+.smag-lead-name { font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.02em; color: #111; }
+.smag-lead-role { font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: #e8231a; }
+@property --smag-sweep { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@keyframes smag-sweep { to { --smag-sweep: 360deg; } }
+@media (max-width: 600px) { .smag-leadership { padding: 56px 20px; } .smag-lead-grid { gap: 22px; } .smag-lead-card { width: min(300px, 100%); } }
+@media (prefers-reduced-motion: reduce) { .smag-lead-card:hover .smag-lead-photo::before { animation: none; } }
+
+/* ── About page corrections (responsive QA) ───────────────────────────────
+   1) Section order: on the mobile layout variant the footer and the inserted
+      leadership block both computed order:0, so they rendered with the intro
+      (order 0) ahead of why-buyers (1), strengths (3) and the CTA (5). Give
+      leadership order 4 (between strengths and CTA) and pin the footer last.
+   2) Leadership photos were 4:5 at full card width: too tall. Make them square
+      and smaller, two-up on phones.
+   3) Strength cards (#team) shipped leftover stock/energy photos. Drop the
+      photos and present clean icon + text cards. */
+.smag-leadership { order: 4; }
+footer.smag-footer { order: 2000; }
+
+.smag-lead-card { width: min(248px, 100%); }
+.smag-lead-photo img { aspect-ratio: 1 / 1; }
+@media (max-width: 600px) {
+  .smag-lead-grid { gap: 16px; }
+  .smag-lead-card { width: calc(50% - 8px); max-width: 220px; }
+}
+
+/* Strengths: hide the leftover photo block, lay the cards out as icon + text. */
+#team .framer-8418eo { display: none !important; }
+#team h5 { position: relative; padding-left: 30px; }
+#team h5::before {
+  content: ""; position: absolute; left: 0; top: 50%; width: 20px; height: 20px;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e8231a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* Leadership photo fix: the <img> carries a height="1036" attribute that beat
+   the img aspect-ratio, so set the aspect on the container and let the image
+   fill it. */
+.smag-lead-photo { aspect-ratio: 1 / 1; overflow: hidden; }
+.smag-lead-photo img { height: 100% !important; aspect-ratio: auto; }
+/* Strength titles: lighter indent so they don't crush in narrow columns. */
+#team h5 { padding-left: 26px; }
+
+/* ── About page: replace the broken Framer card sections with one simple prose
+   block (the card grids relied on broken responsive variants that collapsed).
+   Hide why-buyers / selection-process / strengths; show a clean text section. */
+#our-compertitive, #team, #way-we-work { display: none !important; }
+.smag-about-why { order: 1; max-width: 820px; margin: 0 auto; padding: 84px 40px; text-align: center; }
+.smag-why-eyebrow { font-family: "Satoshi","Satoshi Placeholder",sans-serif; text-transform: uppercase; letter-spacing: .1em; color: #e8231a; font-weight: 600; font-size: 13px; margin: 0 0 14px; }
+.smag-why-title { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-weight: 700; font-size: clamp(28px,4vw,40px); line-height: 1.1; letter-spacing: -.03em; color: #111; margin: 0 0 28px; }
+.smag-why-p { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-size: 17px; line-height: 1.65; color: #333; margin: 0 auto 18px; max-width: 680px; }
+@media (max-width: 600px){ .smag-about-why { padding: 56px 20px; } .smag-why-p { font-size: 16px; } }
+
+/* CTA banner Contact button: the white-pill styling was scoped to #cta (home
+   only), so on about/contact the button kept its default red fill and vanished
+   against the red banner. Key it on the Heading+Button banner so it shows on
+   every page that has the CTA band. */
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-the1i2,
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-1lzkxbs { background-color: #fff !important; }
+[data-framer-name="Heading+Button"] .framer-YHHwL [class*="rolling-text-inner-"] { --text: var(--token-17b3b986-fda4-4a7f-9831-ce6e70e545fb, #e8231a) !important; text-shadow: 0 var(--line-height-abs) 0 var(--text) !important; }
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-the1i2 span { color: #e8231a !important; }
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-1lzkxbs use { color: inherit !important; fill: currentColor !important; stroke: currentColor !important; }
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-1lzkxbs svg path { stroke: #e8231a !important; }
+/* CTA button arrow glyph: tint red to match home (white circle, red arrow). */
+[data-framer-name="Heading+Button"] .framer-YHHwL .framer-1lzkxbs svg {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(94%) saturate(3444%) hue-rotate(353deg) brightness(97%) contrast(89%) !important;
 }
