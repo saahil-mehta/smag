@@ -1416,9 +1416,26 @@ nav.framer-ur6jyi {
   .smag-toast { transition: opacity .2s ease; transform: translate(-50%, 0); }
 }
 
-/* IndiaMART link on the contact page: a quiet line to the trade profile. */
-.smag-indiamart { max-width: 1360px; margin: 0 auto; padding: 8px 40px 72px; text-align: center; }
-.smag-indiamart p { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-size: 16px; color: #555; margin: 0; }
-.smag-indiamart a { color: #e8231a; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(232, 35, 26, .35); transition: border-color .2s ease; }
-.smag-indiamart a:hover { border-bottom-color: #e8231a; }
-@media (max-width: 600px) { .smag-indiamart { padding: 4px 20px 52px; } }
+/* IndiaMART CTA button: mirrors the Contact button (pill + arrow badge +
+   rolling-text hover) in a deeper shade of the brand red, so it reads as a
+   sibling action. Injected under the Contact button in the CTA banners by
+   assets/animations.js, and used (smaller) under the GSTIN line in the footer. */
+.smag-im-cta {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 14px;
+  background: #8a140c; color: #fff; text-decoration: none;
+  padding: 7px 7px 7px 26px; border-radius: 360px;
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-weight: 500; font-size: 16px; line-height: 1.2;
+  transition: background .25s ease, transform .25s ease;
+}
+.smag-im-cta:hover { background: #6e0f08; transform: translateY(-1px); }
+.smag-im-cta-roll { display: inline-block; overflow: hidden; height: 1.2em; }
+.smag-im-cta-inner { display: flex; flex-direction: column; transition: transform .34s cubic-bezier(.16, 1, .3, 1); }
+.smag-im-cta-inner span { display: block; height: 1.2em; line-height: 1.2em; }
+.smag-im-cta:hover .smag-im-cta-inner { transform: translateY(-1.2em); }
+.smag-im-cta-badge { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; flex: none; }
+.smag-im-cta-badge svg { width: 16px; height: 16px; fill: none; stroke: #8a140c; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Footer IndiaMART pill, sits under the GSTIN line to balance the columns. */
+.smag-footer-im { display: inline-flex; align-items: center; gap: 8px; width: fit-content; margin-top: 16px; background: #8a140c; color: #fff !important; padding: 9px 16px; border-radius: 999px; font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.smag-footer-im:hover { background: #6e0f08; transform: translateY(-1px); color: #fff !important; }
+.smag-footer-im svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }

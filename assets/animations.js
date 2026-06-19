@@ -515,4 +515,27 @@
       }).finally(function () { if (btn) btn.disabled = false; });
     });
   })();
+
+  // IndiaMART CTA: stack a branded button under the Contact button in the CTA
+  // banners (contact + about pages). Most of the business comes through there.
+  // Injected so we avoid editing Framer's minified, multi-variant markup.
+  (function () {
+    var btns = [].slice.call(document.querySelectorAll('a.framer-YHHwL[href="contact.html"]'))
+      .filter(function (a) { return !a.closest('nav'); });
+    btns.forEach(function (btn) {
+      var wrap = btn.closest('[class*="-container"]') || btn;
+      var next = wrap.nextElementSibling;
+      if (next && next.classList && next.classList.contains('smag-im-cta')) return;
+      var a = document.createElement('a');
+      a.className = 'smag-im-cta';
+      a.href = 'https://www.indiamart.com/santosh-magnetic-works/';
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.setAttribute('aria-label', 'View our IndiaMART store');
+      a.innerHTML = '<span class="smag-im-cta-roll"><span class="smag-im-cta-inner">'
+        + '<span>IndiaMART</span><span aria-hidden="true">IndiaMART</span></span></span>'
+        + '<span class="smag-im-cta-badge"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>';
+      wrap.parentNode.insertBefore(a, wrap.nextSibling);
+    });
+  })();
 })();
