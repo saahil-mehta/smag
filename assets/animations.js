@@ -29,6 +29,20 @@
     if (/translate|matrix/.test(el.style.transform)) el.style.transform = 'none';
   });
 
+  // Some appear rest states were exported transform-only (opacity already 1)
+  // with a leftover translateY offset, so the opacity:0 pass above misses them.
+  // Left shifted, their last line is clipped by the overflow:hidden Framer
+  // wrapper (the contact and about-us hero intros lose their final line).
+  // Clear these baked vertical slides. Percentage centring transforms
+  // (translate(-50%,-50%), translateX(-50%)) and managed reveals (opacity:0
+  // start state, re-applied below) are deliberately left untouched.
+  document.querySelectorAll('[style*="translateY"]').forEach(function (el) {
+    if (el.closest('nav[name="Navbar"], [data-framer-name="Nav menu"], #smag-mm, [data-marquee]')) return;
+    if (el.style.opacity === '1' && /^translateY\(\d+(\.\d+)?px\)$/.test(el.style.transform)) {
+      el.style.transform = 'none';
+    }
+  });
+
   // Framer also bakes a `transform: scale(<1)` appear rest state on some
   // component containers, meant to grow to scale(1) on load. Without the runtime
   // these freeze shrunk (e.g. the services cards rendered at half size). Reset
