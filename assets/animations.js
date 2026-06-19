@@ -469,4 +469,50 @@
       return function () { M.animate(el, { scale: 1 }, { type: 'spring', stiffness: 500, damping: 30 }); };
     });
   }
+
+  // Contact form: submit to Web3Forms via fetch so the page does not reload.
+  // Result is shown as a toast; the form resets on success. Progressive
+  // enhancement: with JS off the form still POSTs natively (action on the tag).
+  (function () {
+    var form = document.querySelector('form.framer-1es4jfg');
+    if (!form) return;
+
+    function toast(message, ok) {
+      var t = document.getElementById('smag-toast');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'smag-toast';
+        t.className = 'smag-toast';
+        t.setAttribute('role', 'status');
+        t.setAttribute('aria-live', 'polite');
+        document.body.appendChild(t);
+      }
+      t.textContent = message;
+      t.classList.toggle('is-error', !ok);
+      void t.offsetWidth; // reflow so the slide-in transition runs on re-show
+      t.classList.add('is-shown');
+      clearTimeout(t.__hideTimer);
+      t.__hideTimer = setTimeout(function () { t.classList.remove('is-shown'); }, 5000);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = true;
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form)
+      }).then(function (r) { return r.json(); }).then(function (json) {
+        if (json && json.success) {
+          form.reset();
+          toast('Thanks, your enquiry has been sent. We will be in touch shortly.', true);
+        } else {
+          toast((json && json.message ? json.message : 'Something went wrong') + '. Please email us directly or try again.', false);
+        }
+      }).catch(function () {
+        toast('Network error. Please check your connection and try again.', false);
+      }).finally(function () { if (btn) btn.disabled = false; });
+    });
+  })();
 })();
