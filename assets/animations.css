@@ -1323,6 +1323,7 @@ nav.framer-ur6jyi .framer-nb922b a:hover {
    3) Strength cards (#team) shipped leftover stock/energy photos. Drop the
       photos and present clean icon + text cards. */
 .smag-leadership { order: 4; }
+.framer-1spiafk-container { order: 5; } /* CTA banner: kept Framer's default order 0 and floated up next to the hero; pin it after leadership */
 footer.smag-footer { order: 2000; }
 
 .smag-lead-card { width: min(248px, 100%); }
