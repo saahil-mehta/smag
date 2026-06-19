@@ -1421,7 +1421,7 @@ nav.framer-ur6jyi {
    sibling action. Injected under the Contact button in the CTA banners by
    assets/animations.js, and used (smaller) under the GSTIN line in the footer. */
 .smag-im-cta {
-  display: inline-flex; align-items: center; gap: 10px; margin-top: 14px;
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 30px;
   background: #8a140c; color: #fff; text-decoration: none;
   padding: 7px 7px 7px 26px; border-radius: 360px;
   font-family: "Satoshi", "Satoshi Placeholder", sans-serif; font-weight: 500; font-size: 16px; line-height: 1.2;
