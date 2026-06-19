@@ -59,14 +59,6 @@ nav.framer-ur6jyi { view-transition-name: smag-nav; }
 .smag-imgfade { opacity: 0; }
 .smag-imgfade.smag-imgfade-in { opacity: 1; transition: opacity .6s ease; }
 
-/* Lenis smooth scroll (assets/smooth-scroll.js): required hooks. Lenis adds
-   the .lenis/.lenis-smooth classes to <html> when it is active. */
-html.lenis, html.lenis body { height: auto; }
-.lenis.lenis-smooth { scroll-behavior: auto !important; }
-.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
-.lenis.lenis-stopped { overflow: hidden; }
-.lenis.lenis-smooth iframe { pointer-events: none; }
-
 /* Hero depth treatment.
    The hero image is a flattened render, so the foreground layer repeats
    the same image and clips it around the machinery. This lets the large
@@ -1373,4 +1365,22 @@ footer.smag-footer { order: 2000; }
 /* CTA button arrow glyph: tint red to match home (white circle, red arrow). */
 [data-framer-name="Heading+Button"] .framer-YHHwL .framer-1lzkxbs svg {
   filter: brightness(0) saturate(100%) invert(25%) sepia(94%) saturate(3444%) hue-rotate(353deg) brightness(97%) contrast(89%) !important;
+}
+
+/* ── Drop backdrop-filter blurs (scroll performance) ──────────────────────
+   The Framer template left several backdrop-filter blurs (the nav plus large
+   blur(38px) decorative panels). Safari re-blurs anything on screen every
+   scroll frame, and the cost overflows the per-frame budget on high-refresh
+   displays, dragging scrolling down to ~30-40fps. Native scrolling (Lenis
+   removed) plus no live blur keeps it locked to the display refresh rate. The
+   nav uses a more opaque solid fill so it stays readable without the blur. */
+*, *::before, *::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+nav.framer-ur6jyi {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+[data-framer-name="Navbar"].smag-nav-scrolled nav.framer-ur6jyi {
+  background: rgba(255, 255, 255, 0.95) !important;
 }

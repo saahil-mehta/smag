@@ -161,10 +161,6 @@
   function scrollToTarget(target) {
     if (!target) return;
     var offset = -110;
-    if (window.smagLenis && typeof window.smagLenis.scrollTo === 'function') {
-      window.smagLenis.scrollTo(target, { offset: offset, duration: 1.1 });
-      return;
-    }
     var y = target.getBoundingClientRect().top + window.pageYOffset + offset;
     window.scrollTo({ top: Math.max(0, y), behavior: reduce ? 'auto' : 'smooth' });
   }
