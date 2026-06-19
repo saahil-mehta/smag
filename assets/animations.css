@@ -1416,13 +1416,9 @@ nav.framer-ur6jyi {
   .smag-toast { transition: opacity .2s ease; transform: translate(-50%, 0); }
 }
 
-/* IndiaMART call-out (contact page): most enquiries and orders come through
-   IndiaMART, so surface it prominently as a band above the footer. */
-.smag-indiamart { max-width: 1360px; margin: 0 auto; padding: 16px 40px 80px; }
-.smag-indiamart-inner { background: #fbe3e1; border-radius: 24px; padding: 48px 40px; text-align: center; }
-.smag-indiamart-eyebrow { font-family: "Satoshi","Satoshi Placeholder",sans-serif; text-transform: uppercase; letter-spacing: .1em; color: #e8231a; font-weight: 600; font-size: 13px; margin: 0 0 12px; }
-.smag-indiamart-title { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-weight: 700; font-size: clamp(24px,3.4vw,34px); line-height: 1.12; letter-spacing: -.03em; color: #111; margin: 0 0 14px; }
-.smag-indiamart-text { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-size: 16px; line-height: 1.6; color: #333; margin: 0 auto 26px; max-width: 560px; }
-.smag-indiamart-cta { display: inline-flex; align-items: center; gap: 8px; background: #e8231a; color: #fff; text-decoration: none; font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-weight: 600; font-size: 16px; padding: 14px 26px; border-radius: 999px; transition: transform .2s ease, background .2s ease; }
-.smag-indiamart-cta:hover { background: #c91d15; transform: translateY(-1px); }
-@media (max-width: 600px) { .smag-indiamart { padding: 8px 20px 56px; } .smag-indiamart-inner { padding: 36px 22px; } }
+/* IndiaMART link on the contact page: a quiet line to the trade profile. */
+.smag-indiamart { max-width: 1360px; margin: 0 auto; padding: 8px 40px 72px; text-align: center; }
+.smag-indiamart p { font-family: "Satoshi","Satoshi Placeholder",sans-serif; font-size: 16px; color: #555; margin: 0; }
+.smag-indiamart a { color: #e8231a; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(232, 35, 26, .35); transition: border-color .2s ease; }
+.smag-indiamart a:hover { border-bottom-color: #e8231a; }
+@media (max-width: 600px) { .smag-indiamart { padding: 4px 20px 52px; } }
