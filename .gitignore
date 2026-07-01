@@ -4,3 +4,11 @@
 
 # Local reference: original Framer (with-runtime) pages, for rebuilding animations
 framer-reference/
+
+# Local-only faithful reference mirror (copyrighted third-party content, never commit/deploy)
+reference-mirror/
+
+# Astro build artefacts
+site/dist/
+site/node_modules/
+site/.astro/
