@@ -8,7 +8,8 @@ framer-reference/
 # Local-only faithful reference mirror (copyrighted third-party content, never commit/deploy)
 reference-mirror/
 
-# Astro build artefacts
-site/dist/
-site/node_modules/
-site/.astro/
+# Working copy of the faithful mirror, edited down toward the SMAG site.
+# Local-only, third-party-derived until scrubbed. Quarantined from git so it
+# cannot be committed or deployed by accident. Un-ignore files as they are
+# scrubbed to SMAG's own content (see SCRUB-CHECKLIST.md).
+site/
