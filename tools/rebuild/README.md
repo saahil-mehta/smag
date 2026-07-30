@@ -4,9 +4,17 @@ Transformations applied to `site/`, the local working copy of the Eclipse
 Magnetics mirror, as it is reworked into the SMAG site.
 
 `site/` is git-ignored (it still contains substantial third-party content), so
-these scripts are the only version-controlled record of the work. They are also
-the recovery path: `site/` is reproducible as **pristine mirror + these scripts
-in order**, which has already rescued the working copy twice after a bad sweep.
+these scripts are the only version-controlled record of the work.
+
+They are also a recovery path, but a **machine-local** one, and that limit is
+worth stating plainly. `site/` is reproducible as *pristine mirror + these
+scripts in order*, and that has already rescued the working copy twice after a
+bad sweep. But `reference-mirror/` is git-ignored too, for the same third-party
+reason, so it exists only on this machine. If this machine is lost, the scripts
+have nothing to replay against, and the mirror would have to be re-fetched with
+no guarantee the source site still matches.
+
+Nothing here should be treated as a backup of `site/` itself.
 
 ## Order
 
