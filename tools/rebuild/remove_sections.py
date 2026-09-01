@@ -231,3 +231,24 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+def li_element_end(text: str, start: int) -> int | None:
+    """End of a minified <li> that has no closing tag.
+
+    The site's HTML relies on implicit </li>, so find_element_end cannot
+    bound a list item. A leaf <li> ends at the next sibling <li> or the
+    parent's </ul>/</ol>. If a nested <ul> opens first, the item is a
+    parent (nav dropdowns) and None is returned so callers fall back.
+    """
+    m = TAG_RE.match(text, start)
+    if not m or m.group(2).lower() != "li":
+        return None
+    nxt = re.search(r"<li\b|</li>|</ul>|</ol>|<ul\b|<ol\b", text[m.end():])
+    if not nxt:
+        return None
+    if nxt.group(0).startswith(("<ul", "<ol")):
+        return None
+    if nxt.group(0) == "</li>":
+        return m.end() + nxt.end()
+    return m.end() + nxt.start()
