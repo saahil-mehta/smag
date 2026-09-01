@@ -76,8 +76,9 @@ GALLERIES = {
     ],
     "products/magnetic-separation-and-metal-detection/"
     "deep-field-magnetic-plate-separator": [
-        ("magnetic-plate-magnet-01",
-         "Encapsulated deep field plate magnet"),
+        # client-supplied generated image (assets/source/gemini-image-prompts.md)
+        ("deep-field-plate-01",
+         "Deep field magnetic plate separator with lifting eye bolts"),
     ],
     "products/magnetic-separation-and-metal-detection/"
     "high-intensity-liquid-filter-separator": [
@@ -160,8 +161,8 @@ def main() -> None:
     tile_imgs = {
         "magnetic-separation-and-metal-detection/"
         "deep-field-magnetic-plate-separator":
-            ("magnetic-plate-magnet-01.tile.jpg",
-             "Encapsulated deep field plate magnet"),
+            ("deep-field-plate-01.tile.jpg",
+             "Deep field magnetic plate separator with lifting eye bolts"),
         "magnetic-separation-and-metal-detection/magnetic-strip-separator":
             ("hand-magnet-easy-clean-01.tile.jpg",
              "Hand-held easy-clean magnetic separator"),
@@ -173,11 +174,12 @@ def main() -> None:
     for page in sorted(SITE.rglob("*.html")):
         text = orig = page.read_text(encoding="utf-8")
         for slug, (img, alt) in tile_imgs.items():
+            new_div = (f'<div class=image><img src={SMAG}/{img} width=355 '
+                       f'height=205 alt="{alt}" /></div>')
             text = re.sub(
                 rf"(href=/products/{re.escape(slug)}/ class=alt-swap>)"
-                r"<div class=image></div>",
-                rf'\1<div class=image><img src={SMAG}/{img} width=355 '
-                rf'height=205 alt="{alt}" /></div>', text)
+                r"<div class=image>(?:<img[^>]*>)?</div>",
+                lambda m: m.group(1) + new_div, text)
         if text != orig:
             filled += 1
             if not dry:
