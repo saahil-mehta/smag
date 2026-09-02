@@ -31,7 +31,14 @@ CONTAINER_RES = [
     re.compile(r'<div class="?grid__item\b[^>]*>'),
     re.compile(r'<div class="?swiper-slide\b[^>]*>'),
     re.compile(r"<li\b[^>]*>"),
+    re.compile(r"<div class=c2a>"),  # a call-to-action with nowhere to go
 ]
+
+# In-copy links that swap_domain.py turned into absolute SMAG URLs are
+# internal too. Relativise them inside <a> tags only (canonicals and og:url
+# stay absolute) so the same existence check covers them.
+ABS_INTERNAL_RE = re.compile(
+    r'(<a\s[^>]*?href=["\']?)https?://(?:www\.)?santoshmagneticworks\.com/')
 
 HREF_RE = re.compile(r'<a\s[^>]*?href=(?:"([^"]+)"|([^\s>]+))[^>]*>')
 
@@ -62,6 +69,7 @@ def exists(path: str) -> bool:
 def scrub(text: str) -> tuple[str, int, set[str]]:
     removed = 0
     dead: set[str] = set()
+    text = ABS_INTERNAL_RE.sub(r"\1/", text)
     while True:
         hit = None
         for m in HREF_RE.finditer(text):

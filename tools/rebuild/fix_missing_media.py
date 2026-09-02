@@ -89,6 +89,11 @@ def best_substitute(url: str) -> str | None:
 
 def replace_gallery(text: str, imgs: list[dict], alts: list[str]) -> str:
     i = text.find(GALLERY_OPEN)
+    if i < 0:
+        # A failed find must never fall through: text[:-1] + text[None:]
+        # once duplicated seven tools pages onto themselves
+        # (repair_tools_pages.py is the fix).
+        raise ValueError("page has no product gallery to replace")
     end = find_element_end(text, i)
     slides = "".join(build.slide(im, alt) for im, alt in zip(imgs, alts))
     gallery = (GALLERY_OPEN

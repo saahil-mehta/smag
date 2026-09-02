@@ -36,6 +36,10 @@ SIGS = {
     "optimonk": "OptiMonk",
     "hm.baidu.com": "Baidu Analytics",
     "cookieyes": "CookieYes",
+    # Cloudflare bot-challenge loader baked into the crawl; it injects a
+    # hidden iframe and requests /cdn-cgi/, which 404s on the static host
+    "cdn-cgi/challenge-platform": "Cloudflare challenge",
+    "cloudflare-static/email-decode": "Cloudflare email obfuscation",
 }
 
 BLOCK_RES = [
