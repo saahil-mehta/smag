@@ -8,8 +8,7 @@ framer-reference/
 # Local-only faithful reference mirror (copyrighted third-party content, never commit/deploy)
 reference-mirror/
 
-# Working copy of the faithful mirror, edited down toward the SMAG site.
-# Local-only, third-party-derived until scrubbed. Quarantined from git so it
-# cannot be committed or deployed by accident. Un-ignore files as they are
-# scrubbed to SMAG's own content (see SCRUB-CHECKLIST.md).
-site/
+# site/ is the deployed web root. It was quarantined while it still carried
+# third-party content; it is committed now that every page is SMAG's own
+# copy and every asset is referenced by a page (tools/rebuild/prepare_deploy.py).
+__pycache__/

@@ -28,13 +28,12 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        run: make build
-
+      # site/ is the finished static site: no build step, the rebuild
+      # scripts in tools/rebuild/ are run locally and their output committed
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: site
 
       - name: Deploy
         id: deployment
