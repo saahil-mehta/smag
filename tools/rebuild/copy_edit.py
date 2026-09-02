@@ -21,11 +21,37 @@ SITE = Path("/Users/saahil/Documents/GitHub/smag/site")
 
 EDITS: dict[str, list[tuple[str, str]]] = {
     "index.html": [
+        # second hero slide carried Eclipse's filtration strapline
+        ("<h1 class=regular>Sub-Micron Magnetic Filtration Systems</h1>"
+         "<div class=c2a><a href=/products/filtration-systems/ class=button>"
+         " Discover Filtration Solutions </a>",
+         "<h1 class=regular>Separators, filters, lifters and chucks, made in Mumbai</h1>"
+         "<div class=c2a><a href=/products/magnetic-separation-and-metal-detection/ class=button>"
+         " See the separators </a>"),
+        ("<h1 class=regular>The Industries We Serve</h1>"
+         "<div class=c2a><a href=/industries/ class=button> Read More </a>",
+         "<h1 class=regular>Built for food, plastics, steel, chemical and pharma lines</h1>"
+         "<div class=c2a><a href=/industries/ class=button> See the industries </a>"),
+        # Eclipse tagline row that repeated the Product Families intro and
+        # ended in a colon; removed 2 Sep 2026 (redundancy flagged by Saahil)
+        ('<div class="row row--alt tagline"><div class=row__inner><h4>We '
+         "manufacture high quality magnets, supporting various industries "
+         "with advanced magnetic technology and equipment. Explore our "
+         "business key divisions:</h4></div></div>",
+         ""),
         ("<h3 class=bordered-header>Trusted on production lines across India</h3>"
          "<p class=intro>A selection of the manufacturers who rely on our "
          "magnetic equipment.",
          "<h3 class=bordered-header>Running on production lines across India</h3>"
          "<p class=intro>Some of the manufacturers using our equipment."),
+    ],
+    "company/about-us/index.html": [
+        ('<meta name=keywords content="Magnets. Magnet supplier, Magnetics , Magnetic systems , magnet manufacturer">', ""),
+        ("The same three steps whether you need one stock magnet or a separator built around your line.",
+         "The same three steps for one stock magnet and for a separator built around your line."),
+    ],
+    "products/filtration-systems/index.html": [
+        ('alt="Filtramag+ Magnetic Filter"', 'alt="Filtramag magnetic filter"'),
     ],
     "contact-us/index.html": [
         # "not a call centre" is the kind of thing a works actually says.
@@ -67,6 +93,9 @@ EDITS: dict[str, list[tuple[str, str]]] = {
          "anything sensitive that you would mind being read in transit."),
     ],
     "information/cookie-policy/index.html": [
+        # no embedded video or 3D viewers remain on the site
+        ("<p>A few pages include content served by others, and those services may set\ntheir own cookies if you interact with them:\n<ul>\n<li>Product videos are embedded from YouTube in privacy-enhanced mode, which\ndoes not set tracking cookies unless you play the video.</li>\n<li>Interactive 3D product views are served by an external viewer.</li>\n</ul>\n",
+         "<p>This site embeds no video players, maps or other third party content.\n"),
         ("<p>Cookies are small files a website can store on your device. This "
          "page sets out what this website does and does not use them for.",
          "<p>Cookies are small files a website can store on your device. Here "
