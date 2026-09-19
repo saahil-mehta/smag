@@ -36,7 +36,7 @@ FIXES = {
     "company/about-us/index.html": (
         '<source srcset=/site/assets/images/about-banner.jpg media="(min-width: 768px)" width=1280 height=360>\n',
         ('<img src=/site/assets/images/about-banner-mobile.jpg width=640 height=834 alt=',
-         '<img style="object-position:50% 24%" src=/site/assets/images/about-banner-mobile.jpg width=640 height=834 alt='),
+         '<img style="object-position:50% 15%" src=/site/assets/images/about-banner-mobile.jpg width=640 height=834 alt='),
     ),
     "contact-us/index.html": (
         '<source srcset=/site/assets/images/contact-banner.jpg media="(min-width: 768px)" width=1280 height=360>\n',
