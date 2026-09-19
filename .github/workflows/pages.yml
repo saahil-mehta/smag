@@ -28,12 +28,12 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      # site/ is the finished static site: no build step, the rebuild
-      # scripts in tools/rebuild/ are run locally and their output committed
+      # MAINTENANCE MODE: publishing the holding page in maintenance/ instead
+      # of the full site. To restore the site, change this path back to: site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: maintenance
 
       - name: Deploy
         id: deployment
