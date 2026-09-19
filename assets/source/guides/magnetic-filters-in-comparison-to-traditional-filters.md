@@ -3,8 +3,8 @@ title: Magnetic Filters Compared with Other Filters
 category: Filtration
 description: How magnetic filtration works, how it compares with bag, cartridge and paper filters, and where it fits in a fluid system.
 image: magnetic-liquid-trap-inline-01
-product: /products/filtration-systems/filtramag/
-product_label: Filtramag magnetic filter
+product: /products/filtration-systems/magnetic-coolant-filter/
+product_label: magnetic coolant filter
 home: true
 ---
 Most industrial filters work by blocking. The fluid passes through a mesh, a paper, a bag or a cartridge, and the particles are held back. A magnetic filter works by attraction. The fluid passes over magnets, and iron particles are pulled out of the flow and held on the magnet surface.
@@ -61,4 +61,4 @@ Three things decide the size:
 
 ## The SMAG range
 
-Santosh Magnetic Works builds the [Filtramag magnetic filter](/products/filtration-systems/filtramag/) to order in Mumbai, with connection sizes and magnetic strengths matched to the line, and in-line and housed [magnetic liquid traps](/products/magnetic-separation-and-metal-detection/high-intensity-liquid-filter-separator/) for process pipelines. Every unit is supplied with a tested certificate of magnetic strength. [Contact us](/contact-us/) with the flow rate and the fluid.
+Santosh Magnetic Works builds the [magnetic coolant filter](/products/filtration-systems/magnetic-coolant-filter/) to order in Mumbai, with connection sizes and magnetic strengths matched to the line, and in-line and housed [magnetic liquid traps](/products/magnetic-separation-and-metal-detection/high-intensity-liquid-filter-separator/) for process pipelines. Every unit is supplied with a tested certificate of magnetic strength. [Contact us](/contact-us/) with the flow rate and the fluid.

@@ -7,7 +7,7 @@ meta: Magnetic pipeline filters that remove black powder and rust from oil, gas 
 ### Black powder out of the pipeline
 Black powder is fine iron sulphide and iron oxide formed by corrosion inside steel pipelines. It narrows the pipe, wears compressors, pumps and valves, gives false meter readings and blocks barrier filters that then have to be replaced and disposed of as hazardous waste.
 
-Because it is an iron compound, a magnet holds it. Our Filtramag XT and Ultrafiltrex pipeline filters take it out of the flow at full pressure. The cores are lifted out and cleaned. Nothing is consumed.
+Because it is an iron compound, a magnet holds it. Our inline and modular pipeline filters take it out of the flow at full pressure. The cores are lifted out and cleaned. Nothing is consumed.
 
 ## Where
 ### Where the filters go

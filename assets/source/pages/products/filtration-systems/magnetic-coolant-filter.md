@@ -1,7 +1,7 @@
 ---
 type: product
-title: Filtramag Magnetic Filter
-meta: Filtramag magnetic filter for cutting fluids, coolants, oils and wash liquids. Neodymium rods in a stainless housing, built to order in Mumbai.
+title: Magnetic Coolant Filter
+meta: Magnetic coolant filter for cutting fluids, coolants, oils and wash liquids. Neodymium rods in a stainless housing, built to order in Mumbai.
 ---
 ## Tagline
 Fine iron out of coolants, oils and wash liquids

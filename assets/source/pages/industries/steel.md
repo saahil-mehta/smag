@@ -13,7 +13,7 @@ Rolling, sawing, quenching, threading and washing all put fine steel into the pr
 ### Where the equipment goes
 - Maxx lifters on the crane in plate stores, cutting bays and machine loading
 - Rectangular and circular chucks on grinders and lathes in proof machining
-- Filtramag filters on rolling mill, saw, quench and wash fluid tanks
+- Magnetic coolant filters on rolling mill, saw, quench and wash fluid tanks
 - Sweepers in cutting bays, yards and loading areas
 - Plate magnets over scrap and swarf conveyors
 

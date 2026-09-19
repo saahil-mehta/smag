@@ -13,7 +13,7 @@ Fine swarf in the coolant spoils the finish and scores slideways. A magnetic fil
 ### Where the equipment goes
 - Fine pole rectangular chucks on surface grinders
 - Circular chucks on rotary grinders and lathes
-- Filtramag filters on grinding and machining coolant tanks
+- Magnetic coolant filters on grinding and machining coolant tanks
 - Table top demagnetiser after grinding
 - Maxx lifters for plate and billet handling
 - Alnico and neodymium magnets in fixtures and instruments

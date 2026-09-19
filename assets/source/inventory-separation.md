@@ -81,7 +81,7 @@ Brochure-wide technical data (from "Rare Earth (1).pdf", SMAG's own printed broc
 - Applications: sugar, grain, tea, plastic granulate, powdered chemicals, liquids; building blocks for OEM separator designs.
 - Images: `neodymium-magnetic-rod-01.png` (hero: single plain rod, vertical on white).
 
-## Magnetic filters / high-intensity magnetic liquid traps (Filtramag-type)
+## Magnetic filters / high-intensity magnetic liquid traps (inline filter type)
 
 - Suggested slug: `magnetic-liquid-traps` (or `magnetic-filters`)
 - Flanged stainless housings with a removable cluster of magnetic rods that sit in the liquid flow. Fine ferrous particles held on the rods are cleaned off when the magnet assembly is lifted out. Two IndiaMART-listed builds: an in-line trap and a larger basket-style housing.
