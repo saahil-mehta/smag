@@ -73,6 +73,8 @@ the first group. The rest were applied on top, in roughly this order:
 | `polish_navigation.py` | Home crumb, breadcrumb JSON-LD rebuilt from each page's path, the family `#products` anchor, Brochures wording, canonical links, home slider dots |
 | `fill_industry_products.py` | each industry's Products grid rebuilt from its own Where list, cards copied from the family pages |
 | `polish_copy.py` | Eclipse-era meta titles, home stat and grids wording, dead brochure controls, sitemap page, missing meta descriptions |
+| `restore_gallery_thumbs.py` | regenerates the SMAG gallery thumbnails the prune deleted (it missed quoted `url('/...')`) |
+| `click_to_zoom.py` | relabels the gallery tip and adds a zoom cursor; javascript.js opens the large image in lity on click |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way

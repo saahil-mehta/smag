@@ -181,12 +181,19 @@ $(function () {
     $('.filtered-category .category').addClass('loading');
     $('form.filters').submit();
   });
-  $('.product-zoom').each(function () {
-    var url = $(this).attr('data-zoom');
-    $(this).zoom({
-      url: url,
-      target: $(this).parent('.product__image')
-    });
+  // Click opens the large image in a lightbox. The old hover zoom panned the
+  // image under the pointer, which read as the photo being dragged about.
+  $('.product-zoom').on('click', function () {
+    lity($(this).attr('data-zoom'));
+  });
+  // Most masters are only 500px, the same as the page image, so fill the
+  // screen instead. Capped at twice the real size so small shots stay sharp.
+  $(document).on('lity:ready', function (e, instance) {
+    var img = instance.element().find('.lity-content img').get(0);
+    if (!img || !img.naturalWidth) return;
+    var scale = Math.min(2, 0.9 * window.innerWidth / img.naturalWidth,
+      0.85 * window.innerHeight / img.naturalHeight);
+    if (scale > 1) img.style.width = Math.round(img.naturalWidth * scale) + 'px';
   });
   $('header, .subnav').clone().appendTo('.sticky-header');
   $('input[type="radio"]').parent('label').addClass('radio-label');

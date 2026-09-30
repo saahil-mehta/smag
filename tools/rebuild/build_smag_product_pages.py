@@ -525,7 +525,7 @@ def slide(img: dict, alt: str) -> str:
         f'data-zoom={img["zoom"]}>'
         f'<img src={img["hero"]} width={img["hero_w"]} '
         f'height={img["hero_h"]} alt="{alt}" /></div>'
-        '<p class=zoom-tip><i class="fas fa-search"></i> Hover to zoom</div>'
+        '<p class=zoom-tip><i class="fas fa-search"></i> Click to zoom</div>'
     )
 
 
