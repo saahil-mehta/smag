@@ -8,9 +8,10 @@
 /* smag: logo tagline */
 @font-face{font-family:'Noto Serif';font-style:italic;font-weight:700;font-display:swap;src:url(/site/assets/fonts/notoserif-bolditalic-basic.woff2) format('woff2');unicode-range:U+0020-007E}
 header .logo a{display:flex;flex-direction:column;align-items:flex-start}
-.logo__tagline{display:block;margin:5px 0 0 5px;text-indent:0;white-space:nowrap;font-family:'Noto Serif',Georgia,serif;font-style:italic;font-weight:700;font-size:11px;line-height:1.1;letter-spacing:0;color:#2a2a2a}
+.logo__tagline{display:block;box-sizing:border-box;margin-top:5px;text-indent:0;white-space:nowrap;text-align:center;font-family:'Noto Serif',Georgia,serif;font-style:italic;font-weight:700;line-height:1.1;letter-spacing:0;color:#2a2a2a;width:calc(var(--logo-w) * 521 / 560);margin-left:calc(var(--logo-w) * 19.5 / 560);font-size:calc(var(--logo-w) * 521 / 560 / 16.81)}
 .home header .logo__tagline{color:inherit;text-shadow:0 1px 3px rgba(0,0,0,.45)}
-@media (min-width:1024px){.logo__tagline{margin-left:6px;font-size:12px}}
+header .logo{--logo-w:172px}header .logo img{width:var(--logo-w)}
+@media (min-width:1024px){header .logo{--logo-w:208px}header .logo img{width:var(--logo-w)}}
 
 /* smag: team grid */
 .grid--team{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px;max-width:1000px}
@@ -24,3 +25,51 @@ header .logo a{display:flex;flex-direction:column;align-items:flex-start}
 
 /* smag: click to zoom */
 .product-zoom{cursor:zoom-in}
+
+/* smag: ux polish */
+footer{margin-bottom:0}
+@media (min-width:550px){footer{margin-bottom:0}}
+::selection{background:#E20026;color:#fff}
+a{text-underline-offset:.18em}
+:focus-visible{outline:2px solid #E20026;outline-offset:3px}
+.row--action a:focus-visible,.button:focus-visible,.hc-wa:focus-visible{outline-color:#1B1D1F}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:200;background:#1B1D1F;color:#fff;padding:.7em 1.1em;font-weight:500;text-decoration:none;transition:top .15s ease-out}
+.skip-link:focus{top:12px}.skip-link:hover{color:#fff}
+header nav li.parent:focus-within .children{opacity:1;pointer-events:auto}
+body{--hdr:111px}
+@media (min-width:550px){body{--hdr:125px}}
+.mobile-drawer{top:var(--hdr);height:calc(100% - var(--hdr))}
+header .main-nav{top:var(--hdr);height:calc(100% - var(--hdr))}
+@media (min-width:1280px){header .main-nav{top:0;height:100%}}
+header .other-nav{display:flex;align-items:center}
+.header-contact{display:flex;align-items:center;gap:10px;text-indent:0}
+.header-contact a{display:inline-flex;align-items:center;justify-content:center;gap:.5em;box-sizing:border-box;width:40px;height:40px;text-decoration:none;white-space:nowrap;transition:background-color .15s ease-out,color .15s ease-out,border-color .15s ease-out}
+.header-contact a span{display:none}
+.header-contact i{font-size:17px}
+.hc-call{border:1px solid rgba(27,29,31,.25)}
+.home header .hc-call{border-color:rgba(255,255,255,.55)}
+.sticky-header .hc-call{border-color:rgba(27,29,31,.25)}
+.hc-call:hover{border-color:currentColor}
+.header-contact .hc-wa{background:#E20026;color:#fff}
+.header-contact .hc-wa:hover{background:#b8001f}
+@media (min-width:1280px){
+.header-contact{gap:18px}
+.header-contact a{width:auto;height:auto}
+.header-contact a span{display:inline}
+.header-contact i{font-size:15px}
+.hc-call,.home header .hc-call,.sticky-header .hc-call{border:0;font-weight:500;padding:.5em 0}
+.hc-call:hover span{text-decoration:underline}
+.header-contact .hc-wa{padding:.62em 1.05em;font-weight:500}
+}
+.product__image .zoom-tip{z-index:2;pointer-events:none}
+.statistics .row__inner.statistics__three{grid-template-columns:1fr;grid-gap:28px}
+@media (min-width:768px){.statistics .row__inner.statistics__three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.FormBuilder .InputfieldStateRequired label:not(.checkbox-label):not(.radio-label)::after{content:" *";color:#E20026}
+.home .sticky-header .hc-call{border-color:rgba(27,29,31,.25)}
+.home .sticky-header .logo__tagline{text-shadow:none}
+.FormBuilder label:not(.radio-label):not(.checkbox-label)::after{content:""}
+@media (max-width:1023px){.contact-detail__locations{order:-1}}
+@media (max-width:549px){.locations__item{grid-template-columns:1fr;grid-gap:4px}.locations__item>div:last-child{margin-left:0}}
+footer .footer-columns .address,footer .footer-columns ul,footer .row--bordered p{color:#5F646A}
+footer .row--bordered p{font-size:.7em}
+.breadcrumbs span,.product__gallery .zoom-tip,form .description,form .notes{color:#666A6F}

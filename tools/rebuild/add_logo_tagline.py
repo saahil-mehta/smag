@@ -10,6 +10,9 @@ pinned to weight 700 to match the supplied artwork and subset to Basic Latin.
 Its @font-face sits with the tagline rule in the theme CSS appendix, because
 build_noto_webfonts.py owns fonts.css and rewrites it whole.
 
+polish_ux.py later replaces the tagline size and indent rules with a lockup
+that matches the pill's width; these RULES record the first version.
+
 Usage:
     add_logo_tagline.py --src NotoSerif-Italic[wdth,wght].ttf [--dry-run]
 """

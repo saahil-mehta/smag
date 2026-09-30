@@ -195,6 +195,14 @@ $(function () {
       0.85 * window.innerHeight / img.naturalHeight);
     if (scale > 1) img.style.width = Math.round(img.naturalWidth * scale) + 'px';
   });
+  // The mobile menu opens just below the header, whatever its height.
+  var pageHeader = $('header').first();
+  var setHeaderHeight = function () {
+    document.body.style.setProperty('--hdr', Math.ceil(pageHeader.outerHeight()) + 'px');
+  };
+  setHeaderHeight();
+  $(window).on('resize', setHeaderHeight);
+  if (document.fonts) document.fonts.ready.then(setHeaderHeight);
   $('header, .subnav').clone().appendTo('.sticky-header');
   $('input[type="radio"]').parent('label').addClass('radio-label');
   $('input[type="checkbox"]:not(".category-filter")').parent('label').addClass('checkbox-label');

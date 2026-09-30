@@ -75,6 +75,7 @@ the first group. The rest were applied on top, in roughly this order:
 | `polish_copy.py` | Eclipse-era meta titles, home stat and grids wording, dead brochure controls, sitemap page, missing meta descriptions |
 | `restore_gallery_thumbs.py` | regenerates the SMAG gallery thumbnails the prune deleted (it missed quoted `url('/...')`) |
 | `click_to_zoom.py` | relabels the gallery tip and adds a zoom cursor; javascript.js opens the large image in lity on click |
+| `polish_ux.py` | UX polish: logo and tagline lockup, header call and WhatsApp buttons, skip link and focus ring, keyboard dropdown, menu offset from the real header height, footer band, contact form and mobile order, client logo sizing, footer contrast |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way
