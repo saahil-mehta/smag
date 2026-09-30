@@ -16,3 +16,8 @@ header .logo a{display:flex;flex-direction:column;align-items:flex-start}
 .grid--team{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px;max-width:1000px}
 @media (min-width:768px){.grid--team{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}}
 @media (max-width:549px){.grid--team .team__image h3{font-size:1em;padding:.6em .9em 0 0}}
+
+/* smag: home slider dots */
+.home .home-banner__container .swiper-pagination-bullet{background:#fff;opacity:.6}
+.home .home-banner__container .swiper-pagination-bullet-active{background:#E20026;opacity:1}
+#products{scroll-margin-top:170px}

@@ -98,8 +98,11 @@ $(function () {
   $(".subnav .internal").click(function (e) {
     e.preventDefault();
     var target = $(this).attr('href').substring($(this).attr('href').indexOf('#'));
+    if (!$(target).length) return;
+    // Land below the sticky header and subnav, which would cover the heading.
+    var cover = $('header').first().outerHeight() + $('.subnav').outerHeight();
     $([document.documentElement, document.body]).animate({
-      scrollTop: $(target).offset().top
+      scrollTop: $(target).offset().top - cover
     }, 500);
   });
   if ($(window).width() < 768) {
