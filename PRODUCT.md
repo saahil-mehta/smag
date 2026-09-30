@@ -46,6 +46,8 @@ Success is a **phone call or WhatsApp message** to the works. The enquiry form, 
 - Tagline: "Leaders In Magnetic Engineering", set under the logo.
 - Voice: plain, direct trade writing in UK English. Short sentences, one idea each, common words, one name per product, units written the same way every time. No em dashes, no emojis, no contrastive "X, not Y" constructions, no meta-commentary, no "from X to Y" range formula.
 - Photography of the family, the team and the hero video is SMAG's own.
+- Pinned for design work (30 Sep 2026): the S-MAG red and logo, Noto Sans as the type family, every word of the current copy, and the existing photography. Design rounds change presentation only.
+- The site must never read as cold or sterile, as flashy (heavy scroll effects, parallax), as hiding the call and WhatsApp routes, or as burying specifications.
 
 ## Evidence on Hand
 

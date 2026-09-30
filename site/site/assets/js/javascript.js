@@ -1,11 +1,17 @@
 "use strict";
 
 var body = $('body');
+// The guides row starts at the content edge, so no card is cut at the left.
+var pageSwiperOffset = function () {
+  var inner = document.querySelector('#guides .row__inner');
+  return inner ? inner.getBoundingClientRect().left + parseFloat(getComputedStyle(inner).paddingLeft) : 15;
+};
 var swiper = new Swiper('.page-swiper', {
   slidesPerView: 'auto',
   spaceBetween: 15,
-  loop: true,
-  centeredSlides: true,
+  loop: false,
+  slidesOffsetBefore: pageSwiperOffset(),
+  slidesOffsetAfter: pageSwiperOffset(),
   speed: 600,
   breakpoints: {
     1024: {
@@ -91,9 +97,14 @@ $(function () {
     e.preventDefault();
     $('.tabbed-content__tabs li.active').removeClass('active');
     $(this).parent('li').addClass('active');
-    var target = $(this).attr('data-target');
-    $('.tab-item').hide();
-    $('.tab-item#' + target).show();
+    // Every panel stays on the page, so specifications are never hidden;
+    // the tabs jump to their section below the sticky bars.
+    var target = $('.tab-item#' + $(this).attr('data-target'));
+    if (!target.length) return;
+    var cover = $('header').first().outerHeight() + 16;
+    $([document.documentElement, document.body]).animate({
+      scrollTop: target.offset().top - cover
+    }, 500);
   });
   $(".subnav .internal").click(function (e) {
     e.preventDefault();
@@ -203,6 +214,12 @@ $(function () {
   setHeaderHeight();
   $(window).on('resize', setHeaderHeight);
   if (document.fonts) document.fonts.ready.then(setHeaderHeight);
+  $(window).on('resize', function () {
+    if (swiper && swiper.el && swiper.params) {
+      swiper.params.slidesOffsetBefore = swiper.params.slidesOffsetAfter = pageSwiperOffset();
+      swiper.update();
+    }
+  });
   $('header, .subnav').clone().appendTo('.sticky-header');
   $('input[type="radio"]').parent('label').addClass('radio-label');
   $('input[type="checkbox"]:not(".category-filter")').parent('label').addClass('checkbox-label');
@@ -380,3 +397,41 @@ function showPromoPopup() {
   }
 }
 showPromoPopup();
+// Motion: scroll reveals and soft image arrival. Only what starts below the
+// fold is hidden, so nothing on screen at load ever flickers, and a browser
+// without IntersectionObserver or with reduced motion gets a still page.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  var selector = [
+    '.row__intro', '.content--text_1 > div', '.content--text_2 > div', '.content__body',
+    '.grid--product-category > .grid__item', '.home-categories .grid > .grid__item',
+    '.grid--home-industries > .grid__item', '.grid--industries > .grid__item',
+    '.statistics__item', '.image-text-pair', '.team__item', '.icon_boxes_1__item',
+    '.banner--about .banner__text', '.tab-item', '.clients-strip', '.page-swiper',
+    '.row--action .row__inner', 'body:not(.home) .banner picture'
+  ].join(',');
+  var fold = window.innerHeight * 0.92;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -6% 0px' });
+  var seen = new Map();
+  document.querySelectorAll(selector).forEach(function (el) {
+    if (el.closest('.sticky-header, .mobile-drawer') || el.getBoundingClientRect().top < fold) return;
+    // Siblings in one row arrive in sequence, capped so long grids never lag.
+    var n = seen.get(el.parentNode) || 0;
+    seen.set(el.parentNode, n + 1);
+    el.style.setProperty('--d', Math.min(n % 6, 5) * 70 + 'ms');
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+  document.querySelectorAll('main img').forEach(function (img) {
+    if (img.complete || img.closest('.clients-strip')) return;
+    img.classList.add('fade-in');
+    var done = function () { img.classList.add('is-loaded'); };
+    img.addEventListener('load', done, { once: true });
+    img.addEventListener('error', done, { once: true });
+  });
+})();

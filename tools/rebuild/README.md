@@ -76,6 +76,7 @@ the first group. The rest were applied on top, in roughly this order:
 | `restore_gallery_thumbs.py` | regenerates the SMAG gallery thumbnails the prune deleted (it missed quoted `url('/...')`) |
 | `click_to_zoom.py` | relabels the gallery tip and adds a zoom cursor; javascript.js opens the large image in lity on click |
 | `polish_ux.py` | UX polish: logo and tagline lockup, header call and WhatsApp buttons, skip link and focus ring, keyboard dropdown, menu offset from the real header height, footer band, contact form and mobile order, client logo sizing, footer contrast |
+| `apply_works_catalogue.py` | the Works Catalogue design layer: links `site/assets/css/smag.css` on every page, adds the family thumb-index to family and product pages, and call and WhatsApp buttons to the closing action band |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way
