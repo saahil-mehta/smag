@@ -78,6 +78,7 @@ the first group. The rest were applied on top, in roughly this order:
 | `polish_ux.py` | UX polish: logo and tagline lockup, header call and WhatsApp buttons, skip link and focus ring, keyboard dropdown, menu offset from the real header height, footer band, contact form and mobile order, client logo sizing, footer contrast |
 | `apply_works_catalogue.py` | the Works Catalogue design layer: links `site/assets/css/smag.css` on every page, adds the family thumb-index to family and product pages, and call and WhatsApp buttons to the closing action band |
 | `add_guide_figures.py` | places captioned SMAG photographs and the six line diagrams (`assets/source/diagrams/*.svg`) in the guide sources; run `build_guides.py` after, which inlines the diagrams and adds each guide's Related Products cards |
+| `add_product_animations.py` | places an animated line drawing of the working cycle (`assets/source/animations/*.svg`) under the Overview heading of the easy clean grid, lifter, sweeper, liquid trap and coolant filter pages, with numbered steps above it and a Pause button; smag.css runs each on one loop and javascript.js pauses it off screen. Run after `rewrite_copy.py` |
 | `add_family_guides.py` | after `build_guides.py`: a ruled Guides row on each family page from the guides whose `product` sits in that family, and new guides added to the sitemap page |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 

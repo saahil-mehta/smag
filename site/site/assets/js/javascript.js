@@ -436,6 +436,28 @@ showPromoPopup();
   });
 })();
 
+// Product animations: run only while on screen. Pause stops the loop for
+// the reader; with reduced motion a drawing waits for Play.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.product-anim').forEach(function (fig) {
+    var btn = fig.querySelector('.product-anim__toggle');
+    var held = reduce, seen = true;
+    var apply = function () {
+      fig.classList.toggle('is-paused', held || !seen);
+      fig.classList.toggle('is-playing', !held);
+      btn.textContent = held ? 'Play' : 'Pause';
+    };
+    btn.addEventListener('click', function () { held = !held; apply(); });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        seen = entries[0].isIntersecting; apply();
+      }, { threshold: 0.25 }).observe(fig);
+    }
+    apply();
+  });
+})();
+
 // Wide tables: fade the right edge while columns remain off screen.
 (function () {
   // The theme makes the table itself the scroll box (display: block).

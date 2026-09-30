@@ -607,3 +607,156 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
 }
 .content .guide-figure { width: auto; }
 @media (min-width: 1024px) { .guide-products .grid--product-category { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* ---------- Product animations: the working cycle as a line drawing ----------
+   add_product_animations.py inlines the drawings. Every moving part runs on
+   the figure's one loop, so the steps stay in time with each other.
+   javascript.js adds .is-paused while a drawing is off screen or paused. */
+.product-anim { --loop: 12s; }
+.product-anim svg { overflow: hidden; }
+.product-anim .an, .product-anim .an-lt-w1 circle, .product-anim .an-lt-w2 circle, .product-anim .an-lt-w3 circle {
+  animation-duration: var(--loop); animation-timing-function: cubic-bezier(.45, 0, .25, 1);
+  animation-iteration-count: infinite; animation-fill-mode: both; transform-box: view-box;
+}
+.product-anim.is-paused * { animation-play-state: paused !important; }
+.content .product-anim figcaption, .product-anim figcaption {
+  display: flex; gap: 20px; align-items: center; justify-content: space-between; max-width: none;
+}
+.product-anim__toggle {
+  flex: none; font: 500 13px/1 "Noto Sans", sans-serif; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); padding: 8px 14px; cursor: pointer; transition: border-color .2s var(--ease);
+}
+.product-anim__toggle:hover { border-color: var(--ink); }
+.product-anim__toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+/* the steps share one grid cell and take turns; the ticks show the place in the cycle */
+.product-anim__head { position: relative; padding-bottom: 14px; margin-bottom: 8px; }
+.content .product-anim__steps, .product-anim__steps { display: grid; margin: 0; padding: 0; list-style: none; }
+.content .product-anim__steps li, .product-anim__steps li {
+  grid-area: 1 / 1; opacity: 0; margin: 0; padding: 0; list-style: none;
+  font-size: 1.0625em; font-weight: 600; line-height: 1.4; color: var(--ink);
+}
+.content .product-anim__steps li::before { content: none; }
+.product-anim__n { display: inline-block; min-width: 1.6em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.product-anim__ticks, .product-anim__steps li::after { position: absolute; bottom: 0; height: 3px; }
+.product-anim__ticks { left: 0; display: flex; gap: 4px; }
+.product-anim__ticks i { width: 40px; height: 3px; background: var(--rule); }
+.product-anim__steps li::after { content: ""; left: calc(var(--k) * 44px); width: 40px; background: var(--ink); }
+@media (max-width: 549px) {
+  .product-anim { overflow: visible; }
+  .product-anim svg { min-width: 0 !important; }
+  .product-anim .dg-label { font-size: 19px; }
+}
+.an-nail path { fill: none; stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; }
+
+/* continuous parts: falling product and moving liquid */
+.product-anim .an-stream { animation: an-fall .9s linear infinite; }
+@keyframes an-fall { to { transform: translateY(60px); } }
+.product-anim .an-dash { animation: an-dash .8s linear infinite; }
+@keyframes an-dash { to { stroke-dashoffset: -10; } }
+
+/* easy clean grid, 12s */
+.an-ec-product { animation-name: an-ec-product; }
+@keyframes an-ec-product { 0%, 34% { opacity: 1; } 40%, 86% { opacity: 0; } 92%, 100% { opacity: 1; } }
+.an-ec-w1 { animation-name: an-ec-w1; }
+.an-ec-w2 { animation-name: an-ec-w2; }
+.an-ec-w3 { animation-name: an-ec-w3; }
+@keyframes an-ec-w1 { 0%, 3% { opacity: 0; } 6%, 100% { opacity: 1; } }
+@keyframes an-ec-w2 { 0%, 13% { opacity: 0; } 16%, 100% { opacity: 1; } }
+@keyframes an-ec-w3 { 0%, 23% { opacity: 0; } 26%, 100% { opacity: 1; } }
+.an-ec-drop { animation-name: an-ec-drop; }
+@keyframes an-ec-drop {
+  0%, 55% { transform: none; opacity: 1; animation-timing-function: cubic-bezier(.5, 0, .9, .6); }
+  68% { transform: translateY(170px); opacity: 0; } 69%, 100% { transform: none; opacity: 0; }
+}
+.an-ec-cores { animation-name: an-ec-cores; }
+@keyframes an-ec-cores { 0%, 40% { transform: none; } 52%, 72% { transform: translateX(236px); } 86%, 100% { transform: none; } }
+.an-ec-s1 { animation-name: an-ec-s1; } .an-ec-s2 { animation-name: an-ec-s2; }
+.an-ec-s3 { animation-name: an-ec-s3; } .an-ec-s4 { animation-name: an-ec-s4; }
+@keyframes an-ec-s1 { 0%, 36% { opacity: 1; } 38%, 100% { opacity: 0; } }
+@keyframes an-ec-s2 { 0%, 38% { opacity: 0; } 40%, 53% { opacity: 1; } 55%, 100% { opacity: 0; } }
+@keyframes an-ec-s3 { 0%, 55% { opacity: 0; } 57%, 70% { opacity: 1; } 72%, 100% { opacity: 0; } }
+@keyframes an-ec-s4 { 0%, 72% { opacity: 0; } 74%, 98% { opacity: 1; } 100% { opacity: 0; } }
+
+/* permanent magnetic lifter, 10s */
+.product-anim:has(.an-lf-lift) { --loop: 10s; }
+.an-lf-lift { animation-name: an-lf-lift; }
+@keyframes an-lf-lift {
+  0%, 26% { transform: none; } 40%, 50% { transform: translateY(-120px); } 62%, 72% { transform: none; }
+  82%, 88% { transform: translateY(-70px); } 98%, 100% { transform: none; }
+}
+.an-lf-load { animation-name: an-lf-load; }
+@keyframes an-lf-load { 0%, 26% { transform: none; } 40%, 50% { transform: translateY(-120px); } 62%, 100% { transform: none; } }
+.product-anim .an-lf-handle { animation-name: an-lf-handle; transform-box: fill-box; transform-origin: 0 50%; }
+@keyframes an-lf-handle { 0%, 12% { transform: rotate(30deg); } 20%, 64% { transform: rotate(-60deg); } 70%, 100% { transform: rotate(30deg); } }
+.an-lf-field { animation-name: an-lf-field; }
+@keyframes an-lf-field { 0%, 17% { opacity: 0; } 22%, 64% { opacity: 1; } 68%, 100% { opacity: 0; } }
+.an-lf-s1 { animation-name: an-lf-s1; } .an-lf-s2 { animation-name: an-lf-s2; }
+.an-lf-s3 { animation-name: an-lf-s3; } .an-lf-s4 { animation-name: an-lf-s4; }
+@keyframes an-lf-s1 { 0%, 11% { opacity: 1; } 13%, 100% { opacity: 0; } }
+@keyframes an-lf-s2 { 0%, 13% { opacity: 0; } 15%, 25% { opacity: 1; } 27%, 100% { opacity: 0; } }
+@keyframes an-lf-s3 { 0%, 27% { opacity: 0; } 29%, 62% { opacity: 1; } 64%, 100% { opacity: 0; } }
+@keyframes an-lf-s4 { 0%, 64% { opacity: 0; } 66%, 97% { opacity: 1; } 99%, 100% { opacity: 0; } }
+
+/* magnetic sweeper, 12s: rolls at an even pace, so the pick up times match
+   where the bar passes each group of nails */
+.an-sw-sweep { animation-name: an-sw-sweep; }
+@keyframes an-sw-sweep {
+  0%, 4% { transform: none; opacity: 1; animation-timing-function: linear; }
+  38% { transform: translateX(240px); opacity: 1; }
+  50%, 66% { transform: translate(450px, -70px); opacity: 1; }
+  76% { transform: translate(450px, -70px); opacity: 0; } 77%, 86% { transform: none; opacity: 0; }
+  94%, 100% { transform: none; opacity: 1; }
+}
+.product-anim .an-sw-wheel { animation-name: an-sw-wheel; transform-box: fill-box; transform-origin: 50% 50%; }
+@keyframes an-sw-wheel { 0%, 4% { transform: none; animation-timing-function: linear; } 38%, 100% { transform: rotate(982deg); } }
+.product-anim .an-sw-lever { animation-name: an-sw-lever; transform-box: fill-box; transform-origin: 0 0; }
+@keyframes an-sw-lever { 0%, 52% { transform: none; } 56%, 64% { transform: rotate(-24deg); } 68%, 100% { transform: none; } }
+.an-sw-f1 { animation-name: an-sw-f1; } .an-sw-f2 { animation-name: an-sw-f2; }
+.an-sw-f3 { animation-name: an-sw-f3; } .an-sw-f4 { animation-name: an-sw-f4; }
+.an-sw-b1 { animation-name: an-sw-b1; } .an-sw-b2 { animation-name: an-sw-b2; }
+.an-sw-b3 { animation-name: an-sw-b3; } .an-sw-b4 { animation-name: an-sw-b4; }
+@keyframes an-sw-f1 { 0%, 17% { opacity: 1; } 18%, 82% { opacity: 0; } 90%, 100% { opacity: 1; } }
+@keyframes an-sw-f2 { 0%, 23% { opacity: 1; } 24%, 82% { opacity: 0; } 90%, 100% { opacity: 1; } }
+@keyframes an-sw-f3 { 0%, 29% { opacity: 1; } 30%, 82% { opacity: 0; } 90%, 100% { opacity: 1; } }
+@keyframes an-sw-f4 { 0%, 34.5% { opacity: 1; } 35.5%, 82% { opacity: 0; } 90%, 100% { opacity: 1; } }
+@keyframes an-sw-b1 { 0%, 17% { opacity: 0; } 18%, 100% { opacity: 1; } }
+@keyframes an-sw-b2 { 0%, 23% { opacity: 0; } 24%, 100% { opacity: 1; } }
+@keyframes an-sw-b3 { 0%, 29% { opacity: 0; } 30%, 100% { opacity: 1; } }
+@keyframes an-sw-b4 { 0%, 34.5% { opacity: 0; } 35.5%, 100% { opacity: 1; } }
+.an-sw-drop { animation-name: an-sw-drop; }
+@keyframes an-sw-drop {
+  0%, 57% { transform: none; opacity: 1; animation-timing-function: cubic-bezier(.5, 0, .9, .6); }
+  63% { transform: translateY(66px); opacity: 1; } 64%, 100% { transform: none; opacity: 0; }
+}
+.an-sw-pile { animation-name: an-sw-pile; }
+@keyframes an-sw-pile { 0%, 62.5% { opacity: 0; } 63.5%, 90% { opacity: 1; } 97%, 100% { opacity: 0; } }
+.an-sw-s1 { animation-name: an-sw-s1; } .an-sw-s2 { animation-name: an-sw-s2; } .an-sw-s3 { animation-name: an-sw-s3; }
+@keyframes an-sw-s1 { 0%, 37% { opacity: 1; } 39%, 100% { opacity: 0; } }
+@keyframes an-sw-s2 { 0%, 39% { opacity: 0; } 41%, 51% { opacity: 1; } 53%, 100% { opacity: 0; } }
+@keyframes an-sw-s3 { 0%, 53% { opacity: 0; } 55%, 88% { opacity: 1; } 90%, 100% { opacity: 0; } }
+
+/* liquid trap and coolant filter, 12s */
+.an-lt-flow { animation-name: an-lt-flow; }
+@keyframes an-lt-flow { 0%, 44% { opacity: 1; } 48%, 88% { opacity: 0; } 92%, 100% { opacity: 1; } }
+.an-lt-w1 circle { animation-name: an-lt-c1; }
+.an-lt-w2 circle { animation-name: an-lt-c2; }
+.an-lt-w3 circle { animation-name: an-lt-c3; }
+@keyframes an-lt-c1 { 0% { transform: translate(var(--fx), var(--fy)); opacity: 0; } 2% { opacity: 1; } 11%, 100% { transform: none; opacity: 1; } }
+@keyframes an-lt-c2 { 0%, 11% { transform: translate(var(--fx), var(--fy)); opacity: 0; } 13% { opacity: 1; } 22%, 100% { transform: none; opacity: 1; } }
+@keyframes an-lt-c3 { 0%, 22% { transform: translate(var(--fx), var(--fy)); opacity: 0; } 24% { opacity: 1; } 33%, 100% { transform: none; opacity: 1; } }
+.an-lt-iron { animation-name: an-lt-iron; }
+@keyframes an-lt-iron { 0%, 64% { opacity: 1; } 74%, 100% { opacity: 0; } }
+.an-lt-lift { animation-name: an-lt-lift; }
+@keyframes an-lt-lift { 0%, 48% { transform: none; } 60%, 80% { transform: translateY(-160px); } 91%, 100% { transform: none; } }
+.an-lt-s1 { animation-name: an-lt-s1; } .an-lt-s2 { animation-name: an-lt-s2; }
+.an-lt-s3 { animation-name: an-lt-s3; } .an-lt-s4 { animation-name: an-lt-s4; }
+@keyframes an-lt-s1 { 0%, 45% { opacity: 1; } 47%, 100% { opacity: 0; } }
+@keyframes an-lt-s2 { 0%, 47% { opacity: 0; } 49%, 62% { opacity: 1; } 64%, 100% { opacity: 0; } }
+@keyframes an-lt-s3 { 0%, 64% { opacity: 0; } 66%, 78% { opacity: 1; } 80%, 100% { opacity: 0; } }
+@keyframes an-lt-s4 { 0%, 80% { opacity: 0; } 82%, 98% { opacity: 1; } 100% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  /* held on a frame that shows the product at work until Play is pressed */
+  .product-anim:not(.is-playing) * { animation-play-state: paused !important; }
+  .product-anim .an, .product-anim circle { animation-delay: calc(var(--loop) * -.33) !important; }
+}

@@ -1,0 +1,33 @@
+<svg viewBox="0 60 720 340" xmlns="http://www.w3.org/2000/svg">
+  <path class="dg-wall" d="M20 352 H700"/>
+  <!-- bin -->
+  <path class="dg-body" d="M468 290 L482 352 H634 L648 290"/>
+  <text class="dg-label" x="558" y="380" text-anchor="middle">Bin</text>
+  <g class="an an-sw-pile an-nail">
+    <path d="M506 346 L516 341"/><path d="M522 348 H534"/><path d="M540 344 L548 349"/><path d="M556 347 H568"/><path d="M574 342 L582 348"/><path d="M590 347 L600 343"/>
+  </g>
+  <!-- nails, screws and swarf on the floor -->
+  <g class="an-nail">
+    <g class="an an-sw-f1"><path d="M190 349 L198 345"/><path d="M204 350 H214"/></g>
+    <g class="an an-sw-f2"><path d="M232 350 H242"/><path d="M246 346 L252 350"/></g>
+    <g class="an an-sw-f3"><path d="M272 349 L280 345"/><path d="M286 350 H294"/></g>
+    <g class="an an-sw-f4"><path d="M312 350 H322"/><path d="M326 345 L332 350"/></g>
+  </g>
+  <!-- the sweeper -->
+  <g class="an an-sw-sweep">
+    <g class="an an-sw-wheel"><circle class="dg-body" cx="30" cy="338" r="14"/><path class="dg-leader" d="M30 326 V350"/></g>
+    <g class="an an-sw-wheel"><circle class="dg-body" cx="170" cy="338" r="14"/><path class="dg-leader" d="M170 326 V350"/></g>
+    <rect class="dg-steel" x="16" y="300" width="168" height="26" rx="3"/>
+    <rect class="dg-magnet" x="22" y="326" width="156" height="8"/>
+    <path class="dg-wall" d="M160 300 L250 160"/>
+    <path class="dg-hook" d="M244 150 L262 162"/>
+    <g class="an an-sw-lever"><path class="dg-wall" d="M243 171 L262 184"/></g>
+    <g class="an an-sw-drop an-nail">
+      <g class="an an-sw-b1"><path d="M110 338 L116 344"/><path d="M122 337 V345"/></g>
+      <g class="an an-sw-b2"><path d="M88 337 V344"/><path d="M94 338 L99 344"/></g>
+      <g class="an an-sw-b3"><path d="M132 338 L138 344"/><path d="M146 337 V345"/></g>
+      <g class="an an-sw-b4"><path d="M64 337 V345"/><path d="M72 338 L77 344"/></g>
+    </g>
+  </g>
+  <text class="dg-label" x="40" y="384">Nails and swarf on the floor</text>
+</svg>

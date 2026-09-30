@@ -240,7 +240,7 @@ Every page ends on a Works Ink band: the invitation in white at clamp(1.375rem, 
 - **Do** keep red to the primary button, WhatsApp, and the focus, caret, selection and required states.
 - **Do** mark hierarchy with type scale and 1px rules; head every reading list or table with an ink rule.
 - **Do** keep every corner square and every border 1px, Hairline at rest and Ink for state.
-- **Do** use the single ease `cubic-bezier(.16, 1, .3, 1)` for every transition and animation, and switch motion off under reduced motion.
+- **Do** use the single ease `cubic-bezier(.16, 1, .3, 1)` for every transition and animation, and switch motion off under reduced motion. The one exception is the product animations, line drawings of a working cycle, whose parts move with an ease-in-out `cubic-bezier(.45, 0, .25, 1)` like machinery. They run only on screen, have a Pause button, and under reduced motion wait on one frame for Play.
 - **Do** end every page with the ink action band carrying call and WhatsApp.
 - **Do** set figures with tabular, lining numerals.
 

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+  <path class="dg-wall" d="M120 352 H600"/>
+  <!-- the load -->
+  <g class="an an-lf-load">
+    <rect class="dg-plate" x="200" y="322" width="320" height="30"/>
+    <text class="dg-label" x="190" y="342" text-anchor="end">Steel plate</text>
+  </g>
+  <!-- lifter on the crane hook -->
+  <g class="an an-lf-lift">
+    <path class="dg-wall" d="M360 -160 V214"/>
+    <circle class="dg-hook" cx="360" cy="226" r="12"/>
+    <path class="dg-body" d="M342 262 V248 Q342 238 352 238 H368 Q378 238 378 248 V262"/>
+    <rect class="dg-steel" x="290" y="262" width="140" height="52" rx="3"/>
+    <rect class="dg-magnet" x="292" y="314" width="136" height="8"/>
+    <g class="an an-lf-field">
+      <path class="dg-field" d="M304 322 Q330 346 356 322"/>
+      <path class="dg-field" d="M364 322 Q390 346 416 322"/>
+      <path class="dg-field" d="M298 322 Q360 366 422 322"/>
+    </g>
+    <g class="an an-lf-handle">
+      <path class="dg-wall" d="M430 288 H486"/>
+      <circle class="dg-body" cx="492" cy="288" r="6"/>
+    </g>
+    <circle class="dg-dot" cx="430" cy="288" r="4"/>
+    <text class="dg-label" x="512" y="252">Handle</text>
+  </g>
+</svg>

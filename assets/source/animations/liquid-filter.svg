@@ -1,0 +1,38 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="lt-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" class="dg-arrowhead"/></marker></defs>
+  <!-- pipes and housing -->
+  <path class="dg-body" d="M260 180 V250 H40 V282 H260 V360 H460 V282 H680 V250 H460 V180"/>
+  <!-- flow -->
+  <g class="an an-lt-flow">
+    <path class="dg-flow an an-dash" d="M52 266 H250"/>
+    <path class="dg-flow an an-dash" marker-end="url(#lt-arrow)" d="M470 266 H668"/>
+  </g>
+  <text class="dg-label" x="44" y="306">Liquid in</text>
+  <text class="dg-label" x="676" y="306" text-anchor="end">Clean liquid out</text>
+  <!-- lid and rod cluster, lifted out to clean -->
+  <g class="an an-lt-lift">
+    <path class="dg-hook" d="M330 168 V148 H390 V168"/>
+    <rect class="dg-steel" x="250" y="168" width="220" height="12"/>
+    <g class="dg-rod">
+      <rect x="300" y="182" width="20" height="160" rx="10"/>
+      <rect x="350" y="182" width="20" height="160" rx="10"/>
+      <rect x="400" y="182" width="20" height="160" rx="10"/>
+    </g>
+    <path class="dg-leader" d="M421 214 H500"/><circle class="dg-dot" cx="421" cy="214" r="2.5"/>
+    <text class="dg-label" x="506" y="218">Magnetic rods</text>
+    <g class="an an-lt-iron dg-iron">
+      <g class="an an-lt-w1">
+        <circle cx="297" cy="236" r="2.8" style="--fx:-236px;--fy:30px"/><circle cx="297" cy="262" r="2.4" style="--fx:-230px;--fy:4px"/>
+        <circle cx="297" cy="290" r="2.8" style="--fx:-238px;--fy:-24px"/><circle cx="347" cy="220" r="2.4" style="--fx:-22px;--fy:18px"/>
+      </g>
+      <g class="an an-lt-w2">
+        <circle cx="297" cy="212" r="2.4" style="--fx:-236px;--fy:54px"/><circle cx="323" cy="250" r="2.6" style="--fx:10px;--fy:24px"/>
+        <circle cx="347" cy="300" r="2.8" style="--fx:-18px;--fy:-20px"/><circle cx="397" cy="244" r="2.6" style="--fx:-22px;--fy:20px"/>
+      </g>
+      <g class="an an-lt-w3">
+        <circle cx="297" cy="318" r="2.6" style="--fx:-234px;--fy:-52px"/><circle cx="373" cy="276" r="2.4" style="--fx:12px;--fy:-18px"/>
+        <circle cx="397" cy="310" r="2.4" style="--fx:-20px;--fy:-16px"/><circle cx="423" cy="232" r="2.8" style="--fx:14px;--fy:22px"/>
+      </g>
+    </g>
+  </g>
+</svg>
