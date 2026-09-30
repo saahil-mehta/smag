@@ -66,7 +66,7 @@ def build_strip(logos: list[tuple[str, str]], heading: str, sub: str) -> str:
     # A closing label so the strip reads as a sample, not the full list.
     more = (
         '<span style="height:60px;display:flex;align-items:center;'
-        "font-weight:600;font-size:.95em;color:#6b6770;flex:0 0 auto">"
+        'font-weight:600;font-size:.95em;color:#6b6770;flex:0 0 auto">'
         "+ many more</span>"
     )
     return (

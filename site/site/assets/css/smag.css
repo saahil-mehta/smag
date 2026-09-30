@@ -488,8 +488,8 @@ header .main-nav > ul > li > a:hover, header .main-nav > ul > li:focus-within > 
 .thumb-index a[aria-current] { background-size: 100% 2px; border-bottom-color: transparent; }
 
 /* Client register: quiet until you look. */
-.clients-strip img { filter: grayscale(1); opacity: .72; transition: filter .45s var(--ease), opacity .45s var(--ease); }
-.clients-strip img:hover { filter: none; opacity: 1; }
+.clients-strip img { transition: filter .45s var(--ease), opacity .45s var(--ease), transform .45s var(--ease); }
+.clients-strip img:hover { filter: grayscale(1); opacity: .72; transform: scale(.96); }
 
 /* The sticky header arrives instead of appearing. */
 .sticky-header header { animation: drop .45s var(--ease) both; }
@@ -550,7 +550,7 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
 
 /* Client register: a logo supplied on a black ground reads as a block. */
 .clients-strip img[alt="Smoor"] { filter: invert(1) grayscale(1); mix-blend-mode: multiply; }
-.clients-strip img[alt="Smoor"]:hover { filter: invert(1) grayscale(1); opacity: 1; }
+.clients-strip img[alt="Smoor"]:hover { filter: invert(1) grayscale(1); opacity: .72; }
 
 /* Six portraits span the full column. */
 .grid--team { max-width: none; }
