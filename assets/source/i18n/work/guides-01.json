@@ -1,0 +1,477 @@
+[
+ {
+  "id": "fa263ab0cecc",
+  "en": "Are All Metals Magnetic? | Santosh Magnetic Works",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "2cd52f74fcc7",
+  "en": "{1}Guides{/1} / Are All Metals Magnetic?",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "02ff9cb2b720",
+  "en": "Basics guide",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "cddeffac04d9",
+  "en": "Back to Guides",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "e18bfe7df4fd",
+  "en": "Only a few metals are attracted to a magnet. Iron is the main one. Most other metals, such as aluminium, copper, brass and lead, are passed over by a magnet.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "fdd4d9700129",
+  "en": "This guide explains which metals are magnetic, why, and what that means when you use magnets to protect a product line.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "b937e95fa948",
+  "en": "The metals a magnet will pick up",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "172d9422976c",
+  "en": "Three common metals are strongly magnetic:",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "710b88af44c4",
+  "en": "Iron, and every steel made mainly from iron",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "d8daafdcf1eb",
+  "en": "Nickel",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "c509eac2111b",
+  "en": "Cobalt",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "2c63d89e27e7",
+  "en": "These are called ferromagnetic metals. A magnet pulls them with real force. A steel bolt, a nail, a piece of swarf and a broken machine part are all picked up easily.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "a663c4f3f504",
+  "en": "Some rare metals are also magnetic, such as gadolinium. These are unusual in a factory and you will seldom meet them.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "2add8dbd5ce1",
+  "en": "The metals a magnet will pass over",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "db82d7dfdc0d",
+  "en": "Most metals are not attracted to a magnet in any useful way. Common examples are:",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "84ded5cac96b",
+  "en": "Aluminium",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "392696b69184",
+  "en": "Copper",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "4ed497f33d16",
+  "en": "Brass and bronze",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "c6f71d85aeaa",
+  "en": "Lead",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "1a8da3e397e6",
+  "en": "Zinc",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "26d187b3e4a4",
+  "en": "Gold and silver",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "6d1def3d0857",
+  "en": "Titanium",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "28cabf412ff4",
+  "en": "A magnet has no useful pull on these. A magnetic separator will leave them in the product. If these metals are a risk on your line, a magnet alone will not remove them.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "1923744ca0ba",
+  "en": "Why some metals are magnetic",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "3212b17bdf33",
+  "en": "Every atom acts like a very small magnet. In most materials these small magnets point in random directions, so they cancel each other out. In iron, nickel and cobalt, the atoms line up in small groups called domains. When a magnet comes near, the domains turn to face the same way and the metal is pulled towards it.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "efa26a87fe90",
+  "en": "The strength of the pull depends on how much iron the metal contains, how the metal was made, and its shape. A thin, sharp piece is pulled less strongly than a solid block of the same weight.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "8aaa09113e44",
+  "en": "Stainless steel is a special case",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "5db7b5cb88c5",
+  "en": "Stainless steel is made mostly from iron, so many people expect all of it to be magnetic. Some grades are, and some are not. Grades 304 and 316, which are common in food and chemical plants, are only weakly magnetic. Grades such as 430 are strongly magnetic. See our guide {1}Are All Stainless Steels Magnetic?{/1} for the detail.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "7721e2d63bca",
+  "en": "Work hardening changes this. When a 304 stainless part is cut, bent or ground, the worked area becomes weakly magnetic. A high strength separator will still catch most fine stainless particles from wear on stainless equipment.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "08e951520ab1",
+  "en": "What this means on a production line",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "ef7df8313eb9",
+  "en": "Most metal contamination in a factory is iron or steel. It comes from worn machine parts, screens, bolts, tools and the raw material itself. A magnetic separator removes this at low cost, with no power and very little maintenance.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "4b10b0fda520",
+  "en": "A SMAG neodymium separator rod in a sealed stainless steel tube.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "1c85a403e9f9",
+  "en": "The strength of the magnet decides how small a particle it can hold. Standard rods of 7,000 to 8,000 gauss remove ordinary tramp iron. High strength rods of 9,500 gauss and above hold fine particles and weakly magnetic stainless steel.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "b7e08e70a491",
+  "en": "Aluminium, copper and brass need another method, such as a metal detector or a sieve.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "ed18e1c913cd",
+  "en": "The SMAG range",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "e7b3099266ad",
+  "en": "Santosh Magnetic Works makes magnetic rods, grids, drawer housings, liquid traps and plate magnets in strengths up to 13,500 gauss. Every unit is supplied with a tested certificate of magnetic strength. See the full {1}magnetic separation range{/1} or {3}contact us{/3} with a sample of your contamination and we will advise the right strength.",
+  "page": "resources/guides/are-all-metals-magnetic/index.html"
+ },
+ {
+  "id": "8c03b43d390c",
+  "en": "Are All Stainless Steels Magnetic? | Santosh Magnetic Works",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "f656322948b1",
+  "en": "{1}Guides{/1} / Are All Stainless Steels Magnetic?",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "22e1ac2d1bcb",
+  "en": "Some stainless steels are magnetic and some are not. It depends on the grade. Grade 430 is strongly magnetic. Grades 304 and 316 are weakly magnetic or not magnetic at all.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "29cf7f378866",
+  "en": "This matters in food, pharmaceutical and chemical plants, where most equipment is made from stainless steel and wear particles from that equipment can end up in the product.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "4c18df2c7222",
+  "en": "What stainless steel is",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "c032e7482346",
+  "en": "Stainless steel is an alloy. It is mostly iron, with at least 10.5 percent chromium. The chromium forms a thin layer on the surface that stops rust. Nickel, molybdenum, carbon and other elements are added to change the strength and the corrosion resistance.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "4aeadbeabfd8",
+  "en": "The mix of elements changes the crystal structure of the steel. The crystal structure decides whether the steel is magnetic.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "25dd81bef2a3",
+  "en": "The main families of stainless steel",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "96a3cc56963d",
+  "en": "There are five families.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "db04c26aab46",
+  "en": "{1}Ferritic stainless steels{/1} are magnetic. They contain chromium and little or no nickel. Grades 409, 430 and 439 are ferritic. They are used in car exhausts, kitchen appliances and cheaper fittings.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "d7f36c9ab283",
+  "en": "{1}Martensitic stainless steels{/1} are magnetic. They contain more carbon and can be hardened. Grades 410, 420 and 440 are martensitic. Knife blades, valve parts and shafts are often made from them.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "e4ae9ff932e1",
+  "en": "{1}Austenitic stainless steels{/1} are not magnetic in their normal state. They contain nickel, which changes the crystal structure. Grades 304 and 316 are austenitic. Most food and pharmaceutical equipment, tanks, pipes and screens are made from these grades.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "f4c9d134d4fa",
+  "en": "{1}Duplex stainless steels{/1} are a mix of ferritic and austenitic. They are magnetic and very corrosion resistant. They are used in chemical plants and in oil and gas.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "c6d5a573ca77",
+  "en": "{1}Precipitation hardened stainless steels{/1} are magnetic. They are used in aerospace and in high strength parts.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "d5ca220336c5",
+  "en": "Why 304 and 316 can still be caught",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "55fafb1acf66",
+  "en": "Austenitic steel becomes partly magnetic when it is worked. Cutting, bending, grinding and rubbing change the crystal structure in the worked area. A screen that has been vibrating for years, a blade that has been sharpened, or a pipe that has been bent will all show a weak pull.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "fe7676625d94",
+  "en": "The fine particles that wear off stainless equipment are work hardened by the wear itself. This is why a high strength magnet can remove them, even though the parent metal seems to ignore a magnet.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "7c2305643593",
+  "en": "The pull is weak, so the magnet must be strong and the particle must pass close to it. Standard strength rods will miss most of these particles. Rods of 9,500 gauss and above hold them.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "ea4bb4da23fb",
+  "en": "A simple test",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "a43ea5c21a91",
+  "en": "Hold a small permanent magnet against the metal.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "3e3d7d67d95d",
+  "en": "A firm pull means a ferritic, martensitic or duplex grade.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "5332dfe4dd9c",
+  "en": "A weak pull, or a pull only at cut edges and welds, points to a worked austenitic grade such as 304.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "6df920cc6df6",
+  "en": "No pull at all means an austenitic grade in its soft state.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "5895896ac099",
+  "en": "A gauss meter gives a more useful measurement when you need to check the strength of a separator itself.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "d78e9aa85ae4",
+  "en": "Choosing a separator for stainless contamination",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "f28c386e7484",
+  "en": "Use the highest practical strength. SMAG rods are made in four tiers, up to 13,500 gauss.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "e51cf7eea89e",
+  "en": "Keep the product path close to the magnet. Grids and drawer housings space the rods so that every particle passes within a few millimetres of a rod.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "d566d6164221",
+  "en": "Clean the rods often. A rod covered in collected iron has a weaker surface field.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "1d34dcd07070",
+  "en": "Check the strength once a year with a gauss meter against the certificate supplied with the unit.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "0ad2eb4f0dc0",
+  "en": "A stainless cased magnetic rod cartridge.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "e83b47def913",
+  "en": "Santosh Magnetic Works makes {1}neodymium magnetic rods{/1} in 304 stainless tubes, in standard, high, super high and extreme high strength. Every rod is supplied with a tested certificate of magnetic strength. {3}Contact us{/3} with a sample and we will test how well it is held.",
+  "page": "resources/guides/are-all-stainless-steels-magnetic/index.html"
+ },
+ {
+  "id": "a98d07113308",
+  "en": "HACCP and Critical Control Points for Metal | Santosh Magnetic Works",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "91dd88417186",
+  "en": "{1}Guides{/1} / HACCP and Critical Control Points for Metal",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "c5b00e5251d1",
+  "en": "Food Safety guide",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "c7203986efbd",
+  "en": "HACCP is a food safety system. The letters stand for Hazard Analysis and Critical Control Points. The idea is simple. Find the places where a hazard can enter the food. Put a control at each place. Check the control, and write down the result.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "4776f642749f",
+  "en": "Metal is one of the most common physical hazards in food. This guide shows how to handle it under HACCP with magnetic separation.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "af54641290ca",
+  "en": "Step 1: find where metal can enter",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "95137cabf288",
+  "en": "Walk the whole line, starting at intake and ending at packing. At each stage, ask where iron or steel could come from. Common sources are:",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "4ed418240baa",
+  "en": "{1}Raw materials.{/1} Grain, sugar, flour, spices and powders arrive with nails, wire, staples and rust flakes from harvesting, storage and transport.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "a8ffb5abb0e3",
+  "en": "{1}Sieves and screens.{/1} Wire mesh breaks and sheds fine pieces.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "eec2e9e9a3ee",
+  "en": "{1}Mills, mixers and pumps.{/1} Blades, bearings and seals wear and shed particles.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "070924574a7c",
+  "en": "{1}Conveyors and elevators.{/1} Bolts, chain links and belt fasteners work loose.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "6318d2a15f3f",
+  "en": "{1}Maintenance.{/1} Swarf, filings and dropped fixings after a repair.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "00996f180c14",
+  "en": "{1}Packaging.{/1} Staples and wire from sacks and cases.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "9dcc0628ee09",
+  "en": "Write each source down with the stage where it appears.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "95ac585f4466",
+  "en": "Step 2: decide which points are critical",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "9c35e70ff5d6",
+  "en": "A critical control point is a stage where a control can prevent the hazard, or reduce it to a safe level, and where no later stage will catch it. For metal, the usual critical points are:",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "5fa2a6dc6b2a",
+  "en": "{1}Intake{/1}, to protect your own equipment from tramp iron in the raw material.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "85ff69d00199",
+  "en": "{1}After each mill, sieve or mixer{/1}, to catch wear particles that stage creates.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "ed3155068d48",
+  "en": "{1}Before packing{/1}, as the final check on the finished product.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "bb0de8b0e031",
+  "en": "The final point is the most important. Anything that passes it reaches the customer.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "9e0fff48e79e",
+  "en": "Step 3: fit a control at each point",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "792dc6bd0e05",
+  "en": "A magnetic separator is the usual control for iron and steel. Choose the type to suit the product flow:",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "8caf92a5f66e",
+  "en": "A SMAG double drawer housing for an enclosed transfer line.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "ec11a8690bcc",
+  "en": "{1}Grids and grates{/1} for powders and granules falling through a hopper or sieve outlet.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "d811cb0b7ebe",
+  "en": "{1}Housed drawer separators{/1} for enclosed transfer lines and pneumatic conveying.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "a1f917367e27",
+  "en": "{1}Liquid traps{/1} for syrups, oils, sauces and slurries in a pipeline.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "8c4106bb16fa",
+  "en": "{1}Plate and chute magnets{/1} for deep product beds on belts and in ducts.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ },
+ {
+  "id": "209a14c2be78",
+  "en": "At the final point, use the highest practical strength. SMAG rods are made up to 13,500 gauss, and at this strength they hold fine particles and work hardened stainless steel as well as ordinary iron.",
+  "page": "resources/guides/critical-control-points-in-food-processing/index.html"
+ }
+]

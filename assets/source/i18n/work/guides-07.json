@@ -1,0 +1,682 @@
+[
+ {
+  "id": "5cf543bdd38d",
+  "en": "Fit a magnetic separator where raw material enters the plant. A grate magnet in the intake hopper, or a plate magnet over the first conveyor, removes the large tramp iron. This protects your own mills and sieves from damage as well as protecting the product.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "abd4b9add99f",
+  "en": "Step 2: catch what the line creates",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "fa8f86ab495a",
+  "en": "Fit a separator after every stage that can shed metal. After a mill or a sieve, a grid or a drawer housing catches wear particles before they travel further. In liquid lines, a magnetic trap after the pump does the same job.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "897d0eb6297f",
+  "en": "The particles created by the line are small. Standard strength magnets miss many of them. Use high strength rods of 9,500 gauss and above at these points.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "6519994f4247",
+  "en": "Step 3: check the finished product",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "b0fd244b3562",
+  "en": "The last separator before packing is the most important. Everything that passes it goes to the customer. Use the highest practical strength here, and place the magnet where the product flow is thin and slow so that every particle passes close to a rod.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "abe26b4478c6",
+  "en": "A SMAG magnetic sampling probe for spot checks on sacks and bins.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "bc61975aa74f",
+  "en": "A magnet holds iron, steel and work hardened stainless steel. It will pass aluminium, copper and brass. If those metals are a risk, add a metal detector after the final magnet.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "32f641f1419c",
+  "en": "Step 4: clean and check the magnets",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "ffeb08823a1a",
+  "en": "A separator only works while it is clean and strong.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "319e4b1688c6",
+  "en": "Clean on a fixed schedule. Easy clean designs let an operator strip the collected iron in a minute without tools.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "caa15b7df838",
+  "en": "Record what is found. A sudden increase points to a failing part upstream.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "4dd9817bd97f",
+  "en": "Measure the strength once a year with a gauss meter, and compare with the certificate supplied with the unit.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "482fc02ffa87",
+  "en": "Replace rods that are dented, cracked or leaking.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "bd36928598bd",
+  "en": "Step 5: control maintenance work",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "80d581783ce6",
+  "en": "Most large metal fragments come from maintenance. Count tools and fixings out and back in. Clean the area with a hand magnet before restarting. Inspect sieve mesh after any work nearby.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "62c6f09d5a8b",
+  "en": "Choosing the right separator",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "dd3b86d1ef21",
+  "en": "Product",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "5b7e86d8b49a",
+  "en": "Typical separator",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "edda40c58f97",
+  "en": "Free flowing powder or granules in a hopper",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "a05dc6e11ff2",
+  "en": "Grate or grid magnet",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "ae287dc476ef",
+  "en": "Powder in an enclosed pipe or pneumatic line",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "e472892660c8",
+  "en": "Housed drawer or bullet separator",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "98426b7da95d",
+  "en": "Product over a sieve",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "727c42876906",
+  "en": "Magnetic grid for sieves",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "274e6ac02d45",
+  "en": "Liquid, syrup, oil or slurry in a pipeline",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "7c95655a62bf",
+  "en": "Magnetic liquid trap",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "61d6220a1a6d",
+  "en": "Deep bed on a belt or in a chute",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "d3db6185c54a",
+  "en": "Plate or chute magnet",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "20a65f37956d",
+  "en": "Santosh Magnetic Works makes each of these separators in 304 stainless steel with neodymium rods up to 13,500 gauss, and supplies a tested certificate of magnetic strength with every unit. See the {1}magnetic grids for sieves{/1} and the full {3}separation range{/3}, or {5}contact us{/5} to talk through your line.",
+  "page": "resources/guides/reducing-the-risk-of-metal-contamination-in-food-processing/index.html"
+ },
+ {
+  "id": "d6608845e1ba",
+  "en": "Types of Filtration for CNC Machines | Santosh Magnetic Works",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "40b056d7a8c7",
+  "en": "{1}Guides{/1} / Types of Filtration for CNC Machines",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "973630362b5f",
+  "en": "A CNC machine uses cutting fluid or coolant to cool the tool, lubricate the cut and wash away chips. The fluid picks up metal particles, dirt and sludge as it circulates. A filter removes them so the fluid goes back to the machine clean.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "2c469d09a255",
+  "en": "Dirty fluid wears tools, spoils the surface finish and damages pumps and slideways. The type of filter decides what is removed and how much work the filter needs.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d9714794b6aa",
+  "en": "Paper filters",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "58c7a1a7850b",
+  "en": "A paper filter uses a roll or sheets of filter paper. The fluid passes through the paper. Particles larger than the pores stay on the surface. When the paper is loaded, fresh paper is fed in or the sheet is changed.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "739a7c874a21",
+  "en": "Strengths",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "3115fddd4733",
+  "en": "Low cost to buy.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "7196a0769f2c",
+  "en": "Easy to find, in many sizes and grades.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "61a0ae3b849d",
+  "en": "Limits",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f6307c85abe7",
+  "en": "The paper is used up quickly on a busy machine, so it is changed often.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "64eae8b22f9f",
+  "en": "It can block in heavy work, and it can tear and let dirt through.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "19270aa0298b",
+  "en": "Particles smaller than the pores pass through.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "bed469bafd1c",
+  "en": "Used paper goes to waste, wet with fluid and metal.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "fdb2d52210be",
+  "en": "Cartridge filters",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "ef845baa52e0",
+  "en": "A cartridge filter uses a cylinder of filter material. The material can be paper, fabric or metal mesh. The fluid passes through the wall of the cartridge and the dirt stays behind.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "5d5c5d58898f",
+  "en": "Lasts longer than paper, so it is changed less often.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "891e92119702",
+  "en": "Catches a wide range of particle sizes.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "319e00cd91c3",
+  "en": "Many filter materials are available to suit the job.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "fe2763a5633f",
+  "en": "Costs more to buy than a paper filter.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "76cff73376cd",
+  "en": "Elements must be cleaned or replaced.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f03867d88712",
+  "en": "A dense cartridge makes the pump work harder.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "b92d76ad3b82",
+  "en": "Used cartridges add to waste, and some materials cannot be recycled.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "b90f7db41af7",
+  "en": "Bag filters",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "b32f3201d084",
+  "en": "A bag filter is a bag of filter cloth held in a housing. The fluid flows into the bag and out through the cloth. The bag holds a large amount of dirt before it is full.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "cba792388581",
+  "en": "Holds a lot of dirt, so it suits heavy contamination.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "08c436b870f5",
+  "en": "Low running cost where there is a lot of coarse dirt.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "929cec0c33d0",
+  "en": "Less good at holding fine particles.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "572be7816f63",
+  "en": "The cloth can tear under hard use.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "315d5f9165a1",
+  "en": "Used bags go to waste.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "a52f67c61fb9",
+  "en": "Centrifugal filters",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f145dfe8c978",
+  "en": "A centrifuge spins the fluid at high speed. The spinning force throws the solid particles outwards, where they collect. The clean fluid is taken from the centre. A centrifuge separates particles by their density, so it can remove very small particles.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "da5cc0fedfbd",
+  "en": "No filter media to buy or replace.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "cae429ec9356",
+  "en": "Removes a wide range of particle sizes, both ferrous and non-ferrous.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "54caa33c13fb",
+  "en": "High cost to buy.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d75c23b7956d",
+  "en": "It is a machine with moving parts. Rotors and seals wear, need servicing and can fail.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "6155caab1504",
+  "en": "Less suited to very large volumes of fluid.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "38b292bd7749",
+  "en": "It can warm the fluid as it runs.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "0541eeb35158",
+  "en": "Magnetic filters",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "0ac16e098a10",
+  "en": "A magnetic filter passes the fluid over strong magnetic rods. Iron and steel particles are pulled onto the rods and held. The clean fluid flows on. To clean the filter, lift the rods out, wipe off the iron and put them back. {1}How magnetic filtration works{/1} explains this in more detail.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d47ccc064250",
+  "en": "Neodymium magnetic rods of the kind used in a SMAG magnetic filter.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "b58bbb7d3b51",
+  "en": "Some non-magnetic dirt also gets caught in the layer of iron on the rods.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f5e500afe627",
+  "en": "Holds very fine ferrous particles.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "1e8ecc011ff6",
+  "en": "The open path past the rods does not block, so the flow stays steady and there is no pressure build-up.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d24a02afa62b",
+  "en": "Nothing to replace. The rods are cleaned and used again.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "fb87e71ffb20",
+  "en": "Needs no power to run.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "e56621072085",
+  "en": "The iron comes off the rods as metal that can be sold as scrap.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "7950cf266c4e",
+  "en": "Removes only ferrous particles. Aluminium, brass, plastic and general dirt pass through.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "857ff3e461aa",
+  "en": "Costs more to buy than a simple paper or bag filter.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "31674cdb7837",
+  "en": "Summary table",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "22d507f2ba74",
+  "en": "Paper",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "723190a719b1",
+  "en": "Cartridge",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "ef6155a5eccf",
+  "en": "Bag",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "2df19b9fc6e9",
+  "en": "Centrifugal",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "b27fdc3ab3b3",
+  "en": "Magnetic",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "df99e5d99b8c",
+  "en": "Cost to buy",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "a124947cbd2d",
+  "en": "Low",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "90af0d8c2274",
+  "en": "Medium to high",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "39e0fdaeb6cd",
+  "en": "Dirt it can hold",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d404968ea90b",
+  "en": "Medium",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f9d8d178ad57",
+  "en": "What it catches",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "7f5621c5b0fc",
+  "en": "All metals and dirt",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "f8f23aa44847",
+  "en": "Iron and steel",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "0fe7d82f25a3",
+  "en": "Short",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "11eda67f9b15",
+  "en": "Long",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "758987ffa71e",
+  "en": "After use",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "eb07bef4690d",
+  "en": "Thrown away",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "103b12dc9446",
+  "en": "Reused",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "69b2a6ed8381",
+  "en": "Using more than one filter",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "3edfe918f829",
+  "en": "Many machines use two filters together. On machines that cut steel or cast iron, most of the dirt is ferrous. Fit the magnetic filter first. It removes the iron, and the paper, cartridge or bag filter after it catches the non-ferrous dirt. The second filter then fills more slowly, lasts longer and can often be a coarser grade.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "87bd75f99ee2",
+  "en": "For a closer look at magnetic and barrier filters side by side, see {1}magnetic filters compared with other filters{/1}",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "0ba6f7b3266e",
+  "en": "Santosh Magnetic Works builds the {1}magnetic coolant filter{/1} to order in Mumbai, sized to the flow rate and connection of your machine. It can be fitted ahead of an existing paper, cartridge or bag filter. See the {3}filtration range{/3} or {5}contact us{/5} with the machine, the fluid and the flow rate.",
+  "page": "resources/guides/types-of-filtration-for-cnc-machines/index.html"
+ },
+ {
+  "id": "d8300ff3dde1",
+  "en": "What Does a Coolant Filter Do? | Santosh Magnetic Works",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "1d9a227131c1",
+  "en": "{1}Guides{/1} / What Does a Coolant Filter Do?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "2034e02e3188",
+  "en": "A coolant filter takes dirt out of the coolant as it circulates round a machine. The coolant goes back to the cutting area clean, so it can do its job.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "66e8ab4740fb",
+  "en": "What does coolant do?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "5930a6f39367",
+  "en": "Coolant is sprayed onto the tool and the workpiece while the machine cuts or grinds. It does three jobs:",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "d429397068e6",
+  "en": "It carries heat away from the cutting area.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "57a6e1fd0918",
+  "en": "It lubricates the tool as it cuts.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "af52e04ebfac",
+  "en": "It washes chips and swarf away from the work.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "11361f7dadbb",
+  "en": "After that, the coolant runs back to a tank, often called the sump. A pump sends it round again. The same coolant can circulate for months.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "30f351c974ea",
+  "en": "What gets into the coolant?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "6d0c11f1f76f",
+  "en": "Every pass through the machine adds dirt:",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "b9311eeb99cf",
+  "en": "fine metal particles from grinding, honing and cutting",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "9f3628ce5a8b",
+  "en": "small chips that the chip conveyor misses",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "05781f918530",
+  "en": "wear particles from the machine itself",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "79747369f491",
+  "en": "sludge, a mix of fine metal, broken-down coolant and dirt",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "0c0dd81b67b7",
+  "en": "tramp oil that leaks from slideways and hydraulic systems",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "972bfa7d95b1",
+  "en": "On machines that work steel or cast iron, most of the solid dirt is ferrous. Much of it is very fine.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "5a393b581e98",
+  "en": "What happens if the coolant is dirty?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "9dc6f90e1386",
+  "en": "Dirt in the coolant goes back to the cutting area on the next pass. There it causes damage:",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "04349917b75f",
+  "en": "Particles scratch the surface of the part and spoil the finish.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "6e4843669931",
+  "en": "Parts can move out of tolerance, and more parts are rejected.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "e97a17c8b0aa",
+  "en": "The tool and the grinding wheel wear faster.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "d8d43634844f",
+  "en": "Nozzles and small coolant lines block.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "58ba88e3bc5a",
+  "en": "Pumps, seals and slideways wear.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "a1873c76b060",
+  "en": "Sludge builds up in the sump and bacteria grow in it. The coolant starts to smell and breaks down sooner.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "60d18c8c3515",
+  "en": "Dirty coolant also cools less well. The tool runs hotter and wears faster.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "0e9dbd066692",
+  "en": "What does a filter change?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "6215911cb0cb",
+  "en": "A coolant filter removes the dirt before the coolant goes back to the machine. The results are simple:",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "8f518f8ed1e8",
+  "en": "The finish on the part is better and more even.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "55f578f65bdc",
+  "en": "Fewer parts are rejected.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "bdf3f66b75b1",
+  "en": "Tools and wheels last longer.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "264379328233",
+  "en": "The machine has fewer breakdowns and repairs.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "7f298156cefe",
+  "en": "The coolant lasts longer, so it is changed less often and less is thrown away.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "3b25d3df707e",
+  "en": "Clean coolant also flows at a steady rate and keeps a steady temperature. That helps close tolerance work such as grinding and deep hole drilling.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ }
+]

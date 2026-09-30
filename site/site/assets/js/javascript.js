@@ -446,7 +446,7 @@ showPromoPopup();
     var apply = function () {
       fig.classList.toggle('is-paused', held || !seen);
       fig.classList.toggle('is-playing', !held);
-      btn.textContent = held ? 'Play' : 'Pause';
+      btn.textContent = held ? btn.dataset.play : btn.dataset.pause;
     };
     btn.addEventListener('click', function () { held = !held; apply(); });
     if ('IntersectionObserver' in window) {
@@ -455,6 +455,16 @@ showPromoPopup();
       }, { threshold: 0.25 }).observe(fig);
     }
     apply();
+  });
+})();
+
+// Language menu: close it on a click elsewhere or on Escape.
+(function () {
+  var menu = document.querySelector('.lang-switch');
+  if (!menu) return;
+  document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
   });
 })();
 

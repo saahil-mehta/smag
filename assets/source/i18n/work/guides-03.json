@@ -1,0 +1,542 @@
+[
+ {
+  "id": "cc3350f06a83",
+  "en": "Each magnet material has its own strengths. The right choice depends on the pull you need, the space you have, the heat around the magnet and the conditions it works in.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "866852186c3b",
+  "en": "Permanent and temporary magnets",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "4f687f65e1d6",
+  "en": "A permanent magnet keeps its magnetism after it has been magnetised. All the materials below are permanent magnets.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "d96bff6e5081",
+  "en": "A temporary magnet acts like a magnet only while it sits in a magnetic field. A piece of mild steel on a magnet is a temporary magnet. It loses most of the effect when it is taken away.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "ca29a4e03364",
+  "en": "An electromagnet is a coil of wire around a steel core. It is a magnet only while current flows through the coil. The strength can be changed by changing the current.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "57d46e68a791",
+  "en": "Neodymium (NdFeB)",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "907f1915dede",
+  "en": "Neodymium magnets are made from an alloy of neodymium, iron and boron. They are also called NdFeB, neo or rare earth magnets.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "09adc50e0626",
+  "en": "SMAG neodymium disc magnets.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "67d15c77ca9f",
+  "en": "Neodymium is the strongest permanent magnet material. It gives the most pull in the least space, so a small neodymium magnet can do a large job.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "63516272bd16",
+  "en": "It has two weak points. It loses strength when it gets hot, so keep standard grades below 80 degrees Celsius. It also rusts easily, so it is plated. A common plating is nickel copper nickel.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "d66c6ad6e8b6",
+  "en": "Neodymium is sold in grades such as N35 to N52. A higher number means a stronger magnet of the same size.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "06f840867e14",
+  "en": "Samarium cobalt (SmCo)",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "fcc52f52182c",
+  "en": "Samarium cobalt is the other rare earth magnet material. It is a little weaker than neodymium.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "89bf3fd1899a",
+  "en": "It works well at higher temperatures than neodymium. It also resists corrosion much better, so it often needs no plating. It is used where a strong magnet must work in heat or in harsh conditions.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "826558cf523f",
+  "en": "Alnico",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "6f0c3f3c0408",
+  "en": "Alnico is an alloy of aluminium, nickel and cobalt. The name comes from the first letters of each metal.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "572e98960b9b",
+  "en": "A SMAG alnico power magnet.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "511bcb0b54bd",
+  "en": "Alnico gives less pull than neodymium for the same size. In return it keeps its strength close to heat, and its field hardly changes over the years. This suits fixtures near welding and heat treatment, and instruments and sensors.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "3cd044ee6384",
+  "en": "Alnico can lose some of its magnetism if it is placed near a strong opposing field or is knocked hard. It is often set in a steel pot, which protects it and directs its field to one face.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "f98727f108b1",
+  "en": "Alnico is made by casting or by sintering. Casting allows more complex shapes. Sintering gives better mechanical strength.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "cb10143bccd1",
+  "en": "Ferrite (ceramic)",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "58e696049490",
+  "en": "Ferrite magnets are made from iron oxide mixed with barium or strontium carbonate, then pressed and sintered. They are also called ceramic magnets.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "7a793fae7db6",
+  "en": "Ferrite is the lowest cost magnet material and one of the most widely used. It resists corrosion well. It gives the least pull for its size of the materials here, so a ferrite magnet must be larger to give the same hold. It is common in motors, loudspeakers and general magnetic assemblies.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "f327da5b9f65",
+  "en": "Comparing the materials",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "d8169782b57c",
+  "en": "Material",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "7da002169007",
+  "en": "Pull for its size",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "64c6caa5bd34",
+  "en": "Heat",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "408df9cd4493",
+  "en": "Corrosion",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "4513573f3354",
+  "en": "Neodymium",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "2c40d85826e8",
+  "en": "Highest",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "ecf49015e3e4",
+  "en": "Keep below 80 degrees Celsius for standard grades",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "edca22c53bc7",
+  "en": "Needs plating",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "c021064a03d3",
+  "en": "Samarium cobalt",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "b1a5954a483f",
+  "en": "High",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "61dedcf053ff",
+  "en": "Good",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "b91eed4b7a80",
+  "en": "Lower",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "f5babd392090",
+  "en": "Very good",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "96d4c6bca4db",
+  "en": "Ferrite",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "abb490f65dea",
+  "en": "Lowest",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "d7b43e704367",
+  "en": "Questions to ask before you choose",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "f664d4893719",
+  "en": "How much pull or field strength do you need?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "3ee73812c840",
+  "en": "What will the magnet hold, lift or attract, and how thick is that steel?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "2c209cd25dde",
+  "en": "How hot will the magnet get in use?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "ec607b5a3447",
+  "en": "Will it meet water, coolant, chemicals or other corrosive conditions?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "7d3996bb240e",
+  "en": "Will it sit near other strong magnets or fields, or take knocks?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "4d4254af68e7",
+  "en": "How long must it last in the equipment?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "4ef1e31ad95f",
+  "en": "How much space and weight is allowed?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "820ccc7b9648",
+  "en": "What price per magnet makes the job work?",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "44bf79299295",
+  "en": "Santosh Magnetic Works supplies neodymium and alnico magnets. The neodymium range covers {1}disc{/1}, block and channel magnets in grades N35 to N52. The alnico range covers power magnets and shallow and deep pot magnets. See the {3}stock magnets range{/3} or {5}contact us{/5} with the pull, space and temperature you need.",
+  "page": "resources/guides/guide-to-magnet-materials/index.html"
+ },
+ {
+  "id": "f2cc1a050647",
+  "en": "A Guide to Magnetic Separation | Santosh Magnetic Works",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "6a711130ed09",
+  "en": "{1}Guides{/1} / A Guide to Magnetic Separation",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "0dca1a9428f9",
+  "en": "Separation guide",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "8b022c9b0841",
+  "en": "Iron gets into a product line in many ways. It comes in with the raw material. It wears off mills, screws and mixers. It is dropped during maintenance. A magnetic separator pulls this iron out of the product before it damages a machine or reaches a customer.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "267754ddd801",
+  "en": "What is a magnetic separator?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "ef2a96375828",
+  "en": "A magnetic separator is a magnet placed in the path of the product. It holds iron and steel, and the clean product carries on through the process. It works on powders, granules, pellets, flakes, liquids, pastes and slurries.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "e5d2eee148da",
+  "en": "A separator has no power supply and no moving parts in the magnet. The collected iron stays on the magnet until the operator cleans it off.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "e21860bf3732",
+  "en": "How does it work?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "7d3cdf140dd4",
+  "en": "The product moves past the magnet. It may fall by gravity, be pumped, be blown through a pipe or be carried on a conveyor. On its way it passes through or over a rod, grid, grate or plate.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "8b351bccd68a",
+  "en": "Powder or granules in",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "28e320951ad7",
+  "en": "Grid of magnetic rods",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "f7209f7244f3",
+  "en": "Iron held on the rods",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "bf14f75eafc2",
+  "en": "A grid of magnetic rods in a hopper. The product falls between the rods and the iron stays on them.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "0ed14944d802",
+  "en": "The magnetic field pulls iron particles onto the magnet face or the rod surface. They stay there. At each clean, the operator removes the magnet or opens the housing and wipes the iron away.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "0406f947896b",
+  "en": "What types are there?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "5711a453b5ec",
+  "en": "Separators fall into two groups.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "ef36f58b96fa",
+  "en": "A SMAG deep field magnetic plate separator for conveyors and chutes.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "de2e6cbeae47",
+  "en": "{1}Primary separators{/1} remove large tramp iron such as nails, bolts, nuts, wire and tool pieces. Their main job is to protect machines. They sit at intake points and on lines that carry coarse material such as pellets or flakes. Plate magnets are the usual choice here. They sit over a conveyor, in the floor of a chute or on a hinged chute door.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "68ff758d23d8",
+  "en": "{1}Secondary separators{/1} remove fine iron, such as wear particles from process machinery. Their main job is to protect the product. They sit in the middle or at the end of a process. Rods, grids, drawer housings and liquid traps are the usual choice here. A grid in a sealed housing suits a closed gravity line. A liquid trap suits a pumped pipeline.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "9cdaf3a6b010",
+  "en": "Many lines use both. A plate magnet at intake takes out the large pieces, which could bridge across the rods of a grid or damage them. A grid or housing further down takes out the fine particles.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "031743b8278a",
+  "en": "Where can separators be installed?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "7fd329e7bd6f",
+  "en": "Common positions include:",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "9baed7c462d9",
+  "en": "intake hoppers and silo outlets",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "26de213c811e",
+  "en": "before and after sieves",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "4e1f815a8074",
+  "en": "above and below mixers and mills",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "8edb1a5269d8",
+  "en": "bulk tanker discharge and sack tipping stations",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "420921c3da73",
+  "en": "gravity chutes and transfer conveyors",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "5a9575c5cf5b",
+  "en": "pneumatic and vacuum lines",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "5d13db8db6eb",
+  "en": "just before packing",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "454447554c40",
+  "en": "A magnet at intake checks what arrives. A magnet mid-process catches wear from the plant. A magnet before packing protects the finished product. A plant with HACCP control points usually places a separator at each one.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "519b7a47dbb7",
+  "en": "Does the magnet type matter?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "e5d204d0550d",
+  "en": "Yes. {1}Neodymium{/1} magnets, also called rare earth magnets, are the strongest material. They hold very fine iron particles. They suit food, pharmaceutical, plastics and chemical lines, where fine particles are the main risk. Rare earth rods should stay below 100 degrees Celsius.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "d3ccb7a260ed",
+  "en": "{1}Ferrite{/1} magnets are weaker. They cost less and project a field further, so they suit coarse tramp iron and deep product beds on conveyors.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "513fa6535539",
+  "en": "SMAG neodymium rods come in four strengths:",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "aecc49c15355",
+  "en": "Grade",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "73a40d540540",
+  "en": "Surface strength",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "2dfa66079d9b",
+  "en": "Standard",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "eca3829ebd6e",
+  "en": "7,000 to 8,000 gauss",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "b22df8fdad6c",
+  "en": "up to 9,000 gauss",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "f27af91bbd3e",
+  "en": "Super high",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "fb4070be7242",
+  "en": "up to 11,000 gauss",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "5ee3242c37d9",
+  "en": "Extreme high",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "23133c082540",
+  "en": "up to 13,500 gauss",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "7a4016670086",
+  "en": "Ferrite and Ferrearth rods are made for coarse iron at lower cost.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "4a6b285924ce",
+  "en": "How is magnet strength checked?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "5e6f30ba80eb",
+  "en": "Strength is given in gauss. A higher figure means a stronger field. In a separator, the magnet sits inside a stainless tube or cover, so the useful figure is the one measured on the outside of that tube or cover. Ask for this figure when you compare separators.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "38f3e156e9fa",
+  "en": "Magnets can weaken over years of use, heat or knocks. A {1}gauss meter{/1} reads the surface strength so it can be checked against the original certificate.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "eae3e1dc796f",
+  "en": "Can a magnet catch stainless steel?",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "bc7503a253c8",
+  "en": "Much process equipment is made from 304 or 316 stainless steel. Solid pieces of these grades are only weakly magnetic. Stainless steel that has been worked, cut or worn becomes more magnetic. Fine wear particles of this kind can be held by high strength neodymium rods. The extreme high strength rods are made for this job.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "37f50c675ca6",
+  "en": "Aluminium, copper and brass are not magnetic. A magnet cannot catch them. Many plants also run a metal detector after the final magnet as a separate check for these metals.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "8aae717dfdb6",
+  "en": "Keeping a separator working",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "36fd42b0bde9",
+  "en": "Clean the magnet on a fixed schedule. A heavily loaded magnet holds less.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "e19e4549a04a",
+  "en": "Keep a record of what is found at each clean. A sudden rise in iron points to wear upstream.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "78c07013c5aa",
+  "en": "Check the surface strength once a year with a gauss meter.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "94afa47c8084",
+  "en": "Inspect tubes and covers for dents and cracks.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "03ac388f5ca5",
+  "en": "Santosh Magnetic Works makes grids, housed grids, drawer housings, liquid traps, plate magnets, chute magnets and separator rods at its works in Mumbai. Each unit leaves with a tested certificate of magnetic strength. See the {1}separation range{/1} or {3}contact us{/3} with the product, the flow rate and the space you have.",
+  "page": "resources/guides/guide-to-magnetic-separation/index.html"
+ },
+ {
+  "id": "8e232928128e",
+  "en": "The Hidden Costs of Lifting Steel with Chains and Slings | Santosh Magnetic Works",
+  "page": "resources/guides/hidden-costs-of-traditional-steel-lifting/index.html"
+ },
+ {
+  "id": "b8f5b41d1d91",
+  "en": "{1}Guides{/1} / The Hidden Costs of Lifting Steel with Chains and Slings",
+  "page": "resources/guides/hidden-costs-of-traditional-steel-lifting/index.html"
+ },
+ {
+  "id": "476bf0fe30bf",
+  "en": "The price of a set of chains or slings is easy to see. Most of the cost of lifting with them is harder to see. It is spread across the shift, in crane time, labour, wear and repairs. A permanent magnetic lifter reduces many of these costs.",
+  "page": "resources/guides/hidden-costs-of-traditional-steel-lifting/index.html"
+ }
+]

@@ -1,0 +1,172 @@
+[
+ {
+  "id": "1167edb8ca17",
+  "en": "A SMAG circular permanent magnetic chuck.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "000d10b1df4e",
+  "en": "Check the machine table is clean, undamaged and flat.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "6df3802dc68e",
+  "en": "Check the chuck base is flat.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "cc6a9db0e755",
+  "en": "Clean the table and the chuck base completely. One grain of dirt between them will tilt the chuck.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "4d727d7434ea",
+  "en": "Fit the chuck and bolt it down.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "f28ef6ddf6e0",
+  "en": "On a grinder, grind the top plate on that machine, so it is true to that table.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "99cc452eacc1",
+  "en": "On a lathe, the chuck needs a back plate. Use screws that stop short of the inside of the chuck. A screw that goes too far can jam the moving magnets.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "0b145348350a",
+  "en": "Regrinding the top plate",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "d357c65efeff",
+  "en": "Regrind the top plate when it is worn or marked. A thick top plate can be reground many times before it needs replacing.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "87e9a962f3e5",
+  "en": "Switch the chuck off while you regrind.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "769e0343de9e",
+  "en": "Use a medium hard wheel with an open grit.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "3b76f453fa94",
+  "en": "Mounting a chuck on its side",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "04b9cae62079",
+  "en": "A rectangular chuck can be mounted on edge, for example on a large angle plate. Keep the edges of the top plate and base plate from touching steel at the same time. That would short circuit the field and weaken the hold. A non-magnetic spacer at least 3 mm thick, in brass or austenitic stainless steel, prevents this.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "919ecf6a8d3b",
+  "en": "Drilling and machining a chuck",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "2e1a5590b72b",
+  "en": "Simple holes for locating pegs and driving pegs are fine. Follow these rules:",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "e5187c428a9d",
+  "en": "Never drill through into the inside of the chuck. Coolant and dirt get in, and a projection can jam the magnets.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "d6c214f03df7",
+  "en": "Keep every hole at least 5 mm shallower than the plate is thick.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "2b2a1273200a",
+  "en": "Drill only in the solid parts of the plate. Keep clear of the pole inserts and the spacers between them.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "750771ff9479",
+  "en": "On a laminated fine pole top plate, keep clear of the tie rods. You can see them from the chuck ends.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "0e2034125720",
+  "en": "Grooves or recesses cut for one job can spoil the chuck for the next. An extra top plate is usually the better choice. {1}Contact us{/1} before any larger machining.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "2b2ade01d236",
+  "en": "When a part will not hold",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "1baa06b4c8bc",
+  "en": "Problem",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "4b5e84be0e45",
+  "en": "Check",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "dfe669426816",
+  "en": "Chuck will not switch on or off",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "d1c20a54b618",
+  "en": "Damage to the surface or body. Return it for repair if you find any.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "39468b14a2a8",
+  "en": "Part will not hold",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "8e9efd877fbc",
+  "en": "Is the part magnetic? Is it thick enough to take the field? Does it sit across at least one north and one south pole?",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "3df6a03a607e",
+  "en": "Part slides",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "251c6e6d1f5a",
+  "en": "Side and end stops are missing or in the wrong place.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "d657dc21992a",
+  "en": "Part holds weakly",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "a7f40ecbe0c3",
+  "en": "Air gaps from dirt, swarf or a rough surface. Clean the chuck and the part.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "a063181f5f22",
+  "en": "Part will not hold on a jig",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "6d5bb9d86459",
+  "en": "The jig is in the wrong place, or it lets the field bypass the part.",
+  "page": "resources/guides/workholding-tips/index.html"
+ },
+ {
+  "id": "4906623e5f03",
+  "en": "Santosh Magnetic Works makes rectangular and circular permanent magnetic chucks, with the {1}Rectangular Universal Chuck{/1} suited to grinding, turning and light milling. See the {3}workholding range{/3} or {5}contact us{/5} with your machine and part sizes.",
+  "page": "resources/guides/workholding-tips/index.html"
+ }
+]

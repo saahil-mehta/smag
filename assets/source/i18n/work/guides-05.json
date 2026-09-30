@@ -1,0 +1,507 @@
+[
+ {
+  "id": "64b3b6a60231",
+  "en": "{1}Amount of iron.{/1} A heavy load of swarf fills the rods faster. More rods, a larger housing or more frequent cleaning deal with a heavy load.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "6089d7c765f4",
+  "en": "{1}Temperature.{/1} Neodymium magnets lose strength if they get too hot. Rare earth rods should stay below 100 degrees Celsius.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "210ef6ad8adc",
+  "en": "Does the filter block?",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "be8bb101c392",
+  "en": "The rods sit in the flow with open space around them. The liquid passes through that space. As iron builds up on the rods, the liquid still has a clear path, so the flow to the machine stays steady and there is no pressure build-up.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "2bb437469340",
+  "en": "A full rod collects less, though. Clean the rods before the layer of iron gets thick.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "8719bc3de337",
+  "en": "Where does it go in the line?",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "bb5760be4574",
+  "en": "Fit the magnetic filter where the dirty liquid returns from the machine, before it goes back to the tank or on to any other filter. The magnet then takes out the iron first. Any bag, paper or cartridge filter after it receives less dirt and lasts longer.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "cdf72d2530f0",
+  "en": "Fit the filter with enough space above it to lift the rods out.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "21b401f0bba7",
+  "en": "How do you clean it?",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "e33a1e93b903",
+  "en": "Stop the flow or divert it.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "0993cd57b1ef",
+  "en": "Open the lid of the housing.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "83efefd44f60",
+  "en": "Lift the rod assembly out.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "e50f450a1af1",
+  "en": "Wipe or scrape the iron off the rods with a cloth or a plastic scraper.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "dd377c7bcffb",
+  "en": "Refit the rods and close the lid.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "0993eb220b5f",
+  "en": "The collected iron comes off as a damp paste of metal. There is no filter bag or paper to throw away. The magnets keep their strength for many years, so the same rods go back in each time.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "aa27d344f8e2",
+  "en": "How often to clean depends on the amount of iron in the liquid. Check the rods daily at first. Once you know how fast they load, set a regular cleaning time.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "e398db4eb3e5",
+  "en": "Checking the rods",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "da22b1f6b055",
+  "en": "Look for scratches or dents in the stainless tube. A damaged tube can let liquid reach the magnets. Replace a damaged rod.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "a688c6af6792",
+  "en": "A {1}gauss meter{/1} measures the strength at the rod surface. Compare the reading with the certificate supplied with the rod.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "f23b99a2af86",
+  "en": "Santosh Magnetic Works builds the {1}magnetic coolant filter{/1} to order in Mumbai, with neodymium rods in a stainless steel housing sized to your flow rate and connection. Loose {3}neodymium magnetic rods{/3} can also be fitted into an existing housing. See the {5}filtration range{/5} or {7}contact us{/7} with the fluid and the flow rate.",
+  "page": "resources/guides/how-magnetic-filtration-works/index.html"
+ },
+ {
+  "id": "acda7850441d",
+  "en": "How to Keep Machine Coolant Clean for Longer | Santosh Magnetic Works",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "e4b7e8d0a9f5",
+  "en": "{1}Guides{/1} / How to Keep Machine Coolant Clean for Longer",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "f3def3e4cb14",
+  "en": "Machine coolant wears out. Tramp oil, bacteria, metal fines and the wrong mix all shorten its life. Most of these can be controlled with good habits. Start by keeping dirt out of the coolant.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "a0626664b423",
+  "en": "Remove tramp oil",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "58e7ed787439",
+  "en": "Tramp oil is oil that leaks into the coolant from the machine. It comes from slideways, gearboxes and hydraulic systems. It floats on top of the coolant in the sump.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "2695f5b31fae",
+  "en": "A layer of tramp oil keeps air away from the coolant. Bacteria grow under it, and the coolant starts to smell. Tramp oil also marks the parts and reduces cooling.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "d27a8754dd39",
+  "en": "Remove it with a disc or belt skimmer, or with a coalescing separator. Fix the leaks that let it in.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "51cf3251565d",
+  "en": "Filter out metal fines",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "8260ff83a1e4",
+  "en": "Fine metal from cutting and grinding stays in the coolant and goes round the machine again and again. It scratches parts, wears tools and pumps, and turns into sludge in the sump.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "7267e17fcd03",
+  "en": "Choose a filter to suit the metal you cut:",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "570277021bbd",
+  "en": "A {1}magnetic filter{/1} holds iron and steel particles, including very fine ones. It does not catch aluminium, brass or other non-ferrous metals.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "c1a805e060ea",
+  "en": "A {1}barrier filter{/1}, such as a bag, paper or cartridge filter, holds any particle larger than its pores. Some fine barrier filters also take out part of the additives in the coolant.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "0f42ab976103",
+  "en": "On mixed work, use both. Put the magnetic filter first. It takes out the iron, so the barrier filter after it fills more slowly and lasts longer. {1}Magnetic filters compared with other filters{/1} explains the difference in detail.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "26aad150a2f0",
+  "en": "Clean the magnetic rods before they are heavily loaded.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "8d7595445659",
+  "en": "Check the concentration",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "2f0aa92492d4",
+  "en": "Coolant is a concentrate mixed with water. The mix must be right.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "de71770d814b",
+  "en": "{1}Too weak{/1}, and the coolant lubricates less, protects less against rust and lets bacteria grow.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "eded2a474aca",
+  "en": "{1}Too strong{/1}, and it can irritate the operator's skin. It also wastes concentrate.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "c4c51ad2a5e4",
+  "en": "Check the concentration once a week with a refractometer. Adjust the mix to the level the coolant maker gives.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "1646d13d69eb",
+  "en": "Top up the right way",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "3d354cb33f90",
+  "en": "Coolant evaporates, and the water goes first. Top up with coolant that is already mixed to the right strength. Plain water from the tap lowers the concentration and helps bacteria grow.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "6a0408adfa53",
+  "en": "Water with a lot of minerals leaves deposits in the machine. Reverse osmosis or deionised water avoids this.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "5cffd3bd308b",
+  "en": "When mixing, always add the concentrate to the water. Never mix two different coolants. They can react with each other and make the coolant unstable.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "7904fcc7e571",
+  "en": "Keep the sump clean",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "7735728f945e",
+  "en": "Swarf, chips and sludge settle in the sump. Bacteria grow in them, and sludge can block the pump.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "202cfd12430b",
+  "en": "Remove chips and swarf from the sump regularly.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "f1b9d9210266",
+  "en": "When you change the coolant, empty the sump fully and clean out all the sludge.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "a3f45145d170",
+  "en": "Flush the system with a system cleaner before the new fill.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "79e6046d8ec5",
+  "en": "Keep the coolant moving",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "9b1d3ddba682",
+  "en": "Coolant that stands still in an idle machine goes bad faster. Bacteria grow when there is no flow and no air. Run the pump for a while each day, or use aeration, when a machine stands for a long time.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "82ebc461454c",
+  "en": "Stop coolant from smelling",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "7cc5d99864a4",
+  "en": "A bad smell means bacteria are growing. To stop it:",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "c5bad2d55328",
+  "en": "Remove the tramp oil.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "98a9b23e118f",
+  "en": "Filter out the metal fines.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "3f9cae1c3ae7",
+  "en": "Keep the concentration correct.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "94919496f584",
+  "en": "Keep the coolant moving when the machine is idle.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "0360fbcd609f",
+  "en": "How often should coolant be changed?",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "9e75e8eb4aba",
+  "en": "With good habits, one fill of coolant can last many months. Without them, it may need changing after a few weeks. The life also depends on the machine, the metal being cut and how many hours the machine runs.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "e4d31c966828",
+  "en": "Watch for these signs that it is time to change:",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "def18c6669f9",
+  "en": "a bad smell",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "49a49d070f57",
+  "en": "foaming",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "fdc90a2f84d5",
+  "en": "a thick layer of tramp oil",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "0c60c2ba75da",
+  "en": "sludge that returns soon after cleaning",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "b9f319466e50",
+  "en": "Store coolant concentrate safely",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "6c568d381775",
+  "en": "Keep containers sealed.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "a24964d47d3d",
+  "en": "Keep them out of direct sun, frost and great heat.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "6689b21859cb",
+  "en": "Label every container clearly.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "4e924c16ecf6",
+  "en": "Use clean mixing equipment that is kept only for coolant.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "f3f20073b0d9",
+  "en": "Keep the store clean and away from other chemicals.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "9e177c39bfe0",
+  "en": "Santosh Magnetic Works builds the {1}magnetic coolant filter{/1} to order in Mumbai. It takes fine iron out of coolants, oils and wash liquids, and it is cleaned by lifting the rods out and wiping them. See the {3}filtration range{/3} or {5}contact us{/5} with your machine and flow rate.",
+  "page": "resources/guides/keeping-machine-coolant-clean/index.html"
+ },
+ {
+  "id": "4bce0261282d",
+  "en": "What to Check Before Using a Magnetic Lifter | Santosh Magnetic Works",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "4977384052f1",
+  "en": "{1}Guides{/1} / What to Check Before Using a Magnetic Lifter",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "c5b45c4c445f",
+  "en": "A permanent magnetic lifter is simple to use. Set it on the load, turn the handle, and lift. The hold depends on the load as much as on the lifter, so a few checks are needed before every lift.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "7313e0379068",
+  "en": "This guide lists them in order.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "2a07b906b985",
+  "en": "1. Is the load within the rating?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "e98ec0598e03",
+  "en": "Every lifter has a safe working load for a flat plate of low carbon steel, at a given minimum thickness, with a clean flat surface. This is the flat rating. A round bar touches the base along a single line, so the round rating is half the flat rating.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "d202fb1e6495",
+  "en": "Know the weight of the load. If you are not sure, work it out from the size. A steel plate weighs about 7.85 kg for every square metre of area per millimetre of thickness.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "efcf596264c3",
+  "en": "2. Is the plate thick enough?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "88872e08fd0a",
+  "en": "The magnetic field passes into the load. A thin plate cannot carry the whole field, and some of it passes through to the other side. The hold is weaker. Each SMAG Maxx model has a minimum job thickness, from 15 mm on the smallest to 100 mm on the largest. Below that thickness, the rated load is reduced.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "50740fbe2eda",
+  "en": "Plate thick enough",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "dc08fc112b8e",
+  "en": "The field closes inside the plate.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "13c9f2b17524",
+  "en": "The lifter holds its full rating.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "c942ec3a73ed",
+  "en": "Plate too thin",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "46ab0dbdccf5",
+  "en": "Part of the field passes through",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "564466935ea3",
+  "en": "the plate into the air.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "98597d5e264a",
+  "en": "The hold is weaker.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "397d0ab27ac4",
+  "en": "A thin plate cannot carry the whole field, so the lifter holds less.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "c5c08b634e6a",
+  "en": "3. Is the contact surface clean and flat?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "ed4b00686523",
+  "en": "The hold falls quickly with any gap between the base and the load. Rust, scale, paint, oil, swarf and a rough surface all count as a gap. Clean the contact area before the lift. A machined or ground surface gives the full rating.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "39fbed391dca",
+  "en": "4. What is the load made of?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "9668e0d799aa",
+  "en": "Low carbon steel gives the full rating. Other materials hold less:",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "657140366692",
+  "en": "Medium carbon and alloy steels hold a little less.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "5d4da22f9347",
+  "en": "Cast iron holds roughly half.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "584bddf9651c",
+  "en": "Hardened steel holds less than soft steel of the same grade.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "e416e4e69674",
+  "en": "Austenitic stainless steel, aluminium, copper and brass are not held at all.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "91d1abfb9869",
+  "en": "5. How hot is the load?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "45120717af89",
+  "en": "Heat weakens the magnets. Keep the load below 80 degrees Celsius. Do not lift material straight from a furnace or a hot cutting process.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "917759270219",
+  "en": "6. Is the load one piece?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "98317bf852e0",
+  "en": "Lift one plate at a time. Two stacked plates may seem to lift together, then separate in the air. Long thin plates may sag at the ends and peel away from the base. Place the lifter over the centre of gravity.",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "be696cef3165",
+  "en": "7. Is the lifter in good condition?",
+  "page": "resources/guides/key-considerations/index.html"
+ },
+ {
+  "id": "0ba5b8cdda70",
+  "en": "Look at the base. It should be clean, flat and free of dents and swarf. Check that the handle turns fully and locks in the on position. Check the shackle and the crane hook.",
+  "page": "resources/guides/key-considerations/index.html"
+ }
+]

@@ -1,0 +1,412 @@
+[
+ {
+  "id": "5b4284c5dea0",
+  "en": "Which filter?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "1b01ca722239",
+  "en": "There are several kinds of coolant filter. Bag, paper and cartridge filters hold back particles larger than their pores. Centrifuges spin the dirt out. Magnetic filters pull iron and steel out of the flow. The guide to {1}types of filtration for CNC machines{/1} explains each one.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "b6398049433c",
+  "en": "On machines that work steel or cast iron, a magnetic filter is a good first stage. It holds very fine ferrous particles, it does not block, and it has no filter element to replace. Where there is also aluminium, brass or other non-magnetic dirt, a barrier filter after the magnet catches the rest. For a side-by-side view, see {1}magnetic filters compared with other filters{/1}",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "5bbe3ff2c69c",
+  "en": "The right system depends on the particle size, the type of coolant, the flow rate and the amount of work the machine does.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "1c4fe6d348fb",
+  "en": "Where are coolant filters used?",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "5e42bf7ce7b5",
+  "en": "{1}Grinding.{/1} Grinding makes very fine steel particles. They are the main cause of a poor finish.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "a1786bc42f24",
+  "en": "{1}Bearing and precision part making.{/1} Tight tolerances need clean coolant on every pass.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "c5cdcf58321f",
+  "en": "{1}Machining centres and lathes.{/1} Fine swarf blocks nozzles and wears pumps.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "a8b39915d309",
+  "en": "{1}Honing and lapping.{/1} The finish depends on the coolant or oil being clean.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "319a0be8a742",
+  "en": "{1}Wire cut machines.{/1} The fluid needs to stay clean for a steady cut.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "0423dc13c931",
+  "en": "{1}Parts washers.{/1} Iron in the wash liquid settles back onto the next batch of parts.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "2e317aa1e8e4",
+  "en": "Santosh Magnetic Works builds the {1}magnetic coolant filter{/1} for water based coolants, neat oils, hydraulic oil and wash solutions. Each unit is built to order in Mumbai to suit the connection size and flow rate. See the {3}filtration range{/3} or {5}contact us{/5} with the machine, the fluid and the flow rate.",
+  "page": "resources/guides/what-does-a-coolant-filter-do/index.html"
+ },
+ {
+  "id": "506aaeb282cf",
+  "en": "What Is a Pot Magnet? | Santosh Magnetic Works",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "1e86d7bc1f36",
+  "en": "{1}Guides{/1} / What Is a Pot Magnet?",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "1259c5c2afec",
+  "en": "A pot magnet is a magnet set inside a steel cup. The cup is also called the pot or the shell. Only one face of the magnet is open, and that face does the holding.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "d9559bc63ed3",
+  "en": "Pot magnets hold jigs, fixtures, sensors, guards, signs and tools. They also hang cables and hoses from steel frames.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "ca04b437e786",
+  "en": "How the steel cup works",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "dbf961808f90",
+  "en": "A bare magnet has a field on every side. Most of that field goes into the air and does no work.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "7454c5d415f9",
+  "en": "A bare magnet",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "67696987be33",
+  "en": "The field spreads out on every side.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "68ed1c1c35e0",
+  "en": "Only part of it reaches the steel.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "adbc0249a57f",
+  "en": "A pot magnet",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "e0c3c61a949f",
+  "en": "The steel cup carries the field",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "e575b7a626df",
+  "en": "to the face. It closes through the",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "b6ae966ac1e8",
+  "en": "steel and the hold is much stronger.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "04b9507105b0",
+  "en": "Cup",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "d7f87f222d12",
+  "en": "Magnet",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "a8a7fb56434d",
+  "en": "The steel cup brings the field to the working face, where it closes through the steel.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "b945969af892",
+  "en": "The steel cup collects the field from the back of the magnet. It carries the field round to the working face. The magnet forms one pole in the centre of the face. The rim of the cup forms the other pole around it. The field only has a short distance to travel between the two poles, through the steel you are holding.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "0e4f7bb274c4",
+  "en": "This makes the pull on the working face several times what the bare magnet gives. It also puts the hold on one face only, so the back and sides of the pot do not grab nearby steel.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "a4f84031aba9",
+  "en": "Protection for the magnet",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "b62e2d51f771",
+  "en": "Magnet materials are hard and brittle. They can chip or crack if they are knocked.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "e0762f824624",
+  "en": "In a pot magnet, the steel cup takes the knocks. A well made pot sets the magnet face a little below the rim, so any blow lands on the steel. The cup also keeps dirt and moisture away from most of the magnet.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "861f04c8e91e",
+  "en": "Fixings",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "d6da777c3774",
+  "en": "A magnet on its own is too brittle to drill or thread. The steel cup can be drilled and threaded, so a pot magnet can be bolted to a fixture.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "842d627d4c8e",
+  "en": "Common fixings are:",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "01e470444717",
+  "en": "a plain back, for fitting into a recess or bonding in place",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "afeadaa704d4",
+  "en": "a threaded stud or a threaded hole",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "fd5575aed8f6",
+  "en": "a countersunk hole for a screw",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "10d10df0e94c",
+  "en": "a hook, for hanging cables, hoses and signs",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "de0a3964101c",
+  "en": "What reduces the pull",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "a95f6cd9986e",
+  "en": "A pot magnet is rated by its pull. The rated pull is measured on thick, clean, flat mild steel with full contact. In the works the pull is often lower. These things reduce it:",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "ed6af4693c1e",
+  "en": "{1}Thin steel.{/1} Thin plate cannot carry the whole field, so the pull drops. Use more pots, or smaller pots, on thin sheet.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "71d2814f5a14",
+  "en": "{1}Air gaps.{/1} Paint, rust, dirt, scale and a curved surface all hold the magnet away from the steel. Even a small gap reduces the pull a great deal.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "1464f49f44ae",
+  "en": "{1}Poor steel.{/1} Cast iron and some alloy steels carry the field less well than mild steel.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "d385909b4ecd",
+  "en": "{1}Sliding load.{/1} A magnet resists a straight pull best. It slides more easily than it lifts off. Where the load pulls sideways, add a stop or a lip for the magnet to rest against.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "f73a89e73d97",
+  "en": "Keep the working face and the steel clean. A pot magnet works best in direct contact.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "33742269a882",
+  "en": "Shallow or deep",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "32cfff0ff2d9",
+  "en": "{1}Shallow pot magnets{/1} are low and flat. They suit thin plate and fixtures where height is limited. SMAG makes shallow pots with plain, threaded, countersunk or hook fittings. One example size is 25 mm diameter by 8 mm thick.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "59eb7b219ae8",
+  "en": "SMAG alnico pot magnets.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "9c56cfbe5e3f",
+  "en": "{1}Deep pot magnets{/1} hold a taller magnet in a deeper steel shell. The field reaches further into the steel, so the pull on thick steel is higher than a shallow pot of the same diameter gives. They suit heavier clamping, jigs and tooling on steel frames. SMAG makes deep pots with plain, threaded or hook fittings.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "0729113ec34a",
+  "en": "Magnets near heat",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "9e6a6c9d0a76",
+  "en": "SMAG pot magnets use an alnico core. Alnico is an alloy of aluminium, nickel and cobalt. It keeps its strength close to heat, and SMAG shallow pots are suited to heat up to 450 degrees Celsius. This makes alnico pots a good choice for fixtures near welding and heat treatment.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "f002eec4d703",
+  "en": "Santosh Magnetic Works makes {1}alnico shallow pot magnets{/1}",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "026f02cc32ba",
+  "en": "{1}alnico deep pot magnets{/1} and cast alnico power magnets, with custom diameters and heights to order. See the {3}stock magnets range{/3} or {5}contact us{/5} with the pull you need and the space you have.",
+  "page": "resources/guides/what-is-a-pot-magnet/index.html"
+ },
+ {
+  "id": "7cf21482f8d6",
+  "en": "Where Are Magnets Used in Industry? | Santosh Magnetic Works",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "0ec5df1eb482",
+  "en": "{1}Guides{/1} / Where Are Magnets Used in Industry?",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "81fe4b908217",
+  "en": "Magnets do four main jobs in a factory. They remove iron from a product. They hold parts still while they are worked on. They lift steel. And they clean up.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "ccdef1a24c05",
+  "en": "This guide describes each job in plain terms, and names the type of magnet used for it.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "cdf3fa82366c",
+  "en": "Removing iron from a product",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "02142ac9968b",
+  "en": "Raw materials pick up iron on their way to a factory. Screws, wire, rust flakes, wear particles and pieces of broken machinery all end up in the flow. A magnetic separator pulls this iron out before it damages a machine or reaches a customer.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "d17063013197",
+  "en": "The magnet is chosen to suit the way the product moves:",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "d613f0885f82",
+  "en": "{1}Grids and grates{/1} sit in a hopper or above a sieve. Dry powders and granules fall through the rods.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "7d4bddf5e2ec",
+  "en": "{1}Drawer housings{/1} are fitted into a pipe or a chute. The product passes over two or more rows of rods, and the drawers slide out for cleaning.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "065a1ba643c0",
+  "en": "{1}Liquid traps{/1} are fitted into a pipeline. Liquids, oils and slurries pass over a bundle of rods inside a sealed housing.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "35a8ddfb0bb2",
+  "en": "{1}Plate magnets{/1} are mounted above a belt or inside a chute. They collect larger pieces of iron from a deep product bed.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "f979ea76a9d2",
+  "en": "{1}Chute magnets{/1} are hinged plates fitted into a sloping duct.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "2a2f05cb2ec8",
+  "en": "These separators use permanent magnets. They need no power and no maintenance beyond cleaning.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "65e7bbbdf00a",
+  "en": "Holding parts while they are worked",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "254bf600bfca",
+  "en": "A magnetic chuck holds a steel workpiece flat on a grinding machine or a lathe. The operator turns a lever and the part is locked to the table. There are no clamps to get in the way of the wheel, so the whole surface can be ground in one pass.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "3ef6d5a8973d",
+  "en": "Rectangular chucks are used on surface grinders. Circular chucks are used on rotary grinders and lathes. After grinding, the part keeps a little magnetism. A table top demagnetiser removes it in a few seconds.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "68fd0be2e13b",
+  "en": "Small pot magnets and power magnets do the same job on a smaller scale. They hold jigs, guards, sensors and fixtures in place, and can be moved without tools.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "70cc4ff83843",
+  "en": "Lifting steel",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "c9dfa6c8640a",
+  "en": "A permanent magnetic lifter picks up a steel plate, block or round bar with no chains or slings. The operator sets the lifter on the load, turns the handle to switch it on, and the crane does the rest. One person can move a heavy plate in seconds, and the load can be set down on a stack without anyone reaching under it.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "9ff6f3c63fac",
+  "en": "Lifters are rated by the flat load they hold. The SMAG Maxx range covers 100 kg to 6,000 kg.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "7bde6bc48d81",
+  "en": "Cleaning up",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "b552e6bbcf68",
+  "en": "A magnetic sweeper is a bar of magnets on wheels, or on a handle. It is pushed over a floor, a yard or a car park and picks up nails, screws, swarf and wire. A release lever drops the load into a bin. Sweepers protect tyres and feet, and save the time spent picking up by hand.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "94b835e2181b",
+  "en": "A SMAG magnetic sweeper picks up swarf, nails and screws from the floor.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "19bb9d0f73a0",
+  "en": "Hand held magnetic rods do the same job in a small space. They are also used to check a product sample for iron.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "1990a8e9d6b0",
+  "en": "Measuring magnets",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "b4d76fa65dd3",
+  "en": "A gauss meter measures the strength of a magnet at its surface. It is used to check that a separator still meets its certificate, and to compare one magnet with another. Every SMAG separator is supplied with a tested certificate, and a gauss meter is the tool for checking against it.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ },
+ {
+  "id": "62575b16cb8f",
+  "en": "A gauss meter measures the strength of a magnet.",
+  "page": "resources/guides/where-are-magnets-used/index.html"
+ }
+]

@@ -64,7 +64,7 @@ def figure(name: str, caption: str) -> str:
             f"<div class=product-anim__ticks aria-hidden=true>{ticks}</div></div>")
     return ('<figure class="guide-figure guide-figure--diagram product-anim">' + head + svg +
             f"<figcaption>{html.escape(caption)}"
-            '<button class=product-anim__toggle type=button>Pause</button>'
+            '<button class=product-anim__toggle type=button data-play=Play data-pause=Pause>Pause</button>'
             "</figcaption></figure>")
 
 

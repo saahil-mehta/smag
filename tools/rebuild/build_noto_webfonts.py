@@ -6,8 +6,14 @@ normal width, so wdth is pinned at 100 and the wght axis is kept whole, then
 the result is subset to the latin and latin-ext ranges and written as woff2.
 The full TTFs are ~2MB each; the subsets are a fraction of that.
 
+The Indian language pages also need Noto Sans in six scripts. With --indic
+<dir> (the google/fonts NotoSans<Script>[wdth,wght].ttf files, saved as
+NotoSans<Script>.ttf) each script is built the same way and declared under
+the same 'Noto Sans' family with its own unicode range, so a page downloads
+only the scripts it contains and English pages download none of them.
+
 Usage:
-    build_noto_webfonts.py --src ~/Downloads/Noto_Sans [--dry-run]
+    build_noto_webfonts.py --src ~/Downloads/Noto_Sans [--indic ~/Downloads/Noto_Indic] [--dry-run]
 """
 from __future__ import annotations
 
@@ -35,6 +41,20 @@ RANGES = {
                   "U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F"),
 }
 
+# Google Fonts' own ranges for each script subset.
+SCRIPTS = {
+    "devanagari": ("NotoSansDevanagari.ttf",
+                   "U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+20F0,U+25CC,U+A830-A839,U+A8E0-A8FF"),
+    "gujarati": ("NotoSansGujarati.ttf", "U+0951-0952,U+0964-0965,U+0A80-0AFF,U+200C-200D,U+20B9,U+25CC,U+A830-A839"),
+    "kannada": ("NotoSansKannada.ttf",
+                "U+0951-0952,U+0964-0965,U+0C80-0CF3,U+1CD0,U+1CD2-1CD3,U+1CDA,U+1CF2,U+1CF4,U+200C-200D,U+20B9,U+25CC,U+A830-A835"),
+    "telugu": ("NotoSansTelugu.ttf", "U+0951-0952,U+0964-0965,U+0C00-0C7F,U+1CDA,U+1CF2,U+200C-200D,U+25CC"),
+    "malayalam": ("NotoSansMalayalam.ttf",
+                  "U+0307,U+0323,U+0951-0952,U+0964-0965,U+0D00-0D7F,U+1CDA,U+1CF2,U+200C-200D,U+20B9,U+25CC,U+A830-A832"),
+    "tamil": ("NotoSansTamil.ttf", "U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC"),
+}
+INDIC = Path(sys.argv[sys.argv.index("--indic") + 1]).expanduser() if "--indic" in sys.argv else None
+
 SOURCES = {
     "normal": "NotoSans-VariableFont_wdth,wght.ttf",
     "italic": "NotoSans-Italic-VariableFont_wdth,wght.ttf",
@@ -44,11 +64,14 @@ DRY = "--dry-run" in sys.argv
 SRC = Path(sys.argv[sys.argv.index("--src") + 1]).expanduser() if "--src" in sys.argv else None
 
 
-def build(ttf: Path, style: str, subset_name: str, unicodes: str) -> tuple[str, int]:
+def build(ttf: Path, style: str, subset_name: str, unicodes: str, wght=None) -> tuple[str, int]:
     font = TTFont(ttf)
     axes = {a.axisTag for a in font["fvar"].axes}
     if "wdth" in axes:
-        font = instancer.instantiateVariableFont(font, {"wdth": 100})
+        limits = {"wdth": 100}
+        if wght:
+            limits["wght"] = wght
+        font = instancer.instantiateVariableFont(font, limits)
         # Instancing leaves gvar lazily loaded and out of step with the glyph
         # order, which makes the subsetter raise KeyError on the first glyph it
         # cannot find there. A save/reload round trip settles every table.
@@ -97,16 +120,24 @@ def main() -> int:
             name, size = build(ttf, style, subset_name, unicodes)
             built.append((name, size))
             print(f"  {name:34s} {size/1024:7.1f} KB" if size >= 0 else f"  {name} (dry run)")
+    if INDIC:
+        for subset_name, (fname, unicodes) in SCRIPTS.items():
+            RANGES[subset_name] = unicodes
+            # the site sets text from 400 to 700; the rest of the axis is weight
+            name, size = build(INDIC / fname, "normal", subset_name, unicodes, wght=(400, 700))
+            built.append((name, size))
+            print(f"  {name:34s} {size/1024:7.1f} KB")
     # The stylesheet is written here so the unicode ranges have one home.
     faces = []
     for name, _ in built:
         style = "italic" if "-italic-" in name else "normal"
-        subset_name = "latin-ext" if name.endswith("-latin-ext.woff2") else "latin"
+        subset_name = name[:-len(".woff2")].split("-")[-1]
+        subset_name = "latin-ext" if name.endswith("-latin-ext.woff2") else subset_name
         faces.append(
             "@font-face {\n"
             "  font-family: 'Noto Sans';\n"
             f"  font-style: {style};\n"
-            "  font-weight: 100 900;\n"
+            f"  font-weight: {'400 700' if subset_name in SCRIPTS else '100 900'};\n"
             "  font-display: swap;\n"
             f"  src: url(/site/assets/fonts/{name}) format('woff2');\n"
             f"  unicode-range: {RANGES[subset_name].replace(',', ', ')};\n"
