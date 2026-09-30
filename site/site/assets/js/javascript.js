@@ -403,13 +403,13 @@ showPromoPopup();
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !('IntersectionObserver' in window)) return;
+  // Grids of plates, tiles and portraits only: the family plates are the one
+  // authored moment below the hero. Text, specifications and the call and
+  // WhatsApp band are never held back.
   var selector = [
-    '.row__intro', '.content--text_1 > div', '.content--text_2 > div', '.content__body',
     '.grid--product-category > .grid__item', '.home-categories .grid > .grid__item',
     '.grid--home-industries > .grid__item', '.grid--industries > .grid__item',
-    '.statistics__item', '.image-text-pair', '.team__item', '.icon_boxes_1__item',
-    '.banner--about .banner__text', '.tab-item', '.clients-strip', '.page-swiper',
-    '.row--action .row__inner', 'body:not(.home) .banner picture'
+    '.team__item', '.family-guides__list li'
   ].join(',');
   var fold = window.innerHeight * 0.92;
   var io = new IntersectionObserver(function (entries) {
@@ -433,5 +433,18 @@ showPromoPopup();
     var done = function () { img.classList.add('is-loaded'); };
     img.addEventListener('load', done, { once: true });
     img.addEventListener('error', done, { once: true });
+  });
+})();
+
+// Wide tables: fade the right edge while columns remain off screen.
+(function () {
+  // The theme makes the table itself the scroll box (display: block).
+  document.querySelectorAll('.tab-item table').forEach(function (wrap) {
+    var update = function () {
+      wrap.classList.toggle('has-more', wrap.scrollLeft + wrap.clientWidth < wrap.scrollWidth - 2);
+    };
+    update();
+    wrap.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
   });
 })();
