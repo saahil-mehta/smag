@@ -51,7 +51,7 @@ FIXES = {
 
 # white headings sit straight on a photo here; only .home had a scrim
 SCRIM = (".banner__text{position:relative;z-index:3}"
-         ".banner:not(.home-banner)::after{content:\"\";position:absolute;inset:0;"
+         "body:not(.home) .banner::after{content:\"\";position:absolute;inset:0;"
          "z-index:2;pointer-events:none;"
          "background:linear-gradient(90deg,rgba(14,17,20,.55) 0%,rgba(14,17,20,.25) 45%,rgba(14,17,20,0) 75%)}")
 
@@ -73,7 +73,7 @@ def main() -> int:
             p.write_text(s, encoding="utf-8")
 
     css = CSS.read_text(encoding="utf-8")
-    if "banner:not(.home-banner)::after" in css:
+    if "body:not(.home) .banner::after" in css:
         print("  scrim already present")
     else:
         print("  added a scrim behind banner headings")
