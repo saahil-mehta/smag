@@ -40,7 +40,9 @@ def referenced() -> set[str]:
                 u = c.strip().split(" ")[0]
                 if u:
                     refs.add(u)
-        for m in re.finditer(r"url\((/[^)]+)\)", t):
+        # Gallery thumbnails are written url('/...'); an unquoted-only match
+        # missed them and the prune deleted every one.
+        for m in re.finditer(r'url\(["\']?(/[^"\')]+)', t):
             refs.add(m.group(1))
     for c in SITE.rglob("*.css"):
         for m in re.finditer(r'url\(["\']?(/[^"\')]+)', c.read_text(encoding="utf-8", errors="replace")):
