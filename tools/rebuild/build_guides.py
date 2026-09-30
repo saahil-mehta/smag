@@ -36,6 +36,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_smag_product_pages as build  # noqa: E402
 from remove_sections import find_element_end  # noqa: E402
+from apply_works_catalogue import ACTION_CONTACT  # noqa: E402
+from fill_industry_products import catalogue_cards, grid_span  # noqa: E402
 
 REPO = Path("/Users/saahil/Documents/GitHub/smag")
 SITE = REPO / "site"
@@ -44,6 +46,7 @@ GUIDES = SITE / "resources/guides"
 DONOR = GUIDES / "are-all-stainless-steels-magnetic/index.html"
 HOME = SITE / "index.html"
 SMAP = SITE / "sitemap/index.html"
+DIAGRAMS = REPO / "assets/source/diagrams"
 DOMAIN = "https://santoshmagneticworks.com"
 
 CATEGORY_ORDER = ["Basics", "Food Safety", "Separation", "Lifting",
@@ -68,6 +71,28 @@ def inline(s: str) -> str:
     return s
 
 
+FIGURE_RE = re.compile(r"^!\[([^\]]+)\]\((photo|diagram):([\w-]+)\)\s*$")
+
+
+def figure(caption: str, kind: str, name: str) -> str:
+    """A captioned SMAG photograph, or an inline line diagram.
+
+    Diagrams are inlined so their labels use the page's Noto Sans and can be
+    translated with the rest of the copy."""
+    cap = inline(caption)
+    alt = html.escape(caption, quote=True)
+    if kind == "photo":
+        if not (SRC.parent / "brochure-stills" / f"{name}.png").exists():
+            raise FileNotFoundError(f"no still {name}.png for figure")
+        src = card(name, "figure", 720, 460)
+        return (f'<figure class=guide-figure><img src={src} width=720 height=460 alt="{alt}" '
+                f"loading=lazy decoding=async><figcaption>{cap}</figcaption></figure>")
+    svg = (DIAGRAMS / f"{name}.svg").read_text(encoding="utf-8").strip()
+    svg = re.sub(r"<svg\b", f'<svg role=img aria-label="{alt}"', svg, count=1)
+    return (f"<figure class=\"guide-figure guide-figure--diagram\">{svg}"
+            f"<figcaption>{cap}</figcaption></figure>")
+
+
 def render(md: str) -> str:
     out: list[str] = []
     lines = md.strip().splitlines()
@@ -79,6 +104,9 @@ def render(md: str) -> str:
             continue
         if line.startswith("## "):
             out.append(f"<h3>{inline(line[3:].strip())}</h3>")
+            i += 1
+        elif FIGURE_RE.match(line):
+            out.append(figure(*FIGURE_RE.match(line).groups()))
             i += 1
         elif line.startswith("|"):
             rows = []
@@ -105,7 +133,7 @@ def render(md: str) -> str:
         else:
             para = []
             while i < len(lines) and lines[i].strip() and not re.match(
-                    r"^(## |- |\d+\. |\|)", lines[i]):
+                    r"^(## |- |\d+\. |\||!\[)", lines[i]):
                 para.append(lines[i].strip())
                 i += 1
             out.append(f"<p>{inline(' '.join(para))}")
@@ -141,6 +169,49 @@ def card(stem: str, kind: str, tw: int, th: int) -> str:
     return f"{build.IMGURL}/{stem}.{kind}.jpg"
 
 
+# --- related products ---------------------------------------------------------
+_CARDS: dict[str, str] | None = None
+_FAMILY_ORDER: dict[str, list[str]] = {}
+
+
+def _catalogue() -> dict[str, str]:
+    """Product cards from the family pages, plus each family's card order."""
+    global _CARDS
+    if _CARDS is None:
+        _CARDS = catalogue_cards()
+        for fam in (SITE / "products").iterdir():
+            page = fam / "index.html"
+            if page.exists():
+                t = page.read_text(encoding="utf-8")
+                g = t.find('<div class="grid grid--product-category">')
+                if g >= 0:
+                    a, b = grid_span(t, g)
+                    _FAMILY_ORDER[fam.name] = re.findall(r"<a href=/products/([^ >]+?)/ ", t[a:b])
+    return _CARDS
+
+
+def related_products(g: dict, limit: int = 3) -> str:
+    """Up to three product cards: the products the guide links, in the order
+    it mentions them, then its front matter product. A family link stands
+    for that family's first products."""
+    cards = _catalogue()
+    paths = re.findall(r"\]\((/products/[^)#]+?)/?\)", g["body"]) + [g["product"].rstrip("/")]
+    keys: list[str] = []
+    for path in paths:
+        parts = path.strip("/").split("/")[1:]
+        wanted = ["/".join(parts)] if len(parts) == 2 else _FAMILY_ORDER.get(parts[0], []) if parts else []
+        for k in wanted:
+            if k in cards and k not in keys:
+                keys.append(k)
+    keys = keys[:limit]
+    if not keys:
+        return ""
+    return ('<div class="row row--alt guide-products"><div class="row__inner row__intro">'
+            "<h3 class=bordered-header>Related Products</h3></div><div class=row__inner>"
+            '<div class="grid grid--product-category">' + "".join(cards[k] for k in keys)
+            + "</div></div></div>")
+
+
 # --- page -------------------------------------------------------------------
 def guide_page(g: dict, donor: str) -> str:
     url = f"/resources/guides/{g['slug']}/"
@@ -148,7 +219,7 @@ def guide_page(g: dict, donor: str) -> str:
     desc = html.escape(g["description"], quote=True)
     back = '<p class=back-link><a href=/resources/guides/>Back to Guides</a>'
     main = (
-        '<main><div class="content-wrapper content-wrapper--no-testimonials">'
+        '<main id=main><div class="content-wrapper content-wrapper--no-testimonials">'
         '<div class="row article-intro"><div class="row__inner row__inner--narrow">'
         f"<div class=breadcrumbs><a href=/resources/guides/>Guides</a> / {title} </div>"
         f"<h1 class=bordered-header>{title}</h1>"
@@ -162,8 +233,9 @@ def guide_page(g: dict, donor: str) -> str:
         # 5.8em of bottom padding and push the banner text to the top
         '<div class="row row--action"><div class=row__inner><h3><a href=/contact-us/>\n'
         "Tell us about the application and we will come back with a recommendation "
-        "<i aria-hidden=true class=icon></i> </a></h3></div></div></main>"
+        f"<i aria-hidden=true class=icon></i> </a></h3>{ACTION_CONTACT}</div></div></main>"
     )
+    main = main.replace('<div class="row row--action">', related_products(g) + '<div class="row row--action">', 1)
     ms, me = donor.find("<main"), donor.find("</main>") + len("</main>")
     page = donor[:ms] + main + donor[me:]
     page = re.sub(r"<title>[^<]*</title>",

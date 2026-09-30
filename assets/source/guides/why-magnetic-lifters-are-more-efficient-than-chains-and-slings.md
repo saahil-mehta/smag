@@ -52,6 +52,8 @@ For those loads, slings remain the right tool. For flat and round steel within i
 
 Each SMAG Maxx lifter has a flat load rating and a round load rating at half that figure. Pick the model whose flat rating covers your heaviest plate, and check that the plate is at least the minimum thickness for that model. Every lifter is tested to three times its safe working load before dispatch.
 
+![A SMAG Maxx permanent magnetic lifter.](photo:permanent-magnetic-lifter-03)
+
 | Model | Flat load | Round load |
 | --- | --- | --- |
 | Maxx-100 | 100 kg | 50 kg |

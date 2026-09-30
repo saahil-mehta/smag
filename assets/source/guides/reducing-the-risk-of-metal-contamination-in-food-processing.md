@@ -41,6 +41,8 @@ The particles created by the line are small. Standard strength magnets miss many
 
 The last separator before packing is the most important. Everything that passes it goes to the customer. Use the highest practical strength here, and place the magnet where the product flow is thin and slow so that every particle passes close to a rod.
 
+![A SMAG magnetic sampling probe for spot checks on sacks and bins.](photo:magnetic-sampling-rod-01)
+
 A magnet holds iron, steel and work hardened stainless steel. It will pass aluminium, copper and brass. If those metals are a risk, add a metal detector after the final magnet.
 
 ## Step 4: clean and check the magnets

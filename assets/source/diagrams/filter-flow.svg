@@ -1,0 +1,33 @@
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ff-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" class="dg-arrowhead"/></marker></defs>
+  <!-- inlet and outlet pipes -->
+  <path class="dg-wall" d="M40 128 H262 M40 172 H262"/>
+  <path class="dg-wall" d="M458 248 H680 M458 292 H680"/>
+  <!-- housing and lid -->
+  <rect class="dg-body" x="262" y="84" width="196" height="248"/>
+  <rect class="dg-steel" x="246" y="66" width="228" height="18"/>
+  <!-- rods -->
+  <g class="dg-rod"><rect x="292" y="84" width="18" height="222" rx="9"/><rect x="332" y="84" width="18" height="222" rx="9"/><rect x="372" y="84" width="18" height="222" rx="9"/><rect x="412" y="84" width="18" height="222" rx="9"/></g>
+  <!-- iron held on rods -->
+  <g class="dg-iron">
+    <circle cx="289" cy="140" r="2.6"/><circle cx="290" cy="158" r="2.2"/><circle cx="289" cy="176" r="2.8"/><circle cx="290" cy="203" r="2.2"/>
+    <circle cx="329" cy="150" r="2.4"/><circle cx="330" cy="171" r="2.8"/><circle cx="329" cy="196" r="2.2"/><circle cx="352" cy="164" r="2.2"/>
+    <circle cx="369" cy="182" r="2.6"/><circle cx="370" cy="210" r="2.2"/><circle cx="392" cy="194" r="2.4"/>
+    <circle cx="409" cy="224" r="2.2"/><circle cx="410" cy="240" r="2.6"/><circle cx="432" cy="230" r="2.2"/>
+  </g>
+  <!-- dirty liquid in -->
+  <g class="dg-iron"><circle cx="70" cy="146" r="2.4"/><circle cx="104" cy="156" r="2.2"/><circle cx="138" cy="141" r="2.6"/><circle cx="172" cy="154" r="2.2"/><circle cx="206" cy="146" r="2.4"/><circle cx="238" cy="157" r="2.2"/></g>
+  <!-- flow -->
+  <path class="dg-flow" marker-end="url(#ff-arrow)" d="M60 116 H240"/>
+  <path class="dg-flow" marker-end="url(#ff-arrow)" d="M276 150 C 316 150, 312 262, 356 262 S 400 150, 446 262"/>
+  <path class="dg-flow" marker-end="url(#ff-arrow)" d="M480 236 H660"/>
+  <!-- labels -->
+  <text class="dg-label" x="40" y="104">Liquid with iron particles</text>
+  <text class="dg-label" x="500" y="224">Clean liquid out</text>
+  <path class="dg-leader" d="M421 318 V356 H470"/><circle class="dg-dot" cx="421" cy="318" r="2.5"/>
+  <text class="dg-label" x="478" y="360">Magnetic rods hold the iron</text>
+  <path class="dg-leader" d="M262 300 H208 V356"/><circle class="dg-dot" cx="262" cy="300" r="2.5"/>
+  <text class="dg-label" x="96" y="360" >Sealed housing</text>
+  <path class="dg-leader" d="M474 75 H520"/><circle class="dg-dot" cx="474" cy="75" r="2.5"/>
+  <text class="dg-label" x="528" y="72">Lid lifts out with</text><text class="dg-label" x="528" y="90">the rods for cleaning</text>
+</svg>

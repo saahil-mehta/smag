@@ -25,6 +25,8 @@ A permanent magnetic lifter changes the way the job is done. This guide explains
 
 A permanent magnetic lifter is a block of neodymium magnets inside a steel body, with a handle on top. When the handle is turned to the on position, the magnetic field is directed down through the base into the steel load. When the handle is turned off, the field is switched inside the body and the load is released.
 
+![A SMAG Maxx permanent magnetic lifter. The handle turns the hold on and off.](photo:permanent-magnetic-lifter-01)
+
 There is no power supply and no battery. The lifter cannot lose its hold in a power cut. The hold is released only when the operator turns the handle, and the handle locks in the on position so that it cannot be knocked off.
 
 ## How this makes the lift safer

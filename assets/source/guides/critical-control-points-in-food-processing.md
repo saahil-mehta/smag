@@ -37,6 +37,8 @@ The final point is the most important. Anything that passes it reaches the custo
 
 A magnetic separator is the usual control for iron and steel. Choose the type to suit the product flow:
 
+![A SMAG double drawer housing for an enclosed transfer line.](photo:double-drawer-housing-ss-01)
+
 - **Grids and grates** for powders and granules falling through a hopper or sieve outlet.
 - **Housed drawer separators** for enclosed transfer lines and pneumatic conveying.
 - **Liquid traps** for syrups, oils, sauces and slurries in a pipeline.

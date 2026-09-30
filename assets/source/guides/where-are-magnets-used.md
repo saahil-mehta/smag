@@ -43,11 +43,15 @@ Lifters are rated by the flat load they hold. The SMAG Maxx range covers 100 kg 
 
 A magnetic sweeper is a bar of magnets on wheels, or on a handle. It is pushed over a floor, a yard or a car park and picks up nails, screws, swarf and wire. A release lever drops the load into a bin. Sweepers protect tyres and feet, and save the time spent picking up by hand.
 
+![A SMAG magnetic sweeper picks up swarf, nails and screws from the floor.](photo:magnetic-floor-sweeper-01)
+
 Hand held magnetic rods do the same job in a small space. They are also used to check a product sample for iron.
 
 ## Measuring magnets
 
 A gauss meter measures the strength of a magnet at its surface. It is used to check that a separator still meets its certificate, and to compare one magnet with another. Every SMAG separator is supplied with a tested certificate, and a gauss meter is the tool for checking against it.
+
+![A gauss meter measures the strength of a magnet.](photo:gauss-meter-with-hand)
 
 ## The SMAG range
 

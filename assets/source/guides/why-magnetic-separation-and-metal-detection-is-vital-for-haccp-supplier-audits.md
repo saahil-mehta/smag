@@ -44,6 +44,8 @@ All of these expect a hazard analysis, controls at the critical points, checks o
 
 Some auditors ask for proof that the product after the final separator is clean. A magnetic sampling probe is pushed into a sack, a bin or a flow of product and drawn out. Any iron on the probe shows that the upstream control has missed something. Recording a clean probe at a set frequency gives positive evidence that the controls work.
 
+![A gauss meter reading checks each magnet against its certificate.](photo:gauss-meter-with-hand)
+
 ## Preparing for the audit
 
 - Keep the certificate of magnetic strength for every separator in one file.

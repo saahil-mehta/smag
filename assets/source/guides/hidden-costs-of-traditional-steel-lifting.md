@@ -13,6 +13,8 @@ The price of a set of chains or slings is easy to see. Most of the cost of lifti
 
 A crane does useful work only while it is moving a load. With chains and slings, the crane waits while the rigging is fitted, checked and removed. On a busy bay, one slow lift holds up the next job in the queue.
 
+![A Maxx lifter stays on the crane hook between lifts.](photo:permanent-magnetic-lifter-02)
+
 A magnetic lifter stays on the hook. It is set on the load and switched on with one turn of the handle. The crane spends more of each hour lifting.
 
 ## Extra labour

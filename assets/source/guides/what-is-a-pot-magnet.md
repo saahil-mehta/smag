@@ -15,6 +15,8 @@ Pot magnets hold jigs, fixtures, sensors, guards, signs and tools. They also han
 
 A bare magnet has a field on every side. Most of that field goes into the air and does no work.
 
+![The steel cup brings the field to the working face, where it closes through the steel.](diagram:pot-field)
+
 The steel cup collects the field from the back of the magnet. It carries the field round to the working face. The magnet forms one pole in the centre of the face. The rim of the cup forms the other pole around it. The field only has a short distance to travel between the two poles, through the steel you are holding.
 
 This makes the pull on the working face several times what the bare magnet gives. It also puts the hold on one face only, so the back and sides of the pot do not grab nearby steel.
@@ -50,6 +52,8 @@ Keep the working face and the steel clean. A pot magnet works best in direct con
 ## Shallow or deep
 
 **Shallow pot magnets** are low and flat. They suit thin plate and fixtures where height is limited. SMAG makes shallow pots with plain, threaded, countersunk or hook fittings. One example size is 25 mm diameter by 8 mm thick.
+
+![SMAG alnico pot magnets.](photo:pot-magnets-group-01)
 
 **Deep pot magnets** hold a taller magnet in a deeper steel shell. The field reaches further into the steel, so the pull on thick steel is higher than a shallow pot of the same diameter gives. They suit heavier clamping, jigs and tooling on steel frames. SMAG makes deep pots with plain, threaded or hook fittings.
 

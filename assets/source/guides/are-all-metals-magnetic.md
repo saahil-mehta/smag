@@ -53,6 +53,8 @@ Work hardening changes this. When a 304 stainless part is cut, bent or ground, t
 
 Most metal contamination in a factory is iron or steel. It comes from worn machine parts, screens, bolts, tools and the raw material itself. A magnetic separator removes this at low cost, with no power and very little maintenance.
 
+![A SMAG neodymium separator rod in a sealed stainless steel tube.](photo:neodymium-magnetic-rod-01)
+
 The strength of the magnet decides how small a particle it can hold. Standard rods of 7,000 to 8,000 gauss remove ordinary tramp iron. High strength rods of 9,500 gauss and above hold fine particles and weakly magnetic stainless steel.
 
 Aluminium, copper and brass need another method, such as a metal detector or a sieve.

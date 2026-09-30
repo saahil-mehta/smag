@@ -79,6 +79,8 @@ A centrifuge spins the fluid at high speed. The spinning force throws the solid 
 
 A magnetic filter passes the fluid over strong magnetic rods. Iron and steel particles are pulled onto the rods and held. The clean fluid flows on. To clean the filter, lift the rods out, wipe off the iron and put them back. [How magnetic filtration works](/resources/guides/how-magnetic-filtration-works/) explains this in more detail.
 
+![Neodymium magnetic rods of the kind used in a SMAG magnetic filter.](photo:neodymium-magnetic-rod-01)
+
 Some non-magnetic dirt also gets caught in the layer of iron on the rods.
 
 **Strengths**

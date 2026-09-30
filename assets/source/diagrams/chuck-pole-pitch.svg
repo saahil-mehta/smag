@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+  <!-- standard pitch -->
+  <text class="dg-title" x="40" y="36">Standard pitch</text>
+  <rect class="dg-body" x="40" y="150" width="300" height="70"/>
+  <g class="dg-pole"><rect x="40" y="150" width="54" height="22"/><rect x="142" y="150" width="54" height="22"/><rect x="244" y="150" width="54" height="22"/></g>
+  <rect class="dg-part" x="150" y="126" width="38" height="24"/>
+  <path class="dg-field" d="M158 150 C 158 164, 180 164, 180 150"/>
+  <text class="dg-label" x="40" y="252">A small part sits on one pole.</text>
+  <text class="dg-label" x="40" y="272">The field has nowhere to close,</text>
+  <text class="dg-label" x="40" y="292">so the hold is weak.</text>
+  <!-- fine pitch -->
+  <text class="dg-title" x="380" y="36">Fine pitch</text>
+  <rect class="dg-body" x="380" y="150" width="300" height="70"/>
+  <g class="dg-pole">
+    <rect x="380" y="150" width="18" height="22"/><rect x="418" y="150" width="18" height="22"/><rect x="456" y="150" width="18" height="22"/><rect x="494" y="150" width="18" height="22"/>
+    <rect x="532" y="150" width="18" height="22"/><rect x="570" y="150" width="18" height="22"/><rect x="608" y="150" width="18" height="22"/><rect x="646" y="150" width="18" height="22"/>
+  </g>
+  <rect class="dg-part" x="488" y="126" width="38" height="24"/>
+  <path class="dg-field" d="M494 150 C 494 136, 512 136, 512 150 M512 150 C 512 136, 520 136, 520 150"/>
+  <path class="dg-field" d="M500 172 C 500 190, 526 190, 526 172"/>
+  <text class="dg-label" x="380" y="252">The same part sits across</text>
+  <text class="dg-label" x="380" y="272">several poles. The field closes</text>
+  <text class="dg-label" x="380" y="292">through it and holds it firmly.</text>
+  <!-- key -->
+  <rect class="dg-part" x="40" y="72" width="18" height="12"/><text class="dg-label" x="66" y="82">Workpiece</text>
+  <rect class="dg-pole" x="170" y="72" width="18" height="12"/><text class="dg-label" x="196" y="82">Pole</text>
+</svg>

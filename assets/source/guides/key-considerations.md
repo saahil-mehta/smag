@@ -20,6 +20,8 @@ Know the weight of the load. If you are not sure, work it out from the size. A s
 
 The magnetic field passes into the load. A thin plate cannot carry the whole field, and some of it passes through to the other side. The hold is weaker. Each SMAG Maxx model has a minimum job thickness, from 15 mm on the smallest to 100 mm on the largest. Below that thickness, the rated load is reduced.
 
+![A thin plate cannot carry the whole field, so the lifter holds less.](diagram:lifter-plate)
+
 ## 3. Is the contact surface clean and flat?
 
 The hold falls quickly with any gap between the base and the load. Rust, scale, paint, oil, swarf and a rough surface all count as a gap. Clean the contact area before the lift. A machined or ground surface gives the full rating.

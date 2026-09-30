@@ -55,6 +55,8 @@ A gauss meter gives a more useful measurement when you need to check the strengt
 - Clean the rods often. A rod covered in collected iron has a weaker surface field.
 - Check the strength once a year with a gauss meter against the certificate supplied with the unit.
 
+![A stainless cased magnetic rod cartridge.](photo:magnetic-rod-01)
+
 ## The SMAG range
 
 Santosh Magnetic Works makes [neodymium magnetic rods](/products/magnetic-separation-and-metal-detection/magnetic-rods/) in 304 stainless tubes, in standard, high, super high and extreme high strength. Every rod is supplied with a tested certificate of magnetic strength. [Contact us](/contact-us/) with a sample and we will test how well it is held.

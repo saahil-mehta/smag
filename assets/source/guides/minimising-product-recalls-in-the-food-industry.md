@@ -36,6 +36,8 @@ Under HACCP, every plant must list the hazards at each stage and decide where th
 
 Fit a magnetic separator at intake, after each stage that sheds metal, and before packing. Use a grid or grate for powders in a hopper, a drawer housing for enclosed lines, a liquid trap for pipelines and a plate or chute magnet for deep beds.
 
+![A SMAG housed liquid trap for syrup, oil and sauce lines.](photo:magnetic-liquid-trap-housed-01)
+
 The final separator before packing is the last chance to catch a fragment. Use the highest practical strength here. SMAG rods are made up to 13,500 gauss, which holds fine particles and work hardened stainless steel as well as ordinary iron.
 
 ## Control 3: cover the metals a magnet passes

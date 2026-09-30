@@ -15,6 +15,8 @@ This guide compares the two approaches for coolants, oils, wash liquids and proc
 
 A magnetic filter is a housing fitted into a pipeline. Inside are one or more high strength magnetic rods. Fluid enters, passes over and around the rods, and leaves. Iron and steel particles in the fluid are drawn to the rods and held there.
 
+![A SMAG inline magnetic liquid trap.](photo:magnetic-liquid-trap-inline-01)
+
 The rods are cleaned by lifting them out of the housing and wiping off the collected material. Nothing is consumed. The magnets keep their strength for many years.
 
 ## What each type catches

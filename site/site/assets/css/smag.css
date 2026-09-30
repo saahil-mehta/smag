@@ -561,3 +561,49 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
   mask-image: linear-gradient(90deg, #000 calc(100% - 44px), rgba(0,0,0,.18));
 }
 .tab-item table th, .tab-item table td { white-space: nowrap; }
+
+/* ---------- Guide figures: SMAG photographs and line diagrams ---------- */
+
+.guide-figure { margin: 2.4em 0 2.6em; max-width: 720px; }
+.guide-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.guide-figure figcaption { margin-top: .75em; font-size: .8333em; line-height: 1.5; color: var(--muted); max-width: 60ch; }
+.guide-figure--diagram { background: var(--steel); padding: 28px 28px 22px; box-sizing: border-box; }
+.guide-figure--diagram svg { display: block; width: 100%; height: auto; overflow: visible; }
+.guide-figure--diagram figcaption { margin-top: 1em; }
+@media (max-width: 549px) { .guide-figure--diagram { padding: 16px 12px 14px; margin-left: -15px; margin-right: -15px; } }
+
+.dg-body { fill: var(--paper); stroke: var(--ink); stroke-width: 1.6; stroke-linejoin: round; }
+.dg-wall { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
+.dg-steel, .dg-plate { fill: #C9CED2; stroke: var(--ink); stroke-width: 1.4; }
+.dg-cup { fill: #C9CED2; stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; }
+.dg-rod rect, .dg-rod circle { fill: #E3E6E8; stroke: var(--ink); stroke-width: 1.4; }
+.dg-magnet { fill: var(--ink-2); stroke: var(--ink); stroke-width: 1.4; }
+.dg-pole, .dg-pole rect { fill: #8C949A; }
+.dg-sep, .dg-sep rect { fill: #E8D9A8; }
+.dg-part { fill: var(--paper); stroke: var(--ink); stroke-width: 1.6; }
+.dg-hook { fill: none; stroke: var(--ink); stroke-width: 1.6; }
+.dg-iron circle, circle.dg-iron { fill: var(--ink); }
+.dg-product circle { fill: #9AA1A7; }
+.dg-flow { fill: none; stroke: var(--muted); stroke-width: 1.4; stroke-dasharray: 5 5; stroke-linecap: round; }
+.dg-arrowhead { fill: none; stroke: var(--muted); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.dg-field { fill: none; stroke: var(--ink); stroke-width: 1.1; stroke-dasharray: 2 4; stroke-linecap: round; opacity: .75; }
+.dg-leader { fill: none; stroke: var(--muted); stroke-width: 1; }
+.dg-dot { fill: var(--ink); }
+.dg-label { font-family: "Noto Sans", sans-serif; font-size: 13px; font-weight: 500; fill: var(--ink-2); }
+.dg-title { font-family: "Noto Sans", sans-serif; font-size: 15px; font-weight: 600; fill: var(--ink); }
+/* Phones: the drawing keeps a readable scale and scrolls inside its panel. */
+@media (max-width: 649px) {
+  .guide-figure--diagram { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .guide-figure--diagram svg { min-width: 600px; }
+  .guide-figure--diagram figcaption { position: sticky; left: 0; max-width: calc(100vw - 54px); }
+}
+
+/* Related products at the foot of a guide */
+.guide-products .grid--product-category { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+/* The theme overlays figcaptions on the image; guide captions sit below. */
+.content .guide-figure figcaption {
+  position: static; height: auto; width: auto; padding: 0; display: block;
+  background: none; color: var(--muted);
+}
+.content .guide-figure { width: auto; }
+@media (min-width: 1024px) { .guide-products .grid--product-category { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

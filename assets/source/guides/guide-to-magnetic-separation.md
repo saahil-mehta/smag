@@ -19,11 +19,15 @@ A separator has no power supply and no moving parts in the magnet. The collected
 
 The product moves past the magnet. It may fall by gravity, be pumped, be blown through a pipe or be carried on a conveyor. On its way it passes through or over a rod, grid, grate or plate.
 
+![A grid of magnetic rods in a hopper. The product falls between the rods and the iron stays on them.](diagram:hopper-grid)
+
 The magnetic field pulls iron particles onto the magnet face or the rod surface. They stay there. At each clean, the operator removes the magnet or opens the housing and wipes the iron away.
 
 ## What types are there?
 
 Separators fall into two groups.
+
+![A SMAG deep field magnetic plate separator for conveyors and chutes.](photo:deep-field-plate-01)
 
 **Primary separators** remove large tramp iron such as nails, bolts, nuts, wire and tool pieces. Their main job is to protect machines. They sit at intake points and on lines that carry coarse material such as pellets or flakes. Plate magnets are the usual choice here. They sit over a conveyor, in the floor of a chute or on a hinged chute door.
 

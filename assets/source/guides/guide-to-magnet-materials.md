@@ -21,6 +21,8 @@ An electromagnet is a coil of wire around a steel core. It is a magnet only whil
 
 Neodymium magnets are made from an alloy of neodymium, iron and boron. They are also called NdFeB, neo or rare earth magnets.
 
+![SMAG neodymium disc magnets.](photo:ndfeb-disc-magnets-01)
+
 Neodymium is the strongest permanent magnet material. It gives the most pull in the least space, so a small neodymium magnet can do a large job.
 
 It has two weak points. It loses strength when it gets hot, so keep standard grades below 80 degrees Celsius. It also rusts easily, so it is plated. A common plating is nickel copper nickel.
@@ -36,6 +38,8 @@ It works well at higher temperatures than neodymium. It also resists corrosion m
 ## Alnico
 
 Alnico is an alloy of aluminium, nickel and cobalt. The name comes from the first letters of each metal.
+
+![A SMAG alnico power magnet.](photo:alnico-power-magnet-01)
 
 Alnico gives less pull than neodymium for the same size. In return it keeps its strength close to heat, and its field hardly changes over the years. This suits fixtures near welding and heat treatment, and instruments and sensors.
 

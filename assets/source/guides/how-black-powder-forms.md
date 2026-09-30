@@ -13,6 +13,8 @@ Black powder is a common problem in steel pipelines. It forms in gas, oil, petro
 
 Carbon steel pipe corrodes when certain substances are present in the flow. The main ones are:
 
+![Black powder forms on the pipe wall, travels with the flow and is held in a magnetic filter.](diagram:black-powder)
+
 - water
 - oxygen
 - hydrogen sulphide

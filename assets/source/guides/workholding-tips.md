@@ -35,6 +35,8 @@ A chuck is best at holding a part down. It resists sliding much less well. So:
 
 A chuck leaves the works ground flat and parallel. It can still be damaged in transport or handling, so check it before fitting.
 
+![A SMAG circular permanent magnetic chuck.](photo:round-magnetic-chuck-02)
+
 1. Check the machine table is clean, undamaged and flat.
 2. Check the chuck base is flat.
 3. Clean the table and the chuck base completely. One grain of dirt between them will tilt the chuck.

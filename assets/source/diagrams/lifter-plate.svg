@@ -1,0 +1,23 @@
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+  <!-- thick plate -->
+  <text class="dg-title" x="40" y="36">Plate thick enough</text>
+  <path class="dg-wall" d="M200 52 V78"/><path class="dg-hook" d="M186 40 C 186 26, 214 26, 214 40 V52 H186 Z"/>
+  <rect class="dg-body" x="140" y="78" width="120" height="62"/>
+  <path class="dg-wall" d="M260 104 H298"/>
+  <rect class="dg-plate" x="60" y="140" width="280" height="56"/>
+  <path class="dg-field" d="M166 140 C 166 186, 234 186, 234 140"/>
+  <path class="dg-field" d="M180 140 C 180 170, 220 170, 220 140"/>
+  <text class="dg-label" x="40" y="236">The field closes inside the plate.</text>
+  <text class="dg-label" x="40" y="256">The lifter holds its full rating.</text>
+  <!-- thin plate -->
+  <text class="dg-title" x="400" y="36">Plate too thin</text>
+  <path class="dg-wall" d="M530 52 V78"/><path class="dg-hook" d="M516 40 C 516 26, 544 26, 544 40 V52 H516 Z"/>
+  <rect class="dg-body" x="470" y="78" width="120" height="62"/>
+  <path class="dg-wall" d="M590 104 H628"/>
+  <rect class="dg-plate" x="410" y="140" width="240" height="16"/>
+  <path class="dg-field" d="M496 140 C 496 214, 564 214, 564 140"/>
+  <path class="dg-field" d="M510 140 C 510 186, 550 186, 550 140"/>
+  <text class="dg-label" x="400" y="236">Part of the field passes through</text>
+  <text class="dg-label" x="400" y="256">the plate into the air.</text>
+  <text class="dg-label" x="400" y="276">The hold is weaker.</text>
+</svg>

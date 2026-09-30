@@ -15,6 +15,8 @@ Answer these five questions before you order.
 
 **Rectangular chucks** fit surface grinders and milling machines. The workpiece sits flat and the wheel passes back and forth across it.
 
+![A SMAG rectangular permanent magnetic chuck for a surface grinder.](photo:rectangular-magnetic-chuck-02)
+
 **Circular chucks** fit rotary grinders and lathes. The poles run in rings or in radial lines, so a round part is held evenly as it turns. SMAG makes circular chucks up to 600 mm in diameter.
 
 Match the chuck to the table. A chuck that overhangs the table cannot be clamped safely.
@@ -28,6 +30,8 @@ Small parts have the opposite problem. A small part must sit across at least two
 ## 3. Which pole pitch?
 
 The pole pitch is the distance between the poles on the top plate.
+
+![A small part needs to sit across more than one pole to be held firmly.](diagram:chuck-pole-pitch)
 
 **Standard pitch** suits medium and large parts. The field reaches deep into the workpiece and gives a strong hold.
 
@@ -46,6 +50,8 @@ For most grinding shops, a permanent chuck is the simpler choice. Choose electro
 ## 5. How will you demagnetise?
 
 A steel part keeps some magnetism after it leaves the chuck. It then attracts swarf, sticks to gauges and can upset later machining. A table top demagnetiser removes the residual magnetism in a few seconds. The SMAG Maxx-Demag bench unit has a 150 x 100 mm plate and runs from a 230 V single phase supply. Larger surface demagnetisers are built to order.
+
+![The SMAG Maxx-Demag table top demagnetiser.](photo:table-top-demagnetiser-01)
 
 ## Looking after a chuck
 

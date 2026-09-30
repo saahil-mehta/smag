@@ -15,6 +15,8 @@ It is used for machine coolant, cutting fluid, neat oil, hydraulic oil, wash liq
 
 A magnetic filter has two main parts: a housing and a set of magnetic rods.
 
+![Magnetic rods of this kind sit inside the filter housing.](photo:magnetic-rod-01)
+
 The housing is a sealed body with an inlet and an outlet. It fits into the pipe that carries the liquid. The rods hang inside the housing, in the path of the flow.
 
 Each rod is a sealed stainless steel tube. Inside the tube are strong neodymium magnets with steel pole pieces between them. The pole pieces concentrate the magnetic field at the surface of the tube. The tube is welded and watertight, so the liquid never touches the magnets.
@@ -22,6 +24,8 @@ Each rod is a sealed stainless steel tube. Inside the tube are strong neodymium 
 ## How are the particles caught?
 
 Iron and steel are ferrous metals. A magnet attracts them.
+
+![Liquid flows around the magnetic rods. Iron particles are pulled onto the rods and the clean liquid flows on.](diagram:filter-flow)
 
 As the liquid passes the rods, each ferrous particle feels a pull towards the nearest rod. The pull is strongest close to the rod surface. A particle that comes close enough is drawn onto the tube and held there. The flow is not strong enough to wash it off.
 
