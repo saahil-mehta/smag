@@ -47,7 +47,7 @@ SMAP = SITE / "sitemap/index.html"
 DOMAIN = "https://santoshmagneticworks.com"
 
 CATEGORY_ORDER = ["Basics", "Food Safety", "Separation", "Lifting",
-                  "Workholding", "Filtration"]
+                  "Workholding", "Filtration", "Stock Magnets", "Pipeline"]
 
 INDEX_INTRO = (
     "<h2>Guides</h2>"
