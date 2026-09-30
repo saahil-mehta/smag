@@ -12,3 +12,6 @@ reference-mirror/
 # third-party content; it is committed now that every page is SMAG's own
 # copy and every asset is referenced by a page (tools/rebuild/prepare_deploy.py).
 __pycache__/
+
+# Impeccable: per-developer overrides and hook consent
+.impeccable/config.local.json
