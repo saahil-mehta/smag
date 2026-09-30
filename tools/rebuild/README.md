@@ -68,6 +68,11 @@ the first group. The rest were applied on top, in roughly this order:
 | `drop_family_subpages.py` | deletes the eleven Eclipse educational and service sub-pages inside the families and the Case Studies sub-nav anchor |
 | `rewrite_copy.py` | renders every family, product and industry page's copy from `assets/source/pages/*.md`; tile blurbs applied site-wide from the family Tiles sections |
 | `copy_edit.py` (again) | home hero straplines, the redundant tagline row, cookie policy third-party section |
+| `add_logo_tagline.py` | Leaders In Magnetic Engineering under the header logo on every page, Noto Serif Bold Italic subset (needs `--src` TTF) |
+| `add_family_portraits.py` | all six Ingle family portraits from the supplied photo.pdf in the About team block, three across on desktop (needs `--pdf`) |
+| `polish_navigation.py` | Home crumb, breadcrumb JSON-LD rebuilt from each page's path, the family `#products` anchor, Brochures wording, canonical links, home slider dots |
+| `fill_industry_products.py` | each industry's Products grid rebuilt from its own Where list, cards copied from the family pages |
+| `polish_copy.py` | Eclipse-era meta titles, home stat and grids wording, dead brochure controls, sitemap page, missing meta descriptions |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way
