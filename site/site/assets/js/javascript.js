@@ -458,13 +458,17 @@ showPromoPopup();
   });
 })();
 
-// Language menu: close it on a click elsewhere or on Escape.
+// Language menu: close it on a click elsewhere or on Escape. The sticky
+// header is a copy of the header, so there can be more than one menu.
 (function () {
-  var menu = document.querySelector('.lang-switch');
-  if (!menu) return;
-  document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+  var menus = document.querySelectorAll('.lang-switch');
+  if (!menus.length) return;
+  document.addEventListener('click', function (e) {
+    menus.forEach(function (m) { if (!m.contains(e.target)) m.open = false; });
+  });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    if (e.key !== 'Escape') return;
+    menus.forEach(function (m) { if (m.open) { m.open = false; m.querySelector('summary').focus(); } });
   });
 })();
 

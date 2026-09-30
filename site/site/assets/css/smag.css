@@ -629,7 +629,7 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
 .product-anim__toggle:hover { border-color: var(--ink); }
 .product-anim__toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 /* the steps share one grid cell and take turns; the ticks show the place in the cycle */
-.product-anim__head { position: relative; padding-bottom: 14px; margin-bottom: 8px; }
+.product-anim__head { position: relative; isolation: isolate; padding-bottom: 14px; margin-bottom: 8px; }
 .content .product-anim__steps, .product-anim__steps { display: grid; margin: 0; padding: 0; list-style: none; }
 .content .product-anim__steps li, .product-anim__steps li {
   grid-area: 1 / 1; opacity: 0; margin: 0; padding: 0; list-style: none;
@@ -638,7 +638,7 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
 .content .product-anim__steps li::before { content: none; }
 .product-anim__n { display: inline-block; min-width: 1.6em; color: var(--muted); font-variant-numeric: tabular-nums; }
 .product-anim__ticks, .product-anim__steps li::after { position: absolute; bottom: 0; height: 3px; }
-.product-anim__ticks { left: 0; display: flex; gap: 4px; }
+.product-anim__ticks { left: 0; z-index: -1; display: flex; gap: 4px; }
 .product-anim__ticks i { width: 40px; height: 3px; background: var(--rule); }
 .product-anim__steps li::after { content: ""; left: calc(var(--k) * 44px); width: 40px; background: var(--ink); }
 @media (max-width: 549px) {
@@ -759,6 +759,13 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
   /* held on a frame that shows the product at work until Play is pressed */
   .product-anim:not(.is-playing) * { animation-play-state: paused !important; }
   .product-anim .an, .product-anim circle { animation-delay: calc(var(--loop) * -.33) !important; }
+  /* exempt from the site-wide rule that shortens every animation, which
+     would jump a drawing to its last frame and leave Play with nothing to run */
+  .product-anim .an, .product-anim .an-lt-w1 circle, .product-anim .an-lt-w2 circle, .product-anim .an-lt-w3 circle {
+    animation-duration: var(--loop) !important; animation-iteration-count: infinite !important;
+  }
+  .product-anim .an-stream { animation-duration: .9s !important; }
+  .product-anim .an-dash { animation-duration: .8s !important; }
 }
 
 /* ---------- Languages: the header menu, the drawer row, Indian scripts ---------- */
@@ -780,7 +787,12 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
   position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 176px; margin: 0; padding: 6px 0;
   list-style: none; background: var(--paper); border: 1px solid var(--rule); box-shadow: 0 12px 32px rgba(20, 22, 24, .12);
 }
-.lang-switch li { margin: 0; padding: 0; }
+.lang-switch ul, .lang-switch li { float: none; }
+.lang-switch ul { display: block; }
+.lang-switch li { display: block; margin: 0; padding: 0; width: auto; text-align: left; }
+/* Language names use the system's own fonts, which cover every Indian
+   script, so the menu never pulls six web fonts onto a page. */
+.lang-switch li a, .drawer-langs a { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 .lang-switch li a {
   display: block; padding: 9px 18px; font-size: 15px; line-height: 1.5; color: var(--ink);
   text-shadow: none; transition: background-color .2s var(--ease);
@@ -789,9 +801,10 @@ header nav li.parent:hover .children, header nav li.parent:focus-within .childre
 .lang-switch li a[aria-current] { font-weight: 600; box-shadow: inset 3px 0 0 var(--ink); }
 @media (max-width: 1023px) { .lang-switch { display: none; } }
 .drawer-langs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 20px; list-style: none; border-top: 1px solid var(--rule); }
-.drawer-langs li { margin: 0; padding: 0; list-style: none; }
-.drawer-langs a { display: block; padding: 8px 12px; font-size: 15px; line-height: 1.4; color: var(--ink); border: 1px solid var(--rule); }
-.drawer-langs a[aria-current] { border-color: var(--ink); font-weight: 600; }
+.mobile-drawer .drawer-langs li { flex: none; width: auto; margin: 0; padding: 0; border: 0; list-style: none; }
+.mobile-drawer .drawer-langs li::before, .mobile-drawer .drawer-langs li::after { content: none; }
+.mobile-drawer .drawer-langs a { display: block; padding: 8px 12px; font-size: 15px; line-height: 1.4; color: var(--ink); border: 1px solid var(--rule); }
+.mobile-drawer .drawer-langs a[aria-current] { border-color: var(--ink); font-weight: 600; }
 
 /* Indian scripts carry marks above and below the line: open the leading on
    tight headings and drop the negative tracking, which breaks up conjuncts. */
