@@ -266,13 +266,6 @@
   "pages": 1
  },
  {
-  "id": "649df08a448e",
-  "en": "English",
-  "page": "brochures/index.html",
-  "group": "site",
-  "pages": 73
- },
- {
   "id": "70f8bb9a8a53",
   "en": "Home",
   "page": "brochures/index.html",
@@ -616,8 +609,8 @@
   "pages": 1
  },
  {
-  "id": "3789be3d4be2",
-  "en": "COO",
+  "id": "82877f05a929",
+  "en": "Partner, Operations",
   "page": "company/about-us/index.html",
   "group": "site",
   "pages": 1
@@ -630,29 +623,8 @@
   "pages": 1
  },
  {
-  "id": "7a9fec601954",
-  "en": "CEO",
-  "page": "company/about-us/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "9c68cf5352d8",
-  "en": "Deepak Ingle",
-  "page": "company/about-us/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "1d6db549c165",
-  "en": "Vijay Ingle",
-  "page": "company/about-us/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "37d1213e53ce",
-  "en": "Retired",
+  "id": "33b8c612d649",
+  "en": "Managing Partner",
   "page": "company/about-us/index.html",
   "group": "site",
   "pages": 1
@@ -665,8 +637,43 @@
   "pages": 1
  },
  {
+  "id": "a8c33f171d77",
+  "en": "Product Development",
+  "page": "company/about-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
   "id": "37c04cd494a9",
   "en": "Mandar Ingle",
+  "page": "company/about-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "d62021ef3324",
+  "en": "Technical and Applications",
+  "page": "company/about-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "1d6db549c165",
+  "en": "Vijay Ingle",
+  "page": "company/about-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "626eabf7c106",
+  "en": "Former Partner",
+  "page": "company/about-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "9c68cf5352d8",
+  "en": "Deepak Ingle",
   "page": "company/about-us/index.html",
   "group": "site",
   "pages": 1

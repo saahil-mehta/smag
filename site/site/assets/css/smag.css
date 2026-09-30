@@ -257,7 +257,7 @@ footer .row--bordered { border-top: 1px solid var(--rule); }
 
 /* ---------- About ---------- */
 
-.icon_boxes_1__item { border-top: 1px solid var(--ink); background: transparent !important; padding: 22px 0 8px; }
+.icon_boxes_1__item { border-top: 1px solid var(--ink); background: transparent !important; padding: 22px 24px 24px; }
 .team__image h3 { background: var(--paper); font-size: 1.125em; }
 .team h6, .team__item h6 { color: var(--muted); }
 
@@ -812,3 +812,28 @@ html:not([lang=en]) h1, html:not([lang=en]) h2, html:not([lang=en]) h3, html:not
 html:not([lang=en]) .banner__text h1, html:not([lang=en]) .row--action h3 { letter-spacing: 0; line-height: 1.35; }
 html:not([lang=en]) body { line-height: 1.7; }
 html:not([lang=en]) h6 { letter-spacing: .02em; text-transform: none; }
+
+/* ---------- QC fixes ---------- */
+/* Over the home video the language name reads white like the links beside it. */
+.home header .lang-switch summary { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, .45); }
+.home .sticky-header header .lang-switch summary { color: var(--ink); text-shadow: none; }
+
+/* The sticky header is one white surface: the main bar sits above the subnav,
+   so an open dropdown covers the subnav and the shadow runs the full width. */
+.sticky-header { background: var(--paper); box-shadow: 0 8px 22px -12px rgba(20, 22, 24, .35); }
+.sticky-header header { position: relative; z-index: 2; box-shadow: none; }
+.sticky-header .subnav { position: relative; z-index: 1; border-top: 1px solid var(--rule); box-shadow: none; }
+.sticky-header .subnav::after { display: none; }
+
+/* A spec line with no label (the test certificate) takes the whole row. */
+#technical_data ul li:not(:has(> strong)), #models ul li:not(:has(> strong)) { display: block; }
+
+/* The team photo on Contact Us is tall; give the banner the height to keep
+   the seated man and the shrine in frame. */
+@media (min-width: 768px) {
+  body.contact .banner picture { aspect-ratio: 1.85 / 1; }
+  .contact .banner img { object-position: 50% 20% !important; }
+}
+
+/* Room under the client logos before the next band. */
+.clients-strip { padding-bottom: clamp(48px, 6vw, 88px); }

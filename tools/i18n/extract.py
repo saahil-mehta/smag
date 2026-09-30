@@ -12,6 +12,7 @@ the 22 guides. The two policies stay in English.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -41,6 +42,8 @@ def group(rel: str) -> str:
 
 def page_segments(text: str):
     """Every (placeholder text, kind) on a page: body runs and attributes."""
+    # the language menu is added by build.py and never translated
+    text = re.sub(r"<details class=lang-switch>.*?</details>|<ul class=drawer-langs>.*?</ul>", "", text, flags=re.S)
     toks, found = S.segments(text)
     for a, b in found:
         yield S.segment_text(toks[a:b])[1]

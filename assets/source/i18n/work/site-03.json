@@ -220,16 +220,6 @@
   "page": "products/lifting-and-handling/index.html"
  },
  {
-  "id": "6cd51d10c5e2",
-  "en": "Service & Maintenance",
-  "page": "products/lifting-and-handling/index.html"
- },
- {
-  "id": "ee71769e7af7",
-  "en": "Sector Expertise",
-  "page": "products/lifting-and-handling/index.html"
- },
- {
   "id": "7b209a0f4708",
   "en": "Lifting and Handling",
   "page": "products/lifting-and-handling/index.html"
@@ -787,6 +777,11 @@
  {
   "id": "699d5434fc4d",
   "en": "Easy Clean Magnetic Grid Separator",
+  "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
+ },
+ {
+  "id": "c46f38313106",
+  "en": "A grid that cleans itself when you lift the core",
   "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
  }
 ]

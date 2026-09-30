@@ -1,10 +1,5 @@
 [
  {
-  "id": "c46f38313106",
-  "en": "A grid that cleans itself when you lift the core",
-  "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
- },
- {
   "id": "f94e5a6764cc",
   "en": "Magnetic cores sit inside outer stainless tubes",
   "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
@@ -627,6 +622,16 @@
  {
   "id": "997eac8de04a",
   "en": "Neodymium Magnetic Rod",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
+  "id": "7c5799790a0b",
+  "en": "Sealed 304 stainless rods, 7,000 to 13,500 gauss",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
+  "id": "f4eb43d2d516",
+  "en": "Hand-held meter for checking magnet strength",
   "page": "products/magnetic-separation-and-metal-detection/index.html"
  }
 ]
