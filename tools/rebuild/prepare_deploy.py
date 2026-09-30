@@ -126,17 +126,24 @@ def not_found(dry: bool) -> None:
     ms, me = donor.find("<main"), donor.find("</main>") + len("</main>")
     main = ('<main><div class="content-wrapper content-wrapper--no-testimonials">'
             '<div class=row><div class="row__inner content content--text_1">'
-            "<div><h2 class=configurable-header>Page not found</h2></div>"
+            "<div><h1 class=configurable-header>Page not found</h1></div>"
             "<div class=content__body><p>The page you asked for is not here. It may have moved "
             "when we rebuilt the site.<p>Try the <a href=/>home page</a>, the "
             "<a href=/products/magnetic-separation-and-metal-detection/>separation range</a> or the "
             "<a href=/sitemap/>sitemap</a>, or <a href=/contact-us/>ask us</a> and we will point you "
             "to the right place.</div></div></div></div></main>")
     page = donor[:ms] + main + donor[me:]
-    page = re.sub(r"<title>[^<]*</title>", "<title>Page not found | Santosh Magnetic Works</title>", page)
-    page = re.sub(r'(<meta name=description content=)"[^"]*"', r'\1"Page not found."', page)
+    title = "Page not found | Santosh Magnetic Works"
+    desc = "The page you asked for is not on the Santosh Magnetic Works website."
+    # The donor's own address and description must not follow it onto the 404.
+    page = re.sub(r"<link rel=canonical [^>]*>\n?|<meta property=og:url [^>]*>"
+                  r'|<meta (?:name=description|property=og:description) content="[^"]*">', "", page)
+    page = re.sub(r"<title>[^<]*</title>",
+                  f'<title>{title}</title><meta name=description content="{desc}">', page)
+    page = re.sub(r"<meta property=og:title content=[^>]*>", f'<meta property=og:title content="{title}">', page)
     page = re.sub(r"<script type=application/ld\+json>.*?</script>", "", page, flags=re.S)
-    page = page.replace("<head>", "<head><meta name=robots content=noindex>", 1) if "<head>" in page else page
+    # Minified heads carry no literal <head>; anchor on the <title> instead.
+    page = page.replace("<title>", "<meta name=robots content=noindex><title>", 1)
     write(SITE / "404.html", page, dry)
     print("404.html written")
 

@@ -2,7 +2,7 @@
 """Rebuild the home product grid as SMAG's six real families.
 
 Drops Metal Detection and Pipeline Filtration: SMAG does not make either.
-Adds Magnetic Grills and Workshop Tools, which SMAG does make and Eclipse's
+Adds Magnetic Grids and Workshop Tools, which SMAG does make and Eclipse's
 grid never showed.
 
 Descriptions are reworded from the Eclipse tiles rather than lifted from SMAG's
@@ -47,9 +47,9 @@ TILES = [
      "/products/workholding-systems/",
      "Chucks that hold work for grinding, turning, milling and inspection.",
      "Round permanent magnetic chuck"),
-    ("grills", "Magnetic Grills",
+    ("grills", "Magnetic Grids",
      "/products/magnetic-separation-and-metal-detection/",
-     "Hopper and chute grills that take fine iron out of powders and granules.",
+     "Hopper and chute grids that take fine iron out of powders and granules.",
      "Hopper magnetic grill with magnetic tubes"),
     ("tools", "Workshop Tools",
      "/products/magnetic-tools-and-standard-magnets/",

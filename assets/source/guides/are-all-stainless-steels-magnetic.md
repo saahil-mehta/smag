@@ -18,7 +18,7 @@ The mix of elements changes the crystal structure of the steel. The crystal stru
 
 ## The main families of stainless steel
 
-There are five families. Three of them matter for magnets.
+There are five families.
 
 **Ferritic stainless steels** are magnetic. They contain chromium and little or no nickel. Grades 409, 430 and 439 are ferritic. They are used in car exhausts, kitchen appliances and cheaper fittings.
 

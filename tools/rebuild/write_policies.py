@@ -50,7 +50,7 @@ PRIVACY_BODY = f"""<h1>Privacy Policy</h1>
 it, and what you can ask us to do with it. We have kept it short and specific
 to this website rather than generic.
 <h3>Who we are</h3>
-<p>{COMPANY} manufactures magnetic separation, lifting and work-holding
+<p>{COMPANY} manufactures magnetic separation, lifting and workholding
 equipment in Mumbai. For the purposes of the Digital Personal Data Protection
 Act 2023, we are the Data Fiduciary for the data described here.
 <p>{COMPANY}<br>{ADDRESS}<br>GSTIN {GSTIN}<br>
@@ -78,6 +78,7 @@ we do not sell yours.
 <h3>Who we share it with</h3>
 <p>We share personal data only where it is necessary, and only with:
 <ul>
+<li>Web3Forms, which passes the enquiry form on our contact page to our email.</li>
 <li>Couriers and transporters, to deliver your order.</li>
 <li>Our bank and payment processors, to take payment.</li>
 <li>Our accountants and auditors, for statutory compliance.</li>

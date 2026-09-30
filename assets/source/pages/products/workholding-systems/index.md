@@ -6,7 +6,7 @@ button: Ask for a quote
 meta: Permanent magnetic chucks for grinding, turning and light milling, made in Mumbai. Rectangular and circular chucks, electromagnetic builds to order, table top demagnetiser.
 ---
 ## Intro
-### Hold the work with a lever, not a clamp
+### Hold the work with one lever
 A magnetic chuck holds a steel workpiece flat on the machine table. Turn the lever and the part is locked down. There are no clamps in the way of the wheel, so the whole surface is ground in one pass and five faces stay open.
 
 We make rectangular chucks for surface grinders and circular chucks for rotary grinders and lathes, with N35 neodymium magnets and a thick top plate that can be reground many times. Electromagnetic and multicoil chucks are built to customer sizes. The Maxx-Demag bench unit removes the magnetism left in a part after grinding.
