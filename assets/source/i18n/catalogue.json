@@ -266,6 +266,13 @@
   "pages": 1
  },
  {
+  "id": "649df08a448e",
+  "en": "English",
+  "page": "brochures/index.html",
+  "group": "site",
+  "pages": 73
+ },
+ {
   "id": "70f8bb9a8a53",
   "en": "Home",
   "page": "brochures/index.html",
@@ -3040,20 +3047,6 @@
  {
   "id": "280976a2a639",
   "en": "Magnetic Lifters | Santosh Magnetic Works",
-  "page": "products/lifting-and-handling/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "6cd51d10c5e2",
-  "en": "Service & Maintenance",
-  "page": "products/lifting-and-handling/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "ee71769e7af7",
-  "en": "Sector Expertise",
   "page": "products/lifting-and-handling/index.html",
   "group": "site",
   "pages": 1
@@ -6039,13 +6032,6 @@
   "page": "products/magnetic-tools-and-standard-magnets/index.html",
   "group": "site",
   "pages": 1
- },
- {
-  "id": "04b8a41b40f6",
-  "en": "Neodymium Discs Magnets",
-  "page": "products/magnetic-tools-and-standard-magnets/index.html",
-  "group": "site",
-  "pages": 3
  },
  {
   "id": "d609b9b741b2",
