@@ -49,19 +49,28 @@ var simpleArrowSwiper = new Swiper('.arrow-swiper-container', {
     prevEl: '.swiper-prev'
   }
 });
+// No loop: the gallery stops at its first and last photo, the end arrow
+// greys out and the counter shows how many there are.
 var gallerySwiper = new Swiper('.gallery-swiper-container', {
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: '.next',
-    prevEl: '.prev'
+    prevEl: '.prev',
+    disabledClass: 'disabled'
+  },
+  pagination: {
+    el: '.gallery-count',
+    type: 'fraction'
   },
   on: {
-    slideChange: function slideChange() {
-      $('.product__thumbnails a.active').removeClass('active');
-      $('.product__thumbnails a[data-img="' + (this.realIndex + 1) + '"]').addClass('active');
-    }
+    init: markThumbnail,
+    slideChange: markThumbnail
   }
 });
+function markThumbnail() {
+  $('.product__thumbnails a.active').removeClass('active');
+  $('.product__thumbnails a[data-img="' + (this.activeIndex + 1) + '"]').addClass('active');
+}
 $(document).ready(function () {
   $('.InputfieldCheckbox input[type="checkbox"].required').prop('required', true);
   $('select.required, input[type="file"].required').prop('required', 'true');
@@ -86,7 +95,7 @@ $(function () {
     e.preventDefault();
     if (!$(this).hasClass('active')) {
       var target = $(this).attr('data-img');
-      gallerySwiper.slideTo(target);
+      gallerySwiper.slideTo(target - 1);
     }
   });
   $('.accordion__control').click(function () {

@@ -283,6 +283,7 @@ footer { background: var(--paper); border-top: 1px solid var(--rule); }
 .thumb-index + .row--x-small-padding { padding-top: 2.4em; }
 .product__gallery button { background-color: var(--ink); border-radius: 0; }
 .product__gallery button:hover { background-color: #000; }
+.product__gallery button.disabled, .product__gallery button.disabled:hover { background-color: #E2E2E2; box-shadow: none; }
 .product__thumbnails a.active::before { background-color: var(--ink); }
 @media (min-width: 1024px) {
   .tabbed-content__content .tab-item { padding-left: 0; padding-right: 0; }
@@ -392,6 +393,10 @@ body:not(.home) .banner picture img { position: absolute; inset: 0; width: 100%;
 .product__thumbnails { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 88px)); gap: 8px; }
 .product__thumbnails a { width: auto; min-width: 0; overflow: hidden; margin: 0; }
 .product__thumbnails a div { width: 100%; }
+.product__gallery .gallery-count {
+  position: absolute; top: 14px; right: 16px; left: auto; bottom: auto; width: auto; z-index: 2;
+  font-size: .8125rem; font-variant-numeric: tabular-nums; letter-spacing: .04em; color: var(--muted);
+}
 
 /* 8. Plate finish and browser surfaces. */
 .grid--product-category a .image img { mix-blend-mode: multiply; max-width: 88%; margin: 0 auto; display: block; }
