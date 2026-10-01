@@ -492,8 +492,8 @@ showPromoPopup();
 
 // Wide tables: fade the right edge while columns remain off screen.
 (function () {
-  // The theme makes the table itself the scroll box (display: block).
-  document.querySelectorAll('.tab-item table').forEach(function (wrap) {
+  // The wrapper div is the scroll box; smag.css keeps the table a table.
+  document.querySelectorAll('.tab-item div[style*="overflow-x"], .content div[style*="overflow-x"]').forEach(function (wrap) {
     var update = function () {
       wrap.classList.toggle('has-more', wrap.scrollLeft + wrap.clientWidth < wrap.scrollWidth - 2);
     };
