@@ -71,6 +71,15 @@ function markThumbnail() {
   $('.product__thumbnails a.active').removeClass('active');
   $('.product__thumbnails a[data-img="' + (this.activeIndex + 1) + '"]').addClass('active');
 }
+// Enquiry form: a phone field keeps digits and one leading +, typed or
+// pasted; text answers are trimmed so spaces alone do not pass as an answer.
+$(document).on('input', 'form input[type="tel"]', function () {
+  var clean = this.value.replace(/[^\d+]/g, '').replace(/(?!^)\+/g, '');
+  if (clean !== this.value) this.value = clean;
+});
+$(document).on('blur', 'form input[type="text"], form input[type="email"], form textarea', function () {
+  this.value = this.value.trim();
+});
 $(document).ready(function () {
   $('.InputfieldCheckbox input[type="checkbox"].required').prop('required', true);
   $('select.required, input[type="file"].required').prop('required', 'true');
