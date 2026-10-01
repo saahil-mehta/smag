@@ -2,7 +2,7 @@
 title: How Black Powder Forms in Pipelines
 category: Pipeline
 description: What black powder is, how corrosion forms it inside steel pipelines, the problems it causes, and how a magnetic filter removes it.
-image: magnetic-liquid-trap-housed-01
+image: scene-black-powder
 product: /products/oil-and-gas-pipeline-filtration/
 product_label: pipeline filtration range
 home: false

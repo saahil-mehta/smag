@@ -2,7 +2,7 @@
 title: The Hidden Costs of Lifting Steel with Chains and Slings
 category: Lifting
 description: The costs of chain and sling lifting that rarely appear on a budget: idle cranes, extra labour, tired crews, worn gear and damaged steel.
-image: permanent-magnetic-lifter-02
+image: scene-steel-plate-stock
 product: /products/lifting-and-handling/permanent-magnetic-lifter/
 product_label: permanent magnetic lifter
 home: false

@@ -2,7 +2,7 @@
 title: Types of Filtration for CNC Machines
 category: Filtration
 description: How paper, cartridge, bag, centrifugal and magnetic filters clean CNC coolant, with the strengths and limits of each.
-image: neodymium-magnetic-rod-01
+image: scene-cnc-workshop
 product: /products/filtration-systems/
 product_label: filtration range
 home: false

@@ -2,7 +2,7 @@
 title: A Guide to Magnetic Separation
 category: Separation
 description: What a magnetic separator does, the main types, where they go in a line, and how magnet strength is chosen and checked.
-image: hand-magnet-easy-clean-01
+image: suspension-magnet-01
 product: /products/magnetic-separation-and-metal-detection/
 product_label: separation range
 home: false

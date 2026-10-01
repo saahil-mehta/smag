@@ -2,7 +2,7 @@
 title: Magnetic Lifters Compared with Chains and Slings
 category: Lifting
 description: A plain comparison of magnetic lifters against chains and slings for moving steel plate and bar: time, people, damage and safety.
-image: permanent-magnetic-lifter-02
+image: scene-chain-sling-lift
 product: /products/lifting-and-handling/permanent-magnetic-lifter/
 product_label: permanent magnetic lifter
 ---

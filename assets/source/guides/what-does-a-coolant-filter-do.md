@@ -2,7 +2,7 @@
 title: What Does a Coolant Filter Do?
 category: Filtration
 description: What gets into machine coolant, what the dirt does to tools, parts and machines, and how a coolant filter keeps it out.
-image: magnetic-liquid-trap-inline-01
+image: scene-cnc-coolant
 product: /products/filtration-systems/magnetic-coolant-filter/
 product_label: magnetic coolant filter
 home: false

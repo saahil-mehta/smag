@@ -2,7 +2,7 @@
 title: Are All Metals Magnetic?
 category: Basics
 description: A plain guide to which metals a magnet will pick up, which it will pass over, and why this matters for magnetic separation.
-image: magnetic-rod-01
+image: alnico-power-magnet-02
 product: /products/magnetic-separation-and-metal-detection/
 product_label: magnetic separation range
 home: true

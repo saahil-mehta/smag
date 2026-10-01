@@ -2,7 +2,7 @@
 title: Preventing Product Recalls in the Food Industry
 category: Food Safety
 description: Why food products are recalled, what a recall costs, and the controls that stop metal contamination before it leaves the plant.
-image: magnetic-liquid-trap-housed-01
+image: double-drawer-housing-blue-01
 product: /products/magnetic-separation-and-metal-detection/high-intensity-liquid-filter-separator/
 product_label: high intensity liquid trap
 ---
