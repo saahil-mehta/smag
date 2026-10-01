@@ -410,7 +410,6 @@ body:not(.home) .content-wrapper > .row--breadcrumbs { order: -1; border-bottom:
 body:not(.home) .content-wrapper > .breadcrumbs + .banner .row__inner,
 body:not(.home) .content-wrapper > .banner .row__inner { padding-top: 32px; }
 .content-wrapper > .row--breadcrumbs { padding: 0; }
-.content-wrapper .row.row--breadcrumbs + .row { padding-top: 0; }
 
 /* Plates: near-white JPG grounds lift to the plate's white. */
 .grid--product-category a .image img { filter: brightness(1.045) contrast(1.02); }
