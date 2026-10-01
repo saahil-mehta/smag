@@ -36,6 +36,10 @@ var simplePaginationSwiper = new Swiper('.pagination-swiper-container', {
 var simplePaginationManualSwiper = new Swiper('.pagination-swiper-manual-container', {
   loop: true,
   autoplay: false,
+  navigation: {
+    nextEl: '.hero-next',
+    prevEl: '.hero-prev'
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true

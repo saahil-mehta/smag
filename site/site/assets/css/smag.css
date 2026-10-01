@@ -280,6 +280,23 @@ footer .row--bordered { border-top: 1px solid var(--rule); }
 }
 .home .home-banner__container .swiper-pagination-bullet { background: #fff; opacity: .5; }
 .home .home-banner__container .swiper-pagination-bullet-active { background: #fff; opacity: 1; }
+/* Edge arrows: the dots alone did not say there are more slides. */
+.home-banner__container .hero-prev, .home-banner__container .hero-next {
+  position: absolute; top: 50%; z-index: 3; width: 64px; height: 64px; padding: 0; border: 0; cursor: pointer;
+  transform: translateY(-50%); background: rgba(22,24,26,.42) center / 20px no-repeat;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  transition: background-color .25s var(--ease);
+}
+.home-banner__container .hero-prev { left: 24px; background-image: url(/site/assets/images/svg/icon-angle-white-left.svg); }
+.home-banner__container .hero-next { right: 24px; background-image: url(/site/assets/images/svg/icon-angle-white-right.svg); }
+.home-banner__container .hero-prev:hover, .home-banner__container .hero-next:hover { background-color: rgba(22,24,26,.72); }
+.home-banner__container .hero-prev:focus-visible, .home-banner__container .hero-next:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 767px) {
+  /* On a phone the title fills the lower half; the arrows sit above it. */
+  .home-banner__container .hero-prev, .home-banner__container .hero-next { top: 34%; width: 48px; height: 48px; background-size: 15px; }
+  .home-banner__container .hero-prev { left: 12px; }
+  .home-banner__container .hero-next { right: 12px; }
+}
 
 /* Footer: white page, ruled. */
 footer { background: var(--paper); border-top: 1px solid var(--rule); }
@@ -429,8 +446,8 @@ body:not(.home) .content-wrapper > .banner .row__inner { padding-top: 32px; }
 /* Wide tables scroll with an edge cue; model names never break. */
 .tab-item div[style*="overflow-x"], .content div[style*="overflow-x"] {
   background:
-    linear-gradient(90deg, #fff 30%, rgba(255,255,255,0)) left / 32px 100% no-repeat local,
-    linear-gradient(270deg, #fff 30%, rgba(255,255,255,0)) right / 32px 100% no-repeat local,
+    linear-gradient(90deg, #fff 60%, rgba(255,255,255,0)) left / 32px 100% no-repeat local,
+    linear-gradient(270deg, #fff 60%, rgba(255,255,255,0)) right / 32px 100% no-repeat local,
     linear-gradient(90deg, rgba(22,24,26,.24), rgba(22,24,26,0)) left / 18px 100% no-repeat scroll,
     linear-gradient(270deg, rgba(22,24,26,.24), rgba(22,24,26,0)) right / 18px 100% no-repeat scroll;
 }

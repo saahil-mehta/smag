@@ -1075,6 +1075,16 @@
   "page": "index.html"
  },
  {
+  "id": "4e5109389975",
+  "en": "Scroll Previous",
+  "page": "index.html"
+ },
+ {
+  "id": "aebf3f1aa82b",
+  "en": "Scroll Next",
+  "page": "index.html"
+ },
+ {
   "id": "2df5affbe225",
   "en": "Magnetic separator with pull-out magnetic bars",
   "page": "index.html"
@@ -1140,18 +1150,8 @@
   "page": "index.html"
  },
  {
-  "id": "4e5109389975",
-  "en": "Scroll Previous",
-  "page": "index.html"
- },
- {
   "id": "a0c4aa9c174b",
   "en": "Left Arrow",
-  "page": "index.html"
- },
- {
-  "id": "aebf3f1aa82b",
-  "en": "Scroll Next",
   "page": "index.html"
  },
  {
