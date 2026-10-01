@@ -83,6 +83,9 @@ the first group. The rest were applied on top, in roughly this order:
 | `sync_client_logos.py` | adds any logo in `assets/logos/` missing from the home and About strips, in alphabetical order and sized by the equal-area rule in `polish_ux.py`; the "+ many more" label is the 32nd grid cell, so 8, 4 and 2 columns all fill. Run after `tidy_logo_strip.py` |
 | `add_product_animations.py` | places an animated line drawing of the working cycle (`assets/source/animations/*.svg`) under the Overview heading of the easy clean grid, lifter, sweeper, liquid trap and coolant filter pages, with numbered steps above it and a Pause button; smag.css runs each on one loop and javascript.js pauses it off screen. Run after `rewrite_copy.py` |
 | `add_family_guides.py` | after `build_guides.py`: a ruled Guides row on each family page from the guides whose `product` sits in that family, and new guides added to the sitemap page |
+| `fix_product_galleries.py` | one rule for every product gallery: a single photo gets no arrows or thumbnail strip; two or more get arrows and a "2 / 3" counter, and javascript.js stops at the ends with the end arrow greyed. Drops the lifter photo that repeated the first |
+| `sync_guide_cards.py` | points each guide card on /resources/guides/ and the home carousel at the `image:` in its source, one photo per guide; stops if two guides share one. Generated scenes are recorded in `assets/source/generated-image-prompts.md` |
+| `replace_eclipse_images.py` | writes a SMAG image over every rendition of one Eclipse asset under `site/site/assets/files/<id>/`, cropped (scenes) or fitted on white and watermarked (products), so no HTML changes. Masters and prompts: `assets/source/generated-image-prompts.md` |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way
