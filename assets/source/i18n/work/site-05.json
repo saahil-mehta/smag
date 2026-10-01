@@ -1,5 +1,25 @@
 [
  {
+  "id": "b9e5447d776c",
+  "en": "Grid with a quick release core, cleaned in seconds",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
+  "id": "997eac8de04a",
+  "en": "Neodymium Magnetic Rod",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
+  "id": "7c5799790a0b",
+  "en": "Sealed 304 stainless rods, 7,000 to 13,500 gauss",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
+  "id": "f4eb43d2d516",
+  "en": "Hand-held meter for checking magnet strength",
+  "page": "products/magnetic-separation-and-metal-detection/index.html"
+ },
+ {
   "id": "5eea3d01db77",
   "en": "Drawer magnets inside enclosed ducts",
   "page": "products/magnetic-separation-and-metal-detection/index.html"
@@ -592,11 +612,6 @@
  {
   "id": "3fa29d1bc4ad",
   "en": "When the shallow pot is not enough",
-  "page": "products/magnetic-tools-and-standard-magnets/alnico-deep-pot-magnets/index.html"
- },
- {
-  "id": "658bb7a6ff2b",
-  "en": "A deep pot holds a taller magnet in a deeper steel shell. The field reaches further into the workpiece, so the pull on thick steel is higher than a shallow pot of the same diameter gives.",
   "page": "products/magnetic-tools-and-standard-magnets/alnico-deep-pot-magnets/index.html"
  }
 ]

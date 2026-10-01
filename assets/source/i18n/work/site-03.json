@@ -1,5 +1,10 @@
 [
  {
+  "id": "a85dcba6af37",
+  "en": "Most contamination in a metalworking fluid is iron. Put the magnetic filter first and a coarser barrier filter after it, and the barrier filter lasts many times longer.",
+  "page": "products/filtration-systems/index.html"
+ },
+ {
   "id": "4eb3bb7bf9f6",
   "en": "Tell us the fluid, the flow rate and the connection size. We will size the housing and the rods.",
   "page": "products/filtration-systems/index.html"
@@ -570,11 +575,6 @@
   "page": "products/lifting-and-handling/permanent-magnetic-lifter/index.html"
  },
  {
-  "id": "af62a0341640",
-  "en": "Maxx 1000 permanent magnetic lifter, side view",
-  "page": "products/lifting-and-handling/permanent-magnetic-lifter/index.html"
- },
- {
   "id": "4c4617401ab0",
   "en": "Permanent magnetic lifter with rubber handle grip",
   "page": "products/lifting-and-handling/permanent-magnetic-lifter/index.html"
@@ -768,20 +768,5 @@
   "id": "67a610ef87aa",
   "en": "Encapsulated plate magnet with lifting eye bolts",
   "page": "products/magnetic-separation-and-metal-detection/deep-field-magnetic-plate-separator/index.html"
- },
- {
-  "id": "074689a47d11",
-  "en": "Easy Clean Magnetic Grid Separator | Santosh Magnetic Works",
-  "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
- },
- {
-  "id": "699d5434fc4d",
-  "en": "Easy Clean Magnetic Grid Separator",
-  "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
- },
- {
-  "id": "c46f38313106",
-  "en": "A grid that cleans itself when you lift the core",
-  "page": "products/magnetic-separation-and-metal-detection/easy-clean-magnetic-grid-separator/index.html"
  }
 ]

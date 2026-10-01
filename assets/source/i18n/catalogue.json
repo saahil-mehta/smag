@@ -1127,6 +1127,27 @@
   "pages": 1
  },
  {
+  "id": "91ecd2d39e73",
+  "en": "Use letters only",
+  "page": "contact-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "cdd31fae1633",
+  "en": "An email address such as name@company.com",
+  "page": "contact-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "ccaee38a5e6b",
+  "en": "Use 10 to 15 digits. Start with + for a number outside India.",
+  "page": "contact-us/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
   "id": "91020eefc5b4",
   "en": "Magnetic Separation, Filtration, Lifting and Workholding | Santosh Magnetic Works",
   "page": "index.html",
@@ -2270,6 +2291,13 @@
  {
   "id": "617376b9395e",
   "en": "Magnetic pipeline filters that remove black powder and rust from oil, gas and fuel pipelines at full pressure, with no consumable elements.",
+  "page": "industries/oil-and-gas/index.html",
+  "group": "site",
+  "pages": 1
+ },
+ {
+  "id": "6874dcd43d44",
+  "en": "Gas pipelines, valves and a filter vessel at a gas gathering station",
   "page": "industries/oil-and-gas/index.html",
   "group": "site",
   "pages": 1
@@ -3544,13 +3572,6 @@
  {
   "id": "88a6c737d310",
   "en": "Maxx series permanent magnetic lifters, twelve models from 100 kg to 6,000 kg. Hand lever operation, neodymium magnets, tested to three times the safe working load.",
-  "page": "products/lifting-and-handling/permanent-magnetic-lifter/index.html",
-  "group": "site",
-  "pages": 1
- },
- {
-  "id": "af62a0341640",
-  "en": "Maxx 1000 permanent magnetic lifter, side view",
   "page": "products/lifting-and-handling/permanent-magnetic-lifter/index.html",
   "group": "site",
   "pages": 1

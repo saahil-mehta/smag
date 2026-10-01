@@ -1,5 +1,10 @@
 [
  {
+  "id": "4275066955b1",
+  "en": "The plating protects the magnet from rust. Keep the working temperature below 80 degrees Celsius. Standard sizes are stocked and other sizes are made to order.",
+  "page": "products/magnetic-tools-and-standard-magnets/neodymium-disc-magnets/index.html"
+ },
+ {
   "id": "b18d5b16999a",
   "en": "{1}Example size:{/1} 4 to 10 mm diameter x 2 mm thick",
   "page": "products/magnetic-tools-and-standard-magnets/neodymium-disc-magnets/index.html"
@@ -587,11 +592,6 @@
  {
   "id": "ae34d24bccea",
   "en": "A fine pole chuck suits small parts and a standard chuck suits large ones. The universal pitch does both jobs well enough that most shops need only one chuck per machine.",
-  "page": "products/workholding-systems/rectangular-universal-chuck/index.html"
- },
- {
-  "id": "7ddc0374a8fb",
-  "en": "The top plate concentrates the field on the working face. A light hold position lets the operator set the part before the full hold is applied. Used for grinding, turning, wire cut and light milling.",
   "page": "products/workholding-systems/rectangular-universal-chuck/index.html"
  }
 ]

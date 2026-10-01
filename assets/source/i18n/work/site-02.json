@@ -1,5 +1,15 @@
 [
  {
+  "id": "35bc0addb2ce",
+  "en": "Fine iron out of powders, pastes and liquids",
+  "page": "industries/chemical-processing/index.html"
+ },
+ {
+  "id": "d447e8e50fb0",
+  "en": "Chemical plants handle powders, granules, pastes and liquids that pick up iron from raw materials, from mills and mixers and from maintenance work. Iron in the product spoils colour and purity and can damage downstream equipment.",
+  "page": "industries/chemical-processing/index.html"
+ },
+ {
   "id": "514baa39c6fa",
   "en": "Our separators are made in 304 stainless steel with rods up to 13,500 gauss. Grids and housed grids handle dry product. Liquid traps handle solutions and slurries. Sizes are made to your line.",
   "page": "industries/chemical-processing/index.html"
@@ -302,6 +312,11 @@
  {
   "id": "617376b9395e",
   "en": "Magnetic pipeline filters that remove black powder and rust from oil, gas and fuel pipelines at full pressure, with no consumable elements.",
+  "page": "industries/oil-and-gas/index.html"
+ },
+ {
+  "id": "6874dcd43d44",
+  "en": "Gas pipelines, valves and a filter vessel at a gas gathering station",
   "page": "industries/oil-and-gas/index.html"
  },
  {
@@ -637,11 +652,6 @@
  {
   "id": "0c2c6afd39eb",
   "en": "Grinding and machining coolant lasts longer and the finish improves. Hydraulic and gear oil carries less wear metal, so the machine wears less. Wash tanks stop redepositing iron on the next batch.",
-  "page": "products/filtration-systems/index.html"
- },
- {
-  "id": "a85dcba6af37",
-  "en": "Most contamination in a metalworking fluid is iron. Put the magnetic filter first and a coarser barrier filter after it, and the barrier filter lasts many times longer.",
   "page": "products/filtration-systems/index.html"
  }
 ]

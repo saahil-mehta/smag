@@ -805,6 +805,21 @@
   "page": "contact-us/index.html"
  },
  {
+  "id": "91ecd2d39e73",
+  "en": "Use letters only",
+  "page": "contact-us/index.html"
+ },
+ {
+  "id": "cdd31fae1633",
+  "en": "An email address such as name@company.com",
+  "page": "contact-us/index.html"
+ },
+ {
+  "id": "ccaee38a5e6b",
+  "en": "Use 10 to 15 digits. Start with + for a number outside India.",
+  "page": "contact-us/index.html"
+ },
+ {
   "id": "91020eefc5b4",
   "en": "Magnetic Separation, Filtration, Lifting and Workholding | Santosh Magnetic Works",
   "page": "index.html"
@@ -1307,16 +1322,6 @@
  {
   "id": "82bdac5160d7",
   "en": "Chemical Processing | Santosh Magnetic Works",
-  "page": "industries/chemical-processing/index.html"
- },
- {
-  "id": "35bc0addb2ce",
-  "en": "Fine iron out of powders, pastes and liquids",
-  "page": "industries/chemical-processing/index.html"
- },
- {
-  "id": "d447e8e50fb0",
-  "en": "Chemical plants handle powders, granules, pastes and liquids that pick up iron from raw materials, from mills and mixers and from maintenance work. Iron in the product spoils colour and purity and can damage downstream equipment.",
   "page": "industries/chemical-processing/index.html"
  }
 ]
