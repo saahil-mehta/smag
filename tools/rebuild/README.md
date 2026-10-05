@@ -87,6 +87,9 @@ the first group. The rest were applied on top, in roughly this order:
 | `sync_guide_cards.py` | points each guide card on /resources/guides/ and the home carousel at the `image:` in its source, one photo per guide; stops if two guides share one. Generated scenes are recorded in `assets/source/generated-image-prompts.md` |
 | `replace_eclipse_images.py` | writes a SMAG image over every rendition of one Eclipse asset under `site/site/assets/files/<id>/`, cropped (scenes) or fitted on white and watermarked (products), so no HTML changes. Masters and prompts: `assets/source/generated-image-prompts.md` |
 | `update_contact_details.py` | client corrections of 5 Oct 2026: factory unit 026 / 117, registered office added to the footer, contact page and privacy policy, WhatsApp links to +91 93245 87891, "Mr." before the About team names. Run `make i18n-extract`, translate, `make i18n` after |
+| `set_company_phone.py` | the company number +91 93245 87891 becomes the main call number (header, footer, action band); Contact Us lists 93245 87891, 93243 15562, 99201 43922, 82861 93555 |
+| `link_addresses.py` | bold Factory and Registered Office labels, each address a Google Maps link, in the footer and on Contact Us |
+| `add_footer_tagline.py` | footer logo becomes the header lockup, mark over "Leaders In Magnetic Engineering"; width set in smag.css |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way

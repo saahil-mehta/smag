@@ -28,7 +28,7 @@ Success is a **phone call or WhatsApp message** to the works. The enquiry form, 
 ## Operating Context
 
 - Six product families: Magnetic Filtration, Magnetic Separation, Stock Magnets & Tools, Workholding Systems, Lifting & Handling, Pipeline Filtration. Eight industries: food, sugar, pharmaceutical, chemical, virgin and recycled plastic, steel, oil and gas, aerospace. Twelve guides.
-- Contact routes: phone and WhatsApp (+91 99201 43922), queries@santoshmagneticworks.com, the enquiry form on /contact-us/ (posts to Web3Forms), IndiaMART listing, Google business profile.
+- Contact routes: phone and WhatsApp (+91 93245 87891, the company number; Contact Us also lists +91 93243 15562, +91 99201 43922 and +91 82861 93555), queries@santoshmagneticworks.com, the enquiry form on /contact-us/ (posts to Web3Forms), IndiaMART listing, Google business profile.
 - Printed brochures served as PDFs from /brochures/.
 - Buyers typically need specifications, compliance details (ISO 9001:2015, GSTIN 27ABDFS2378H1ZY) and a way to reach a person.
 

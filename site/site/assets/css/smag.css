@@ -865,3 +865,15 @@ html:not([lang=en]) h6 { letter-spacing: .02em; text-transform: none; }
 
 /* Room under the client logos before the next band. */
 .clients-strip { padding-bottom: clamp(48px, 6vw, 88px); }
+
+/* Address labels in the footer and on Contact Us read as headings; the
+   theme's strong is only 500. Each address links to Google Maps. */
+footer .footer-columns .address strong,
+.contact-detail__locations strong { font-weight: 700; color: var(--ink); }
+footer .footer-columns .address a:hover,
+.contact-detail__locations address a:hover { color: var(--ink); text-decoration: underline; }
+
+/* Footer logo: the header lockup, mark over tagline, at footer size. */
+footer .footer-logo { --logo-w: 180px; margin-bottom: 4px; }
+footer .footer-logo a { display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none; }
+footer .footer-logo img { display: block; width: var(--logo-w); height: auto; }
