@@ -86,6 +86,7 @@ the first group. The rest were applied on top, in roughly this order:
 | `fix_product_galleries.py` | one rule for every product gallery: a single photo gets no arrows or thumbnail strip; two or more get arrows and a "2 / 3" counter, and javascript.js stops at the ends with the end arrow greyed. Drops the lifter photo that repeated the first |
 | `sync_guide_cards.py` | points each guide card on /resources/guides/ and the home carousel at the `image:` in its source, one photo per guide; stops if two guides share one. Generated scenes are recorded in `assets/source/generated-image-prompts.md` |
 | `replace_eclipse_images.py` | writes a SMAG image over every rendition of one Eclipse asset under `site/site/assets/files/<id>/`, cropped (scenes) or fitted on white and watermarked (products), so no HTML changes. Masters and prompts: `assets/source/generated-image-prompts.md` |
+| `update_contact_details.py` | client corrections of 5 Oct 2026: factory unit 026 / 117, registered office added to the footer, contact page and privacy policy, WhatsApp links to +91 93245 87891, "Mr." before the About team names. Run `make i18n-extract`, translate, `make i18n` after |
 | `prepare_deploy.py` | final step before publishing: prunes unreferenced assets, strips the CMS generator meta, writes robots.txt, sitemap.xml, favicons, 404.html, CNAME and .nojekyll |
 
 ## Two lessons the hard way

@@ -85,8 +85,28 @@
   "page": "404.html"
  },
  {
-  "id": "d8339dc59566",
-  "en": "Santosh Magnetic Works{1/}026 / 177, Sarita Indl Estate, A Wing{2/}Prabhat Complex, Near Toll Plaza{3/}W E Highway, Dahisar East{4/}Mumbai, Maharashtra 400068{5/}India",
+  "id": "3aefef3c16ab",
+  "en": "Santosh Magnetic Works",
+  "page": "404.html"
+ },
+ {
+  "id": "e47b9b102103",
+  "en": "Factory",
+  "page": "404.html"
+ },
+ {
+  "id": "8f71a04e6fe1",
+  "en": "026 / 117, Sarita Indl Estate, A Wing{1/}Prabhat Complex, Near Toll Plaza{2/}W E Highway, Dahisar East{3/}Mumbai, Maharashtra 400068{4/}India",
+  "page": "404.html"
+ },
+ {
+  "id": "ebf6d589b900",
+  "en": "Registered Office",
+  "page": "404.html"
+ },
+ {
+  "id": "ce8a5f47e58d",
+  "en": "205, Devraj Mall, Hari Shankar Joshi Road{1/}Opp. Madhuram Hall, Maratha Colony{2/}Dahisar East, Mumbai, Maharashtra 400068{3/}India",
   "page": "404.html"
  },
  {
@@ -152,11 +172,6 @@
  {
   "id": "c86f6ee5eae1",
   "en": "The page you asked for is not on the Santosh Magnetic Works website.",
-  "page": "404.html"
- },
- {
-  "id": "3aefef3c16ab",
-  "en": "Santosh Magnetic Works",
   "page": "404.html"
  },
  {
@@ -430,8 +445,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "725937820b14",
-  "en": "Sushil Ingle",
+  "id": "62590e46fb40",
+  "en": "Mr. Sushil Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -440,8 +455,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "c26e78297192",
-  "en": "Rahul Ingle",
+  "id": "23a97b3dbb2d",
+  "en": "Mr. Rahul Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -450,8 +465,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "9757269c60ac",
-  "en": "Santosh Ingle",
+  "id": "3eb0e71682cd",
+  "en": "Mr. Santosh Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -460,8 +475,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "37c04cd494a9",
-  "en": "Mandar Ingle",
+  "id": "23ef26f65d03",
+  "en": "Mr. Mandar Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -470,8 +485,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "1d6db549c165",
-  "en": "Vijay Ingle",
+  "id": "dffc012209a6",
+  "en": "Mr. Vijay Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -480,8 +495,8 @@
   "page": "company/about-us/index.html"
  },
  {
-  "id": "9c68cf5352d8",
-  "en": "Deepak Ingle",
+  "id": "3a52a738d1e6",
+  "en": "Mr. Deepak Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -512,6 +527,36 @@
  {
   "id": "c5a27c9d27ab",
   "en": "The Santosh Magnetic Works team at our Mumbai works",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "725937820b14",
+  "en": "Sushil Ingle",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "c26e78297192",
+  "en": "Rahul Ingle",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "9757269c60ac",
+  "en": "Santosh Ingle",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "37c04cd494a9",
+  "en": "Mandar Ingle",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "1d6db549c165",
+  "en": "Vijay Ingle",
+  "page": "company/about-us/index.html"
+ },
+ {
+  "id": "9c68cf5352d8",
+  "en": "Deepak Ingle",
   "page": "company/about-us/index.html"
  },
  {
@@ -785,8 +830,13 @@
   "page": "contact-us/index.html"
  },
  {
-  "id": "9a9ad6edae2e",
-  "en": "026 / 177, Sarita Indl Estate, A Wing, Prabhat Complex, Near Toll Plaza, W E Highway, Dahisar East, Mumbai, Maharashtra 400068, India",
+  "id": "502afe2955be",
+  "en": "026 / 117, Sarita Indl Estate, A Wing, Prabhat Complex, Near Toll Plaza, W E Highway, Dahisar East, Mumbai, Maharashtra 400068, India",
+  "page": "contact-us/index.html"
+ },
+ {
+  "id": "5d2ab936662d",
+  "en": "205, Devraj Mall, Hari Shankar Joshi Road, Opp. Madhuram Hall, Maratha Colony, Dahisar East, Mumbai, Maharashtra 400068, India",
   "page": "contact-us/index.html"
  },
  {
@@ -1283,45 +1333,5 @@
   "id": "4cd443f3220a",
   "en": "Maxx lifters for plate and billet handling",
   "page": "industries/aerospace/index.html"
- },
- {
-  "id": "ae00fa7af63e",
-  "en": "Alnico and neodymium magnets in fixtures and instruments",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "6121011db043",
-  "en": "Magnetic chucks, lifters and filters for aerospace machine shops. Precision workholding, clean coolant and safe handling of steel stock.",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "48bc66fc3687",
-  "en": "rectangular premier chuck",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "02c159c2ca24",
-  "en": "circular premier range chuck",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "093457536da0",
-  "en": "magnetic coolant filter",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "b54ddc20aed5",
-  "en": "table top demagnetiser",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "690ec96b848c",
-  "en": "Maxx 1000 permanent magnetic lifter, three-quarter view",
-  "page": "industries/aerospace/index.html"
- },
- {
-  "id": "82bdac5160d7",
-  "en": "Chemical Processing | Santosh Magnetic Works",
-  "page": "industries/chemical-processing/index.html"
  }
 ]
